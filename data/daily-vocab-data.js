@@ -966,28 +966,35 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "menyampaikan",
     "cn": "传达；表达",
-    "en": "",
-    "root": "",
+    "en": "to convey; to pass on",
+    "root": "sampai",
     "categories": [
       "每日学习",
       "08:00",
       "原始课程",
-      "历史记录不完整"
+      "历史记录不完整",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-26 08:00",
-    "last_seen": "2026-10-10 08:00",
+    "last_seen": "2026-11-26 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-26",
-      "2026-10-10"
+      "2026-10-10",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
       "2026-08-26 08:00",
-      "2026-10-10 08:00"
-    ]
+      "2026-10-10 08:00",
+      "2026-11-26 18:00"
+    ],
+    "root_cn": "到达",
+    "example": "Nanti tolong sampaikan salam saya ke pasangan pengantin, ya, soalnya saya nggak bisa datang ke nikahannya.",
+    "example_cn": "到时候请替我向新郎新娘问好，因为我去不了婚礼。"
   },
   {
     "word": "mengingatkan",
@@ -2789,31 +2796,36 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "berusaha",
     "cn": "努力、设法",
-    "en": "",
+    "en": "to try hard; to make an effort",
     "root": "usaha",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-24 19:00",
-    "last_seen": "2026-10-10 08:00",
+    "last_seen": "2026-11-26 18:00",
     "sessions": [
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-24",
-      "2026-10-10"
+      "2026-10-10",
+      "2026-11-26"
     ],
-    "example": "Saya akan berusaha.",
-    "example_cn": "我会努力。",
+    "example": "Kalau cuma marah-marah, nggak akan menghasilkan apa-apa. Lebih baik berusaha cari jalan tengah.",
+    "example_cn": "光发火什么用也没有，不如想办法找个折中的办法。",
     "lesson_occurrences": [
       "2026-08-24 19:00",
-      "2026-10-10 08:00"
-    ]
+      "2026-10-10 08:00",
+      "2026-11-26 18:00"
+    ],
+    "root_cn": "努力；生意"
   },
   {
     "word": "berencana",
@@ -9351,27 +9363,29 @@ window.DAILY_VOCAB_DB = [
     "en": "listen closely; follow attentively",
     "root": "simak",
     "root_cn": "仔细听；留意",
-    "example": "Coba nyimak dulu sampai dia selesai bicara.",
-    "example_cn": "先认真听，等他说完。",
+    "example": "Semua orang nyimak baik-baik waktu bos ngomong soal karyawan yang dipecat bulan lalu.",
+    "example_cn": "老板说起上个月被开除的员工时，大家都听得很认真。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-10-08 08:00",
+    "last_seen": "2026-11-26 18:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-09-18",
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
-      "2026-10-08 08:00"
+      "2026-10-08 08:00",
+      "2026-11-26 18:00"
     ]
   },
   {
@@ -21035,24 +21049,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to promise",
     "root": "janji",
     "root_cn": "约定；承诺",
-    "example": "Ayah berjanji akan menjemputku sebelum jam enam.",
-    "example_cn": "爸爸答应在六点前来接我。",
+    "example": "Adikku sudah berjanji nggak bakal kabur lagi waktu disuruh cuci piring.",
+    "example_cn": "我弟弟已经保证，以后叫他洗碗时不会再溜走了。",
     "categories": [
       "每日学习",
       "18:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-11 18:00",
-    "last_seen": "2026-10-11 18:00",
+    "last_seen": "2026-11-26 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
-      "2026-10-11 18:00"
+      "2026-10-11 18:00",
+      "2026-11-26 18:00"
     ]
   },
   {
@@ -30146,25 +30162,27 @@ window.DAILY_VOCAB_DB = [
     "en": "interest",
     "root": "minat",
     "root_cn": "兴趣；意愿",
-    "example": "Aku punya minat pada fotografi. Aku kepo soal teknik mengambil foto, bukan soal kehidupan pribadi orang yang difoto.",
-    "example_cn": "我对摄影有兴趣。我好奇的是拍照技术，不是被拍摄者的私生活。（kepo = sangat ingin tahu，口语）",
+    "example": "Anakku nggak terlalu minat sama senam, dia lebih suka main bola.",
+    "example_cn": "我孩子对体操没什么兴趣，他更喜欢踢球。（sama = dengan / pada）",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-06 18:00",
-    "last_seen": "2026-11-07 18:00",
+    "last_seen": "2026-11-26 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
       "2026-11-06",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
       "2026-11-06 18:00",
-      "2026-11-07 18:00"
+      "2026-11-07 18:00",
+      "2026-11-26 18:00"
     ]
   },
   {
@@ -30173,27 +30191,29 @@ window.DAILY_VOCAB_DB = [
     "en": "skilled; proficient",
     "root": "mahir",
     "root_cn": "熟练；精于",
-    "example": "Orang yang mahir menggambar itu membuat tokoh unta yang lincah untuk buku anak.",
-    "example_cn": "那位擅长画画的人为儿童书画了一个活泼灵巧的骆驼角色。",
+    "example": "Sejak SMP dia sudah mahir bikin kuah soto sendiri, nggak perlu lihat resep lagi.",
+    "example_cn": "他从初中起就能熟练地自己做索多汤的汤底，不用再看菜谱。（bikin = membuat）",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-06 18:00",
-    "last_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-26 18:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-11-06",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-26"
     ],
     "lesson_occurrences": [
       "2026-11-06 18:00",
-      "2026-11-07 08:00"
+      "2026-11-07 08:00",
+      "2026-11-26 18:00"
     ]
   },
   {
@@ -34340,6 +34360,56 @@ window.DAILY_VOCAB_DB = [
     ],
     "lesson_occurrences": [
       "2026-11-26 08:00"
+    ]
+  },
+  {
+    "word": "penyok",
+    "cn": "压瘪；凹陷（硬的东西被压、被撞后凹进去）",
+    "en": "dented",
+    "root": "penyok",
+    "root_cn": "凹陷；瘪",
+    "example": "Kotak paketnya penyok di satu sudut, tapi untungnya isinya nggak apa-apa.",
+    "example_cn": "包裹的盒子一个角压瘪了，不过幸好里面的东西没事。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-26 18:00",
+    "last_seen": "2026-11-26 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-26"
+    ],
+    "lesson_occurrences": [
+      "2026-11-26 18:00"
+    ]
+  },
+  {
+    "word": "cabang",
+    "cn": "网点；分店；分公司",
+    "en": "branch (office)",
+    "root": "cabang",
+    "root_cn": "树枝；分支",
+    "example": "Kalau nggak ada orang di rumah, paketnya dibawa balik ke cabang terdekat, jadi bisa diambil sendiri.",
+    "example_cn": "如果家里没人，包裹会被带回最近的网点，可以自己去取。",
+    "categories": [
+      "每日学习",
+      "18:00"
+    ],
+    "times_seen": 1,
+    "first_seen": "2026-11-26 18:00",
+    "last_seen": "2026-11-26 18:00",
+    "sessions": [
+      "18:00"
+    ],
+    "dates": [
+      "2026-11-26"
+    ],
+    "lesson_occurrences": [
+      "2026-11-26 18:00"
     ]
   }
 ];

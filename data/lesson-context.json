@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-26",
-    "session": "pm",
-    "time": "18:00",
-    "day": 97
+    "date": "2026-11-27",
+    "session": "am",
+    "time": "08:00",
+    "day": 98
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-26T00:31:59.802Z",
-    "lesson_watermark": "2026-11-26 08:00",
+    "runtime_generated_at": "2026-11-26T10:54:25.072Z",
+    "lesson_watermark": "2026-11-26 18:00",
     "index_updated": "2026-11-26",
-    "runtime_hash": "b1ab364363a9c914160689f9d7ee9e11e5147cbcd9ad906afff704b87504b3c8",
-    "index_hash": "c8dedd1743a1a0d3d471d04a171782da86855812757e103952469f832326f36f",
+    "runtime_hash": "8d5ed53cd788589c28e08e3d82e04e82afcfd6a5e11a9302f88a0d470d6e9a97",
+    "index_hash": "92f60dabcc5c289e081405042458f66856f8ec6047aa8637808653573779786c",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -48,18 +48,8 @@
     ]
   },
   "candidates": {
-    "new_dont": [
-      [
-        "penyok",
-        "压瘪；凹陷"
-      ]
-    ],
-    "new_fuzzy": [
-      [
-        "cabang",
-        "网点；分店；分公司"
-      ]
-    ],
+    "new_dont": [],
+    "new_fuzzy": [],
     "review": [
       [
         "berlaku sampai",
@@ -1712,16 +1702,6 @@
         "监狱"
       ],
       [
-        "nyimak",
-        3,
-        1,
-        "2026-09-11T15:04:23.880Z",
-        "2026-11-08T07:35:37.271Z",
-        "认真听；跟着听懂内容（口语）",
-        "simak",
-        "仔细听；留意"
-      ],
-      [
         "kontrak",
         3,
         0,
@@ -1902,26 +1882,6 @@
         "仔细的；严谨的"
       ],
       [
-        "berusaha",
-        3,
-        0,
-        "",
-        "2026-11-14T08:25:15.544Z",
-        "努力、设法",
-        "usaha",
-        ""
-      ],
-      [
-        "menyampaikan",
-        4,
-        1,
-        "2026-10-09T07:56:00.191Z",
-        "2026-11-22T01:47:12.429Z",
-        "传达；表达",
-        "",
-        ""
-      ],
-      [
         "anjuran",
         2,
         0,
@@ -2040,16 +2000,6 @@
         "因此；这样一来",
         "demikian",
         "如此；这样"
-      ],
-      [
-        "berjanji",
-        3,
-        1,
-        "2026-10-15T08:24:27.694Z",
-        "2026-10-29T03:52:54.539Z",
-        "答应；承诺",
-        "janji",
-        "约定；承诺"
       ],
       [
         "tetangga",
@@ -2262,6 +2212,46 @@
         "记得、想起"
       ],
       [
+        "kendala",
+        2,
+        1,
+        "2026-10-13T15:16:58.511Z",
+        "2026-10-26T07:45:02.071Z",
+        "障碍；困难；卡点",
+        "kendala",
+        "障碍；限制"
+      ],
+      [
+        "ngaret",
+        2,
+        0,
+        "",
+        "2026-11-15T03:35:04.945Z",
+        "拖延、迟到",
+        "karet",
+        "橡胶；引申为时间被‘拉长’"
+      ],
+      [
+        "pedagang",
+        2,
+        0,
+        "",
+        "2026-10-26T07:53:58.360Z",
+        "商贩；商人",
+        "dagang",
+        "做买卖；经商"
+      ],
+      [
+        "peralatan",
+        2,
+        0,
+        "",
+        "2026-10-26T07:54:06.360Z",
+        "设备；用具（成套的）",
+        "alat",
+        "工具；器具"
+      ],
+      [
         "resi",
         2,
         0,
@@ -2392,34 +2382,14 @@
         "完；用尽"
       ],
       [
-        "menyediakan",
+        "penyok",
         2,
-        1,
-        "2026-10-15T08:17:21.463Z",
-        "2026-10-28T03:33:44.841Z",
-        "提供；准备好（供人使用）",
-        "sedia",
-        "准备好的；有的"
-      ],
-      [
-        "menyiapkan",
-        2,
-        1,
-        "2026-10-15T13:40:34.757Z",
-        "2026-10-29T03:53:53.751Z",
-        "准备好某物",
-        "siap",
-        "准备好；就绪"
-      ],
-      [
-        "mengaku",
-        3,
         0,
         "",
-        "2026-11-18T07:07:31.647Z",
-        "承认；自称",
-        "aku",
-        "我；自我"
+        "",
+        "压瘪；凹陷（硬的东西被压、被撞后凹进去）",
+        "penyok",
+        "凹陷；瘪"
       ]
     ],
     "focus": [
@@ -2696,35 +2666,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-19",
-      "session": "am",
-      "review_core": [
-        "teriak",
-        "berteriak",
-        "bongkar",
-        "dipatok",
-        "bentuk"
-      ],
-      "new_words": [
-        "hancur"
-      ]
-    },
-    {
-      "date": "2026-11-19",
-      "session": "pm",
-      "review_core": [
-        "berteriak",
-        "kelabakan",
-        "kepancing",
-        "berat"
-      ],
-      "new_words": [
-        "semakin",
-        "rumit",
-        "pintas"
-      ]
-    },
-    {
       "date": "2026-11-20",
       "session": "am",
       "review_core": [
@@ -2906,76 +2847,38 @@
         "garansi",
         "stok habis"
       ]
+    },
+    {
+      "date": "2026-11-26",
+      "session": "pm",
+      "review_core": [
+        "menyampaikan",
+        "nyimak",
+        "berjanji",
+        "minat",
+        "mahir"
+      ],
+      "new_words": [
+        "penyok",
+        "cabang"
+      ]
     }
   ],
   "previous_pm": {
-    "date": "2026-11-25",
+    "date": "2026-11-26",
     "new_words": [
-      "pengirim",
-      "kode pos"
+      "penyok",
+      "cabang"
     ],
     "review_core": [
-      "meletakkan",
-      "letak",
-      "berlaku sampai",
-      "nggak kepegang",
-      "nyusahin"
+      "menyampaikan",
+      "nyimak",
+      "berjanji",
+      "minat",
+      "mahir"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-26",
-    "vocab": [
-      [
-        "garansi",
-        "保修；（服务的）保证、保障",
-        "warranty; guarantee",
-        "garansi",
-        "保证（外来词）"
-      ],
-      [
-        "stok habis",
-        "缺货；卖完了",
-        "out of stock; sold out",
-        "habis",
-        "完；用尽"
-      ],
-      [
-        "menerapkan",
-        "实施；推行；应用（规则、方法）",
-        "to implement; to apply (a rule, system, method)",
-        "terap",
-        "应用（多见于派生词）"
-      ],
-      [
-        "menyediakan",
-        "提供；备好（供人使用）",
-        "to provide; to make available",
-        "sedia",
-        "备有；愿意"
-      ],
-      [
-        "menyiapkan",
-        "准备（好）某物",
-        "to prepare; to get (something) ready",
-        "siap",
-        "准备好的"
-      ],
-      [
-        "mengaku",
-        "承认；自称",
-        "to admit; to claim (to be)",
-        "aku",
-        "我；承认"
-      ]
-    ],
-    "review_vocab": [
-      "ongkir",
-      "pengirim",
-      "penanganan",
-      "kalah",
-      "nyari"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
