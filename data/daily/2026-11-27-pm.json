@@ -1,0 +1,365 @@
+{
+  "date": "2026-11-27",
+  "session": "pm",
+  "time": "18:00",
+  "day": 98,
+  "title": "18:00 晚课｜Paketnya Dititip di Pos Satpam yang Bocor · 包裹被放在漏雨的门卫室",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "variation"
+  },
+  "new_words": [],
+  "vocab": [
+    {
+      "word": "harusnya",
+      "display": "harusnya",
+      "audio_text": "harusnya",
+      "cn": "按理说；本来应该（事情没按应有的样子发生）",
+      "en": "supposedly; should have",
+      "root": "harus",
+      "root_cn": "必须；应该",
+      "formation": "harus + -nya → harusnya，是 seharusnya（se- + harus + -nya）的口语简化形，放在句首或主语后。常见搭配：harusnya + 动词（Harusnya kamu bilang dulu 你本来应该先说一声）、harusnya sudah …（按理早该……了：Harusnya paketnya sudah sampai）、harusnya nggak …（本来不该……）、harusnya sih …（按理说嘛……，语气更软）。",
+      "example": "Harusnya film fantasi itu tayang minggu ini, tapi jadwalnya diundur sampai bulan depan.",
+      "example_cn": "那部奇幻片按理这周就该上映了，可是排期推迟到了下个月。",
+      "synonym_note": "harusnya、seharusnya、sebaiknya、mestinya：harusnya 和 seharusnya 意思一样，常用来说“按理应该这样，但实际上没有”，带一点埋怨或遗憾（Harusnya kurirnya telepon dulu 快递员本该先打电话）；seharusnya 更完整，写邮件、正式投诉多用；sebaiknya 是“最好……”，是给建议，不带埋怨；mestinya 和 harusnya 接近，更口语。口语说法：harusnya 本身就是口语里最常说的形式；正式书面写 seharusnya。",
+      "everyday": "聊天、打电话多说 harusnya；邮件、正式投诉多写 seharusnya",
+      "usage_note": "此前学过、答错过的词，已经一个多月没复习。Dimas 抱怨：快递员本该先给他打电话，再把包裹放到门卫室。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "balas",
+      "display": "balas",
+      "audio_text": "balas",
+      "cn": "回复；回（消息、邮件）；回报",
+      "en": "to reply; to repay",
+      "root": "balas",
+      "root_cn": "回复；回报",
+      "formation": "词根本身口语里直接当动词用（Dia belum balas 他还没回）。标准形 membalas（meN- + balas），被动 dibalas，名词 balasan（回复、回信）。常见搭配：balas chat / balas pesan（回消息）、balas email（回邮件）、belum dibalas（还没被回复）、cepat balas（回得快）、membalas budi（报恩）、balas dendam（报仇）。",
+      "example": "Aku penasaran banget, kenapa dia belum balas chat-ku dari pagi.",
+      "example_cn": "我特别想知道，为什么他从早上到现在都还没回我消息。",
+      "synonym_note": "balas 和 jawab 别混：balas 是“回复”别人发来的消息、邮件、信（balas chat、balas email）；jawab 是“回答”问题（jawab pertanyaan）。接电话不说 balas telepon，说 angkat telepon。balas 还有“回报、报复”的意思：membalas kebaikan（回报好意）、balas dendam（报仇），要看搭配。口语说法：bales（Udah aku bales, kok）；正式场合用 membalas（Mohon segera dibalas）。",
+      "everyday": "日常多说 bales / balas（Kok nggak dibales?）；membalas 用在邮件、正式通知里",
+      "usage_note": "此前学过、答错过的词，已经一个多月没复习。Dimas 从三点就在应用里给客服发消息，一直没人回。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "membatasi",
+      "display": "membatasi",
+      "audio_text": "membatasi",
+      "cn": "限制；把……控制在一定范围内",
+      "en": "to limit; to restrict",
+      "root": "batas",
+      "root_cn": "界限；边界",
+      "formation": "meN- + batas + -i → membatasi（b 开头变 mem-，b 保留）。被动 dibatasi，命令式 batasi。同词根：terbatas（有限的：waktunya terbatas）、batasan（限度、限制条件）、pembatasan（限制措施）、perbatasan（边境）。常见搭配：membatasi waktu / jumlah（限制时间、数量）、membatasi makanan manis（少吃甜食）、dibatasi maksimal …（最多限……）、membatasi diri（克制自己）。",
+      "example": "Sampai luka di kakinya sembuh, dokter menyuruhnya membatasi makanan manis.",
+      "example_cn": "在他脚上的伤口痊愈之前，医生让他少吃甜食。",
+      "synonym_note": "membatasi、melarang、mengurangi：melarang 是“禁止”，完全不准；membatasi 是“限制在某个范围内”，可以，但有上限或条件（membatasi klaim 理赔有限制，不是完全不能理赔）；mengurangi 是“减少”，只说变少，不一定有明确上限。形容词 terbatas 说“有限的”：Stoknya terbatas（库存有限）。口语说法：batasin（Aku lagi batasin gula）。",
+      "usage_note": "此前学过、答错过的词，已经一个多月没复习。客服一开始说，系统把理赔限制在“丢件”范围内，压坏、泡湿的包裹不能索赔。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berlaku",
+      "display": "berlaku",
+      "audio_text": "berlaku",
+      "cn": "适用；有效；生效（规定、优惠、证件）",
+      "en": "to apply; to be valid",
+      "root": "laku",
+      "root_cn": "行得通；卖得出去",
+      "formation": "ber- + laku → berlaku（规定、优惠等“行得通、有效”）。使动 memberlakukan（实施、使生效：memberlakukan aturan baru）。常见搭配：berlaku untuk …（适用于……）、berlaku sampai …（有效期到……）、tidak berlaku lagi（已失效）、mulai berlaku（开始生效）、masih berlaku（仍然有效）。",
+      "example": "Voucher hotelnya nggak berlaku untuk kamar mewah, cuma untuk kamar standar.",
+      "example_cn": "这张酒店代金券不适用于豪华房，只能用于标准间。",
+      "synonym_note": "berlaku、laku、melakukan：berlaku 说规定、优惠、证件“适用、有效”（Promo ini berlaku untuk semua member）；laku 是“卖得出去、受欢迎”（Kue ini laku banget）；melakukan 是“做、进行”某事（melakukan pengecekan）。说“有效期到某天”用 berlaku sampai …。口语说法：日常也说 berlaku；说优惠能不能用，口语常说 bisa dipakai（Voucher-nya bisa dipakai, nggak?）。",
+      "usage_note": "此前学过的词，已经快 50 天没上过词卡。客服查完记录后说，快递员没征得同意就寄放，这种情况赔偿是适用的。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "hiburan",
+      "display": "hiburan",
+      "audio_text": "hiburan",
+      "cn": "娱乐；消遣（让人放松、开心的事）",
+      "en": "entertainment",
+      "root": "hibur",
+      "root_cn": "使开心；安慰",
+      "formation": "hibur + -an → hiburan（让人开心、放松的东西）。同词根：menghibur（逗人开心；安慰：menghibur teman yang sedih）、terhibur（被逗乐、心情好了些）、penghibur（给人带来快乐的人或东西）。常见搭配：hiburan favorit（最喜欢的消遣）、tempat hiburan（娱乐场所）、acara hiburan（娱乐节目）、cari hiburan（找点乐子）、sekadar hiburan（只是消遣而已）。",
+      "example": "Penampilan band sekolah jadi hiburan paling seru di acara tujuh belasan tahun ini.",
+      "example_cn": "学校乐队的表演是今年八一七（独立日）活动上最精彩的娱乐节目。",
+      "synonym_note": "hiburan、liburan、rekreasi 别混：hiburan 是让人开心的“娱乐、消遣”本身（看电影、听音乐、读小说都算）；liburan 是“假期、度假”（liburan ke Bali）；rekreasi 是外出游玩、休闲活动（偏书面）。同词根的 menghibur 有两个意思：“逗人开心”和“安慰”（Aku cuma mau menghibur dia 我只是想安慰他）。口语说法：日常也说 hiburan；“安慰、逗开心”口语常说 hibur（Hibur dia, dong）。",
+      "usage_note": "此前学过、答错过的词，已经三个星期没上过词卡。Dimas 的外甥女 Kayla 最喜欢的消遣就是看书，所以他挑了一套奇幻小说。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mengharukan",
+      "display": "mengharukan",
+      "audio_text": "mengharukan",
+      "cn": "感人的；令人动容的",
+      "en": "touching; moving",
+      "root": "haru",
+      "root_cn": "感动；动容",
+      "formation": "meN- + haru + -kan → mengharukan（h 开头变 meng-），字面是“使人感动的”，形容事情、故事、场面。同词根：terharu（人“被感动了”：Aku terharu banget）、keharuan（感动之情，较书面）。常见搭配：cerita yang mengharukan（感人的故事）、momen mengharukan（感人的时刻）、mengharukan banget（太感人了）、bikin terharu（让人感动，口语）。",
+      "example": "Pesan kakek di pernikahan cucunya mengharukan banget: \"Jaga satu sama lain selamanya, ya.\"",
+      "example_cn": "爷爷在孙子婚礼上说的话太感人了：“你们要一辈子互相照顾。”",
+      "synonym_note": "mengharukan 和 terharu 别混：mengharukan 说事情、故事“感人”（Ceritanya mengharukan）；terharu 说人“被感动了”（Aku terharu baca ceritanya）。不能说 Aku mengharukan（那是“我很感人”）。和 menyedihkan 也不同：menyedihkan 是“令人难过的”，mengharukan 可以是感动得想哭，但不一定伤心。口语说法：bikin terharu（Ceritanya bikin terharu）；年轻人也说 bikin baper（让人情绪上头）。",
+      "everyday": "聊天常说 bikin terharu（Ceritanya bikin terharu banget）；mengharukan 也常说，新闻、影评里更多",
+      "usage_note": "此前学过、答错过的词，已经半个多月没上过词卡。Dimas 在电话里说，外甥女在写作比赛里写的故事特别感人，所以他更想让她准时收到礼物。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "bocor",
+      "display": "bocor",
+      "audio_text": "bocor",
+      "cn": "漏；漏水；漏气；（消息、资料）泄露",
+      "en": "to leak; leaking",
+      "root": "bocor",
+      "root_cn": "漏",
+      "formation": "词根本身是形容词兼动词，不加词缀直接用。派生：kebocoran（漏洞、泄漏：kebocoran gas 煤气泄漏、kebocoran data 数据泄露）、bocoran（泄露出来的内容：bocoran soal ujian 泄露的考题）、membocorkan（泄露：membocorkan rahasia）。常见搭配：atapnya bocor（屋顶漏雨）、ban bocor（轮胎扎破漏气）、pipanya bocor（水管漏水）、datanya bocor（资料泄露了）。",
+      "example": "Atap kamarku bocor lagi, jadi semalam aku tidur di tikar di ruang tengah.",
+      "example_cn": "我房间的屋顶又漏雨了，所以昨晚我在客厅铺席子睡的。",
+      "synonym_note": "bocor、tumpah、rembes：bocor 是容器、屋顶、管子有洞，里面的东西漏出来或雨水漏进来；tumpah 是液体洒出来、打翻了（kopinya tumpah 咖啡洒了），容器本身没破；rembes 是水慢慢渗出来（temboknya rembes 墙渗水）。轮胎：ban bocor 是扎破了漏气，ban kempis 只说瘪了、没气了，不一定破。口语说法：日常就说 bocor。",
+      "usage_note": "此前学过的词，今晚换到签收场景里用：门卫室屋顶昨晚漏雨，放在里面的包裹纸箱全泡湿了。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "cenderung",
+      "display": "cenderung",
+      "audio_text": "cenderung",
+      "cn": "倾向于；往往（容易这样做、容易这样）",
+      "en": "to tend to; inclined to",
+      "root": "cenderung",
+      "root_cn": "倾向；偏向",
+      "formation": "词根本身用作动词或副词，后面直接接动词或形容词：cenderung memilih …（往往选……）、cenderung lebih mahal（往往更贵）、cenderung diam（往往不说话）。名词 kecenderungan（倾向、趋势：ada kecenderungan …）。",
+      "example": "Kalau lagi capek, aku cenderung asal pilih judul film tanpa nonton trailer-nya dulu.",
+      "example_cn": "累的时候，我往往不先看预告片就随便挑一部片子看。",
+      "synonym_note": "cenderung、biasanya、sering：sering 只说次数多；biasanya 是“通常、一般”；cenderung 说“有这个倾向、容易这样”，常用来说人或事的习惯、特点（Kurir di sini cenderung asal titip 这里的快递员往往随便寄放）。cenderung 比 sering 更客观、略书面，但聊天里也常说。口语说法：suka（Dia suka telat 他老是迟到），这里的 suka 是“老是、爱……”，不是“喜欢”。",
+      "usage_note": "此前学过的词，今晚换到投诉场景里用：Dimas 说他们小区的快递员往往不问一声就把包裹丢在门卫室。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "title": "Paket di Pos Satpam · 放在门卫室的包裹",
+    "text": "Jumat siang, Dimas mendapat notifikasi bahwa paketnya sudah diterima pukul 14.10. Padahal dia masih di kantor dan tidak ada yang meneleponnya. Isinya satu set novel fantasi untuk keponakannya, Kayla, yang berulang tahun hari Minggu. Kayla baru saja berpartisipasi dalam lomba menulis cerita di sekolah. Membaca adalah hiburan favoritnya, dan sejak menonton trailer filmnya, dia penasaran dengan seri novel itu. Di aplikasi, foto bukti menunjukkan kardus itu diletakkan di pos satpam kompleks. Dimas langsung mengirim pesan ke layanan pelanggan, tetapi sampai pukul lima belum ada yang membalas. Sepulang kerja, dia mengambil paket itu. Ternyata atap pos satpam bocor karena hujan semalam, dan kardusnya dalam keadaan basah. Tidak ada plastik yang menutupi buku-bukunya. Dimas pun menelepon layanan pelanggan.",
+    "cn": "星期五中午，Dimas 收到通知，说他的包裹已在 14:10 签收。可他当时还在公司，也没有人给他打过电话。包裹里是一套奇幻小说，送给他的外甥女 Kayla——她星期天过生日。Kayla 刚在学校参加了一个写故事比赛。看书是她最喜欢的消遣，自从看了那部电影的预告片，她就一直很好奇这套小说。应用里的签收照片显示，纸箱被放在了小区的门卫室。Dimas 马上给客服发了消息，可是到五点还没有人回复。下班后，他去取了包裹。原来昨晚下雨，门卫室的屋顶漏了，纸箱湿透了，里面的书也没有任何塑料袋包着。于是 Dimas 给客服打了电话。"
+  },
+  "dialogue": {
+    "title": "打客服电话：包裹被放在门卫室，还泡湿了",
+    "twist": 4,
+    "lines": [
+      {
+        "speaker": "Kak Nisa",
+        "id": "Selamat sore, dengan Nisa dari Sigap Express. Ada yang bisa saya bantu, Kak?",
+        "cn": "下午好，我是 Sigap 快递的 Nisa。请问有什么可以帮您？"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Sore, Kak. Paket saya statusnya sudah diterima jam dua, padahal nggak ada yang ngabarin saya. Saya udah chat dari jam tiga, tapi nggak ada yang balas.",
+        "cn": "下午好。我的包裹两点就显示已签收了，可根本没人通知我。我从三点就开始在应用里发消息，一直没人回。（nggak = tidak，ngabarin = mengabari，udah = sudah）"
+      },
+      {
+        "speaker": "Kak Nisa",
+        "id": "Mohon maaf, Kak, chat-nya lagi ramai banget. Boleh saya cek dulu nomor resinya? … Oke, di foto bukti, paketnya dititip di pos satpam kompleks Kakak jam 14.10.",
+        "cn": "非常抱歉，现在在线咨询特别多。我可以先核对一下运单号吗？……好的，签收照片显示，包裹 14:10 寄放在了您小区的门卫室。（lagi = sedang，dititip = dititipkan）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Iya, barusan saya ambil di sana. Tapi atap pos satpamnya bocor, kardusnya basah, sampul novelnya jadi bergelombang. Harusnya kurirnya telepon saya dulu sebelum nitip ke satpam.",
+        "cn": "对，我刚去那儿拿了。可是门卫室的屋顶漏雨，纸箱湿了，小说的封面都起皱了。快递员本该先给我打个电话，再交给门卫的。（nitip = menitipkan）"
+      },
+      {
+        "speaker": "Kak Nisa",
+        "id": "Mohon maaf, Kak. Karena statusnya sudah diterima, sistem kami membatasi klaim cuma untuk paket yang hilang. Paket yang rusak nggak bisa diklaim.",
+        "cn": "很抱歉。因为状态已经是已签收，我们的系统只受理丢件的索赔。损坏的包裹不能索赔。（cuma = hanya）"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Lho, Kak, saya nggak pernah setuju paketnya dititip. Kurir di kompleks saya memang cenderung asal titip ke satpam. Masa saya yang rugi?",
+        "cn": "咦，我从来没同意把包裹寄放在那儿。我们小区的快递员确实老是随便交给门卫。难道吃亏的要是我？（asal = 随便，masa = 难道）"
+      },
+      {
+        "speaker": "Kak Nisa",
+        "id": "Sebentar, Kak, saya cek catatan kurirnya. … Betul, nggak ada telepon ke Kakak. Kalau begitu ini kesalahan kurir, dan ganti rugi berlaku untuk kasus seperti ini.",
+        "cn": "请稍等，我查一下快递员的记录。……没错，他没有给您打过电话。那这就是快递员的失误，这种情况是可以赔偿的。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Syukurlah. Kalau bisa, prosesnya selesai sebelum hari Minggu, ya, Kak. Novelnya buat kado ulang tahun keponakan saya. Dia baru ikut lomba nulis, ceritanya mengharukan banget.",
+        "cn": "谢天谢地。如果可以的话，麻烦在星期天之前处理好。这套小说是给我外甥女的生日礼物。她刚参加了写作比赛，写的故事特别感人。（buat = untuk，nulis = menulis）"
+      },
+      {
+        "speaker": "Kak Nisa",
+        "id": "Saya usahakan, Kak. Tolong kirim foto kardus dan bukunya lewat chat sebelum besok jam dua. Kali ini langsung saya balas.",
+        "cn": "我尽量。请在明天两点之前，通过在线咨询把纸箱和书的照片发过来。这次我一定马上回复您。"
+      },
+      {
+        "speaker": "Dimas",
+        "id": "Jadi fotonya saya kirim malam ini lewat chat, terus Kakak yang urus klaimnya, betul?",
+        "cn": "所以我今晚通过在线咨询把照片发过去，然后由您来处理索赔，对吗？（terus = lalu）"
+      },
+      {
+        "speaker": "Kak Nisa",
+        "id": "Betul, Kak. Sekali lagi mohon maaf, ya. Semoga keponakannya tetap senang sama kadonya.",
+        "cn": "对的。再次向您道歉。希望您外甥女收到礼物还是很开心。（sama = dengan）"
+      }
+    ],
+    "practice": {
+      "role": "Dimas",
+      "lines": [
+        {
+          "speaker": "Kak Nisa",
+          "id": "Paketnya dititip di pos satpam, Kak.",
+          "cn": "包裹寄放在门卫室了。"
+        },
+        {
+          "speaker": "Dimas",
+          "id": "Atap posnya bocor, kardusnya basah semua.",
+          "cn": "门卫室的屋顶漏雨，纸箱全湿了。"
+        },
+        {
+          "speaker": "Dimas",
+          "id": "Harusnya kurirnya telepon saya dulu.",
+          "cn": "快递员本该先给我打个电话。"
+        },
+        {
+          "speaker": "Kak Nisa",
+          "id": "Maaf, sistem kami membatasi klaim untuk paket hilang.",
+          "cn": "抱歉，我们系统只受理丢件的索赔。"
+        },
+        {
+          "speaker": "Dimas",
+          "id": "Kalau bisa, selesai sebelum hari Minggu, ya, Kak.",
+          "cn": "如果可以的话，星期天之前处理好吧。"
+        },
+        {
+          "speaker": "Dimas",
+          "id": "Jadi saya kirim fotonya malam ini, betul?",
+          "cn": "所以我今晚把照片发过去，对吗？"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：假如 Kak Nisa 说今天的投诉太多，赔偿要等到下星期一才能处理。你是 Dimas：先表示理解，但说明这套书是星期天的生日礼物；再用 Kalau bisa, … sebelum … 请她至少在星期六之前确认；然后说明快递员本该先打电话，所以赔偿适用于你的包裹；最后用 Jadi …, betul? 确认今晚发照片、她明早回复。尽量用上 harusnya、berlaku、balas。",
+      "frame": "Saya ngerti, Kak, tapi …… . Kalau bisa, …… sebelum hari Sabtu, ya. Harusnya kurirnya …… , jadi ganti ruginya berlaku buat paket saya. Jadi saya kirim …… malam ini, terus Kakak balas besok pagi, betul?",
+      "reference_answer": "Saya ngerti, Kak, tapi novelnya kado ulang tahun keponakan saya hari Minggu. Kalau bisa, klaimnya dikonfirmasi sebelum hari Sabtu, ya. Harusnya kurirnya telepon saya dulu sebelum nitip ke satpam, jadi ganti ruginya berlaku buat paket saya. Jadi saya kirim foto kardus dan bukunya malam ini, terus Kakak balas besok pagi, betul?",
+      "reference_cn": "我理解，可是这套小说是我外甥女星期天的生日礼物。如果可以的话，麻烦在星期六之前确认索赔。快递员本该先给我打电话再交给门卫，所以赔偿适用于我的包裹。所以我今晚把纸箱和书的照片发过去，然后您明天早上回复我，对吗？"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "Dimas 给朋友发消息抱怨：“Udah tiga jam aku chat CS-nya, tapi chat-ku belum ____ juga.” 哪项最自然？",
+        "options": [
+          "balas",
+          "dibalas",
+          "balasan",
+          "membalas"
+        ],
+        "answer_index": 1,
+        "answer": "dibalas",
+        "explain": "主语是 chat-ku（我的消息），消息是“被回复”的，所以用被动 dibalas（口语也说 dibales）。balas 和 membalas 是主动，主语得是回复的人（CS-nya belum balas）；balasan 是名词“回复”，要说 belum ada balasan，不能直接放在 belum 后面。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Dimas 在电话里埋怨：快递员一个电话都没打，就把包裹交给了门卫。哪句最符合实际情况、也最能表达他的意思？",
+        "options": [
+          "Untungnya kurirnya telepon saya dulu sebelum nitip ke satpam.",
+          "Harusnya saya telepon kurirnya dulu sebelum dia nitip ke satpam.",
+          "Harusnya kurirnya telepon saya dulu sebelum nitip ke satpam.",
+          "Ternyata kurirnya telepon saya dulu sebelum nitip ke satpam."
+        ],
+        "answer_index": 2,
+        "answer": "Harusnya kurirnya telepon saya dulu sebelum nitip ke satpam.",
+        "explain": "快递员根本没打电话，Dimas 是在埋怨“快递员本该先打电话”，所以用 Harusnya kurirnya telepon saya dulu。A 的 untungnya（幸好）和 D 的 ternyata（原来）都表示快递员真的打了电话，和事实相反；B 把主语换成了 saya，变成 Dimas 怪自己没打电话。"
+      },
+      {
+        "type": "choice",
+        "prompt": "客服 Kak Nisa 一开始拒绝了索赔：“Mohon maaf, Kak, sistem kami ____ klaim cuma untuk paket yang hilang.” 哪项最自然？",
+        "options": [
+          "membatasi",
+          "terbatas",
+          "dibatasi",
+          "berbatasan"
+        ],
+        "answer_index": 0,
+        "answer": "membatasi",
+        "explain": "主语 sistem kami 主动“把理赔限制在……范围内”，后面直接接宾语 klaim，用 membatasi。terbatas 是形容词“有限的”（waktunya terbatas），后面不能直接接宾语；dibatasi 是被动，要说 klaim dibatasi …，主语得是 klaim；berbatasan 是“接壤、交界”（berbatasan dengan Malaysia），和理赔无关。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Kurir di kompleks ini ____ nitip paket ke satpam kalau rumahnya kosong.（往往、倾向于）",
+        "answer": "cenderung",
+        "explain": "说某人“往往会、容易这样做”用 cenderung + 动词。口语也可以说 suka nitip（老是寄放），这里的 suka 是“老是”，不是“喜欢”。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Semalam hujan deras dan atap pos satpamnya ____, jadi kardusnya basah.（漏水）",
+        "answer": "bocor",
+        "explain": "屋顶、水管、容器有洞漏水说 bocor（atapnya bocor）。如果只是水洒出来、容器没破，用 tumpah。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：凯拉在比赛里写的故事特别感人。",
+        "tokens": [
+          "Cerita",
+          "Kayla",
+          "di",
+          "lomba",
+          "itu",
+          "mengharukan",
+          "banget."
+        ],
+        "answer": "Cerita Kayla di lomba itu mengharukan banget.",
+        "answer_cn": "凯拉在比赛里写的故事特别感人。",
+        "explain": "主语 Cerita Kayla di lomba itu（凯拉在那次比赛里的故事）+ mengharukan（感人的）+ banget（非常，口语）。说故事“感人”用 mengharukan；如果说的是人“被感动”，要换成 terharu：Aku terharu baca cerita Kayla。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 bocor、harusnya、membatasi、berlaku 说说 Dimas 的包裹出了什么事，客服最后怎么处理的。"
+    ],
+    "retell_reference": "Paket Dimas dititip di pos satpam, padahal nggak ada yang menelepon dia. Atap pos satpamnya bocor, jadi novelnya diterima dalam keadaan basah. Harusnya kurirnya telepon dulu sebelum nitip. Awalnya CS bilang sistemnya membatasi klaim untuk paket hilang saja. Tapi karena kurirnya nggak minta izin, ganti rugi berlaku untuk paket Dimas.",
+    "retell_reference_cn": "Dimas 的包裹被放在了门卫室，可根本没人给他打电话。门卫室的屋顶漏雨，所以小说收到时已经湿了。快递员本该先打电话再寄放。客服一开始说，系统只受理丢件的索赔。但因为快递员没征得同意，赔偿适用于 Dimas 的包裹。"
+  },
+  "lesson_focus": {
+    "words": [
+      "harusnya",
+      "membatasi",
+      "bocor"
+    ],
+    "patterns": [
+      {
+        "pattern": "Kalau bisa, … sebelum …",
+        "cn": "如果可以的话，……在……之前（委婉催促）",
+        "function": "urge-politely",
+        "example": "Kalau bisa, prosesnya selesai sebelum hari Minggu, ya, Kak.",
+        "example_cn": "如果可以的话，麻烦在星期天之前处理好。"
+      },
+      {
+        "pattern": "Harusnya … dulu sebelum …",
+        "cn": "本该先……再……（埋怨事情没按应有的顺序做）",
+        "example": "Harusnya kurirnya telepon saya dulu sebelum nitip ke satpam.",
+        "example_cn": "快递员本该先给我打个电话，再交给门卫的。"
+      }
+    ]
+  }
+}
