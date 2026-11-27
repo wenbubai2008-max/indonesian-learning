@@ -7501,19 +7501,21 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-07 08:00",
-    "last_seen": "2026-10-11 08:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-07",
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
       "2026-09-07 08:00",
-      "2026-10-11 08:00"
+      "2026-10-11 08:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -10921,22 +10923,26 @@ window.DAILY_VOCAB_DB = [
     "root": "tanah",
     "categories": [
       "每日学习",
-      "19:00"
+      "19:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-15 19:00",
-    "last_seen": "2026-09-15 19:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
-      "19:00"
+      "19:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-15"
+      "2026-09-15",
+      "2026-11-27"
     ],
     "root_cn": "泥土；土地",
-    "example": "Jalan di depan masih banyak tanah basah karena barusan hujan.",
-    "example_cn": "前面的路上还有很多湿泥土，因为刚刚下过雨。",
+    "example": "Sebelum meninggal, kakek menanam pohon mangga di tanah kosong belakang rumah.",
+    "example_cn": "爷爷去世前，在屋后的空地上种了一棵芒果树。",
     "lesson_occurrences": [
-      "2026-09-15 19:00"
+      "2026-09-15 19:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -11329,23 +11335,27 @@ window.DAILY_VOCAB_DB = [
     "en": "center; central point",
     "root": "pusat",
     "root_cn": "中心",
-    "example": "Kantor baru kami dekat pusat kota.",
-    "example_cn": "我们的新办公室靠近市中心。",
+    "example": "Perpustakaan kota ada di pusat kota, dekat alun-alun.",
+    "example_cn": "市图书馆在市中心，靠近广场。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-16 18:00",
-    "last_seen": "2026-09-16 18:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-09-16"
+      "2026-09-16",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-09-16 18:00"
+      "2026-09-16 18:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -11612,23 +11622,25 @@ window.DAILY_VOCAB_DB = [
     "en": "offer",
     "root": "tawar",
     "root_cn": "议价；出价",
-    "example": "Mereka menawarkan solusi yang lebih sederhana.",
-    "example_cn": "他们提出了一个更简单的解决方案。",
+    "example": "Toko sebelah menawarkan diskon besar, tapi pelanggan setia kami tetap belanja di sini.",
+    "example_cn": "隔壁店推出了大折扣，可我们的老顾客还是在这儿买。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-17 08:00",
-    "last_seen": "2026-09-17 08:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-17"
+      "2026-09-17",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-09-17 08:00"
+      "2026-09-17 08:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -14993,28 +15005,30 @@ window.DAILY_VOCAB_DB = [
     "en": "obstacle; constraint",
     "root": "kendala",
     "root_cn": "障碍；限制",
-    "example": "Kalau ada kendala, beri tahu saya lebih awal.",
-    "example_cn": "如果有障碍，请提前告诉我。",
+    "example": "Mohon maaf, pengiriman hari ini mengalami kendala karena hujan yang amat deras.",
+    "example_cn": "很抱歉，因为雨下得非常大，今天的派送遇到了问题。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-10-14 08:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-26",
-      "2026-10-14"
+      "2026-10-14",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
       "2026-09-26 08:00",
       "2026-09-26 18:00",
-      "2026-10-14 08:00"
+      "2026-10-14 08:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -17092,20 +17106,22 @@ window.DAILY_VOCAB_DB = [
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-01 08:00",
-    "last_seen": "2026-11-23 18:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-10-01",
-      "2026-11-23"
+      "2026-11-23",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
       "2026-10-01 08:00",
-      "2026-11-23 18:00"
+      "2026-11-23 18:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -20213,17 +20229,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-09 08:00",
-    "last_seen": "2026-10-09 08:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-09"
+      "2026-10-09",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-10-09 08:00"
+      "2026-10-09 08:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -20817,17 +20835,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-11 08:00",
-    "last_seen": "2026-10-11 08:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-10-11 08:00"
+      "2026-10-11 08:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -21461,23 +21481,27 @@ window.DAILY_VOCAB_DB = [
     "en": "challenge",
     "root": "tantang",
     "root_cn": "挑战、向……挑战",
-    "example": "Dewi menerima tantangan Rina untuk berolahraga selama tiga puluh hari.",
-    "example_cn": "Dewi 接受了 Rina 的挑战，连续三十天运动。",
+    "example": "Buat orang yang perfeksionis, kerja di gudang yang serba cepat itu tantangan tersendiri.",
+    "example_cn": "对完美主义的人来说，在节奏飞快的仓库里工作本身就是一种挑战。",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-12 18:00",
-    "last_seen": "2026-10-12 18:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-12"
+      "2026-10-12",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-10-12 18:00"
+      "2026-10-12 18:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -22828,9 +22852,9 @@ window.DAILY_VOCAB_DB = [
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-10-16 18:00",
-    "last_seen": "2026-10-27 18:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -22838,12 +22862,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-10-16",
       "2026-10-21",
-      "2026-10-27"
+      "2026-10-27",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
       "2026-10-16 18:00",
       "2026-10-21 08:00",
-      "2026-10-27 18:00"
+      "2026-10-27 18:00",
+      "2026-11-27 08:00"
     ]
   },
   {
@@ -25973,26 +25999,30 @@ window.DAILY_VOCAB_DB = [
     "en": "to end; to put an end to",
     "root": "akhir",
     "root_cn": "最后；末尾",
-    "example": "Mereka akhirnya mengakhiri pernikahan itu dan resmi bercerai tahun lalu.",
-    "example_cn": "他们最终结束了那段婚姻，去年正式离了婚。",
+    "example": "Nenek selalu mengakhiri kisahnya dengan pesan yang sama: jangan sombong.",
+    "example_cn": "奶奶讲故事总是用同一句叮嘱收尾：别骄傲。",
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-10-25 18:00",
-    "last_seen": "2026-10-27 18:00",
+    "last_seen": "2026-11-27 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
       "2026-10-25",
-      "2026-10-27"
+      "2026-10-27",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
       "2026-10-25 18:00",
-      "2026-10-27 18:00"
+      "2026-10-27 18:00",
+      "2026-11-27 08:00"
     ]
   },
   {
