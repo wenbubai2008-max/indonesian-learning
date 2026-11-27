@@ -4000,31 +4000,36 @@ window.DAILY_VOCAB_DB = [
   {
     "word": "harusnya",
     "cn": "按理说、本来应该",
-    "en": "",
+    "en": "supposedly; should have",
     "root": "harus",
     "categories": [
       "每日学习",
       "19:00",
       "原始课程",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 19:00",
-    "last_seen": "2026-10-15 08:00",
+    "last_seen": "2026-11-27 18:00",
     "sessions": [
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-10-15"
+      "2026-10-15",
+      "2026-11-27"
     ],
-    "example": "Harusnya udah selesai.",
-    "example_cn": "按理说应该已经好了。",
+    "example": "Harusnya film fantasi itu tayang minggu ini, tapi jadwalnya diundur sampai bulan depan.",
+    "example_cn": "那部奇幻片按理这周就该上映了，可是排期推迟到了下个月。",
     "lesson_occurrences": [
       "2026-08-29 19:00",
-      "2026-10-15 08:00"
-    ]
+      "2026-10-15 08:00",
+      "2026-11-27 18:00"
+    ],
+    "root_cn": "必须；应该"
   },
   {
     "word": "nyaris",
@@ -4720,25 +4725,30 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-31 19:00",
-    "last_seen": "2026-10-15 08:00",
+    "last_seen": "2026-11-27 18:00",
     "sessions": [
       "19:00",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
       "2026-08-31",
-      "2026-10-15"
+      "2026-10-15",
+      "2026-11-27"
     ],
-    "example": "Aku mulai ngebatasin jajan kopi tiap hari.",
-    "example_cn": "我开始限制自己每天买咖啡了。",
+    "example": "Sampai luka di kakinya sembuh, dokter menyuruhnya membatasi makanan manis.",
+    "example_cn": "在他脚上的伤口痊愈之前，医生让他少吃甜食。",
     "lesson_occurrences": [
       "2026-08-31 19:00",
-      "2026-10-15 08:00"
-    ]
+      "2026-10-15 08:00",
+      "2026-11-27 18:00"
+    ],
+    "root_cn": "界限；边界"
   },
   {
     "word": "menunda",
@@ -19903,23 +19913,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to tend to; inclined",
     "root": "cenderung",
     "root_cn": "倾向",
-    "example": "Kalau lagi panik, orang cenderung langsung menyalahkan siapa saja.",
-    "example_cn": "人一慌，往往就会立刻怪罪身边的任何人。",
+    "example": "Kalau lagi capek, aku cenderung asal pilih judul film tanpa nonton trailer-nya dulu.",
+    "example_cn": "累的时候，我往往不先看预告片就随便挑一部片子看。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-08 08:00",
-    "last_seen": "2026-10-08 08:00",
+    "last_seen": "2026-11-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-10-08 08:00"
+      "2026-10-08 08:00",
+      "2026-11-27 18:00"
     ]
   },
   {
@@ -20462,23 +20476,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to be valid; to apply",
     "root": "laku",
     "root_cn": "行得通；卖得出去",
-    "example": "Kartu diskon ini hanya berlaku pada hari Minggu.",
-    "example_cn": "这张折扣卡只在周日有效。",
+    "example": "Voucher hotelnya nggak berlaku untuk kamar mewah, cuma untuk kamar standar.",
+    "example_cn": "这张酒店代金券不适用于豪华房，只能用于标准间。",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-10 08:00",
-    "last_seen": "2026-10-10 08:00",
+    "last_seen": "2026-11-27 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-10"
+      "2026-10-10",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-10-10 08:00"
+      "2026-10-10 08:00",
+      "2026-11-27 18:00"
     ]
   },
   {
@@ -21097,23 +21115,25 @@ window.DAILY_VOCAB_DB = [
     "en": "leaky; to leak",
     "root": "bocor",
     "root_cn": "漏",
-    "example": "Ban motorku bocor, jadi aku harus ke bengkel.",
-    "example_cn": "我的摩托车轮胎漏气了，所以我得去修车行。",
+    "example": "Atap kamarku bocor lagi, jadi semalam aku tidur di tikar di ruang tengah.",
+    "example_cn": "我房间的屋顶又漏雨了，所以昨晚我在客厅铺席子睡的。",
     "categories": [
       "每日学习",
       "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-11 18:00",
-    "last_seen": "2026-10-11 18:00",
+    "last_seen": "2026-11-27 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-11"
+      "2026-10-11",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-10-11 18:00"
+      "2026-10-11 18:00",
+      "2026-11-27 18:00"
     ]
   },
   {
@@ -22116,24 +22136,26 @@ window.DAILY_VOCAB_DB = [
     "en": "to reply; to repay",
     "root": "balas",
     "root_cn": "回复；回报",
-    "example": "Maaf baru membalas pesanmu, tadi aku lagi rapat.",
-    "example_cn": "抱歉现在才回你的消息，刚才我在开会。（lagi = sedang）",
+    "example": "Aku penasaran banget, kenapa dia belum balas chat-ku dari pagi.",
+    "example_cn": "我特别想知道，为什么他从早上到现在都还没回我消息。",
     "categories": [
       "每日学习",
       "18:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-14 18:00",
-    "last_seen": "2026-10-14 18:00",
+    "last_seen": "2026-11-27 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-10-14"
+      "2026-10-14",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
-      "2026-10-14 18:00"
+      "2026-10-14 18:00",
+      "2026-11-27 18:00"
     ]
   },
   {
@@ -30163,27 +30185,29 @@ window.DAILY_VOCAB_DB = [
     "en": "entertainment; amusement",
     "root": "hibur",
     "root_cn": "使开心；安慰",
-    "example": "Film animasi berjudul Teman yang Setia itu menjadi hiburan keluarga pada akhir pekan.",
-    "example_cn": "那部题为《忠诚的朋友》的动画片成了家庭周末的消遣。",
+    "example": "Penampilan band sekolah jadi hiburan paling seru di acara tujuh belasan tahun ini.",
+    "example_cn": "学校乐队的表演是今年八一七（独立日）活动上最精彩的娱乐节目。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-06 18:00",
-    "last_seen": "2026-11-07 08:00",
+    "last_seen": "2026-11-27 18:00",
     "sessions": [
       "18:00",
       "08:00"
     ],
     "dates": [
       "2026-11-06",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
       "2026-11-06 18:00",
-      "2026-11-07 08:00"
+      "2026-11-07 08:00",
+      "2026-11-27 18:00"
     ]
   },
   {
@@ -31601,26 +31625,28 @@ window.DAILY_VOCAB_DB = [
     "en": "touching; moving",
     "root": "haru",
     "root_cn": "感动；动容",
-    "example": "Surat dari murid-muridnya di hari terakhir mengajar sangat mengharukan.",
-    "example_cn": "最后一天上课时学生们写给他的信非常感人。",
+    "example": "Pesan kakek di pernikahan cucunya mengharukan banget: \"Jaga satu sama lain selamanya, ya.\"",
+    "example_cn": "爷爷在孙子婚礼上说的话太感人了：“你们要一辈子互相照顾。”",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-11-10 08:00",
-    "last_seen": "2026-11-10 18:00",
+    "last_seen": "2026-11-27 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
-      "2026-11-10"
+      "2026-11-10",
+      "2026-11-27"
     ],
     "lesson_occurrences": [
       "2026-11-10 08:00",
-      "2026-11-10 18:00"
+      "2026-11-10 18:00",
+      "2026-11-27 18:00"
     ]
   },
   {

@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-27",
-    "session": "pm",
-    "time": "18:00",
-    "day": 98
+    "date": "2026-11-28",
+    "session": "am",
+    "time": "08:00",
+    "day": 99
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-27T00:31:58.353Z",
-    "lesson_watermark": "2026-11-27 08:00",
+    "runtime_generated_at": "2026-11-27T10:54:04.405Z",
+    "lesson_watermark": "2026-11-27 18:00",
     "index_updated": "2026-11-27",
-    "runtime_hash": "fb2c97d987062adaab26e58ed94d2787401410cc5a27c39e1bdfbd92986d070f",
-    "index_hash": "c5aba09cfd1a83df34934ada792ca13189f4c3a15ba242db23a7a5faa386bba7",
+    "runtime_hash": "ce59fd8fc6074a35c9b5cb7017eb2677875c6feb086584a585fd19e790d0a985",
+    "index_hash": "0db69908de1e288c76b8fc62f02fefc74066b7aeb3d0a1f9cdfdc939607fe0be",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -1632,16 +1632,6 @@
         "参与"
       ],
       [
-        "cenderung",
-        2,
-        0,
-        "",
-        "2026-11-18T14:21:30.897Z",
-        "倾向于；容易（做某事）",
-        "cenderung",
-        "倾向"
-      ],
-      [
         "kejam",
         2,
         0,
@@ -1792,16 +1782,6 @@
         "垃圾"
       ],
       [
-        "berlaku",
-        2,
-        0,
-        "",
-        "2026-11-23T04:52:22.061Z",
-        "生效；适用；通行",
-        "laku",
-        "行得通；卖得出去"
-      ],
-      [
         "cerai",
         2,
         0,
@@ -1920,16 +1900,6 @@
         "所说的话；致辞；祝词",
         "ucap",
         "说出；讲"
-      ],
-      [
-        "bocor",
-        2,
-        0,
-        "",
-        "2026-10-26T07:51:23.870Z",
-        "漏；漏水；破洞漏气",
-        "bocor",
-        "漏"
       ],
       [
         "dengan demikian",
@@ -2202,16 +2172,6 @@
         ""
       ],
       [
-        "balas",
-        1,
-        1,
-        "2026-10-15T03:20:40.933Z",
-        "2026-10-26T07:54:20.042Z",
-        "回复；回报",
-        "balas",
-        "回复；回报"
-      ],
-      [
         "khas",
         2,
         0,
@@ -2232,24 +2192,64 @@
         "好奇（本身当作词根）"
       ],
       [
-        "harusnya",
-        1,
-        1,
-        "2026-10-15T02:07:32.244Z",
-        "2026-11-20T05:14:33.961Z",
-        "按理说、本来应该",
-        "harus",
+        "bergabung",
+        2,
+        0,
+        "",
+        "2026-10-26T07:48:28.387Z",
+        "加入；合在一起",
+        "gabung",
+        "合在一起；联合"
+      ],
+      [
+        "rusa",
+        2,
+        0,
+        "",
+        "2026-10-26T07:54:43.859Z",
+        "鹿",
+        "",
         ""
       ],
       [
-        "membatasi",
-        1,
-        1,
-        "2026-10-15T02:06:00.192Z",
-        "2026-11-15T03:35:20.212Z",
-        "限制；控制在一定范围内",
-        "batas",
+        "saya pamit",
+        2,
+        0,
+        "",
+        "2026-10-26T07:49:11.695Z",
+        "我先告辞了",
+        "pamit",
+        "告辞；辞行"
+      ],
+      [
+        "boros",
+        3,
+        0,
+        "",
+        "2026-11-18T07:08:03.266Z",
+        "浪费；花钱大手大脚；耗费多",
+        "boros",
         ""
+      ],
+      [
+        "kekurangan",
+        1,
+        1,
+        "2026-10-15T11:39:38.739Z",
+        "2026-10-26T07:54:47.112Z",
+        "缺乏；不足；缺点",
+        "kurang",
+        "不够；少；不太"
+      ],
+      [
+        "sengaja",
+        1,
+        0,
+        "",
+        "2026-10-26T07:50:26.767Z",
+        "故意；特意",
+        "sengaja",
+        "故意；有意"
       ],
       [
         "resi",
@@ -2390,56 +2390,6 @@
         "压瘪；凹陷（硬的东西被压、被撞后凹进去）",
         "penyok",
         "凹陷；瘪"
-      ],
-      [
-        "tantangan",
-        2,
-        1,
-        "2026-10-15T08:26:17.220Z",
-        "2026-10-29T03:53:41.146Z",
-        "挑战",
-        "tantang",
-        "挑战、向……挑战"
-      ],
-      [
-        "kendala",
-        2,
-        1,
-        "2026-10-13T15:16:58.511Z",
-        "2026-10-26T07:45:02.071Z",
-        "障碍；困难；卡点",
-        "kendala",
-        "障碍；限制"
-      ],
-      [
-        "tanah",
-        2,
-        0,
-        "",
-        "2026-11-15T03:31:01.116Z",
-        "泥土；土地",
-        "tanah",
-        "泥土；土地"
-      ],
-      [
-        "pusat",
-        3,
-        0,
-        "",
-        "2026-11-14T08:26:33.982Z",
-        "中心",
-        "pusat",
-        "中心"
-      ],
-      [
-        "menawarkan",
-        2,
-        0,
-        "",
-        "2026-11-15T03:32:29.484Z",
-        "提供 / 报价",
-        "tawar",
-        "议价；出价"
       ]
     ],
     "focus": [
@@ -2716,34 +2666,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-20",
-      "session": "am",
-      "review_core": [
-        "pintas",
-        "kelabakan",
-        "kesiangan",
-        "memisahkan",
-        "belanja"
-      ],
-      "new_words": [
-        "bunyi",
-        "judi"
-      ]
-    },
-    {
-      "date": "2026-11-20",
-      "session": "pm",
-      "review_core": [
-        "remaja",
-        "beliau",
-        "berfungsi",
-        "biarpun",
-        "demi",
-        "jarak tempuh"
-      ],
-      "new_words": []
-    },
-    {
       "date": "2026-11-21",
       "session": "am",
       "review_core": [
@@ -2924,76 +2846,34 @@
         "bawahan"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-27",
+      "session": "pm",
+      "review_core": [
+        "harusnya",
+        "balas",
+        "membatasi",
+        "berlaku",
+        "hiburan",
+        "mengharukan"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
-    "date": "2026-11-26",
-    "new_words": [
-      "penyok",
-      "cabang"
-    ],
-    "review_core": [
-      "menyampaikan",
-      "nyimak",
-      "berjanji",
-      "minat",
-      "mahir"
-    ]
-  },
-  "same_day_am": {
     "date": "2026-11-27",
-    "vocab": [
-      [
-        "mengakhiri",
-        "结束；终止（让某事停下来）",
-        "to end; to bring to an end",
-        "akhir",
-        "最后；末尾"
-      ],
-      [
-        "tantangan",
-        "挑战",
-        "challenge",
-        "tantang",
-        "挑战；向……挑战"
-      ],
-      [
-        "kendala",
-        "障碍；困难；卡点",
-        "obstacle; constraint; problem",
-        "kendala",
-        "障碍；限制"
-      ],
-      [
-        "tanah",
-        "泥土；土地",
-        "soil; earth; land",
-        "tanah",
-        "泥土；土地"
-      ],
-      [
-        "pusat",
-        "中心；总部",
-        "center; headquarters",
-        "pusat",
-        "中心"
-      ],
-      [
-        "menawarkan",
-        "提供；主动提出；推销",
-        "to offer",
-        "tawar",
-        "议价；出价"
-      ]
-    ],
-    "review_vocab": [
-      "kenal",
-      "mengenali",
-      "menuduh",
-      "nombok",
-      "bawahan"
+    "new_words": [],
+    "review_core": [
+      "harusnya",
+      "balas",
+      "membatasi",
+      "berlaku",
+      "hiburan",
+      "mengharukan"
     ]
   },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
