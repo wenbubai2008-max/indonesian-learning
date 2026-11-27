@@ -1,0 +1,297 @@
+{
+  "date": "2026-11-27",
+  "session": "am",
+  "time": "08:00",
+  "day": 98,
+  "title": "08:00 早课｜Penelepon dari Kantor Pusat · 自称总部的来电",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "variation"
+  },
+  "story": {
+    "series": "Agen Kilat Mbak Sinta · 辛塔姐的快递代收点",
+    "episode": 5,
+    "previously_cn": "上集：闪电快递承认是系统出错，包裹要到周一才能到棉兰；辛塔姐帮布罗丝阿姨申请了运费保障。这时一个自称闪电快递工作人员的男人打来电话，向布罗丝阿姨要验证码。",
+    "next_cn": "下集：一位大叔抱来一大盆带土的辣椒苗，想寄到棉兰——带土的植物到底能不能寄？"
+  },
+  "vocab": [
+    {
+      "word": "mengakhiri",
+      "display": "mengakhiri",
+      "audio_text": "mengakhiri",
+      "cn": "结束；终止（让某事停下来）",
+      "en": "to end; to bring to an end",
+      "root": "akhir",
+      "root_cn": "最后；末尾",
+      "formation": "meN- + akhir + -i → mengakhiri（元音开头的词根加 meng-）。后面直接接“被结束的事”：mengakhiri rapat（结束会议）、mengakhiri kontrak（终止合同）、mengakhiri hubungan（结束一段关系）、mengakhiri panggilan（挂断来电）。同词根：berakhir（自己结束，不及物：Acaranya berakhir jam sembilan）、diakhiri（被结束）、akhirnya（最后、终于）、terakhir（最后一个）。",
+      "example": "Nenek selalu mengakhiri kisahnya dengan pesan yang sama: jangan sombong.",
+      "example_cn": "奶奶讲故事总是用同一句叮嘱收尾：别骄傲。",
+      "synonym_note": "先回想：mengakhiri 和 berakhir 差在哪？mengakhiri 是“有人把某事结束掉”，后面要接宾语（Mbak Sinta mengakhiri panggilan）；berakhir 是事情“自己到头了”，后面不接宾语（Panggilannya berakhir）。menyelesaikan 是把事情“做完”（menyelesaikan laporan），mengakhiri 只说“让它停下”，不一定做完了。口语说法：挂电话日常多说 tutup telepon / nutup telepon；聊天收尾常说 udahan dulu, ya。",
+      "everyday": "挂电话日常说 tutup telepon / nutup telepon；mengakhiri 多用在会议、合同、新闻和手机按钮（Akhiri panggilan）上",
+      "is_oral_new": false
+    },
+    {
+      "word": "tantangan",
+      "display": "tantangan",
+      "audio_text": "tantangan",
+      "cn": "挑战",
+      "en": "challenge",
+      "root": "tantang",
+      "root_cn": "挑战；向……挑战",
+      "formation": "tantang + -an → tantangan（动作的对象、结果）。同词根：menantang（挑战某人；也作形容词“有挑战性的”：pekerjaan yang menantang）、ditantang（被挑战）。典型搭配：menghadapi tantangan（面对挑战）、tantangan besar / baru、tantangan tersendiri（一种特别的挑战）。",
+      "example": "Buat orang yang perfeksionis, kerja di gudang yang serba cepat itu tantangan tersendiri.",
+      "example_cn": "对完美主义的人来说，在节奏飞快的仓库里工作本身就是一种挑战。",
+      "synonym_note": "先回想：tantangan 和 kendala 怎么分？tantangan 是需要努力去面对、克服的难题，常带一点“值得去拼”的意味（tantangan besar buat jasa kirim）；kendala 是具体卡住进度的障碍、问题（ada kendala teknis，pengiriman mengalami kendala）。客服通知里说“出了点问题”用 kendala，不说 tantangan。谈“最大的难处”时 tantangan terbesar / kendala terbesar 都能说。",
+      "is_oral_new": false
+    },
+    {
+      "word": "kendala",
+      "display": "kendala",
+      "audio_text": "kendala",
+      "cn": "障碍；困难；卡点",
+      "en": "obstacle; constraint; problem",
+      "root": "kendala",
+      "root_cn": "障碍；限制",
+      "formation": "本身就是词根（梵语来源）。典型搭配：ada kendala（有问题）、kendala teknis（技术问题）、mengalami kendala（遇到障碍）、kendala utama（主要障碍）。派生：terkendala（受阻、被耽搁：Pengiriman terkendala cuaca）。",
+      "example": "Mohon maaf, pengiriman hari ini mengalami kendala karena hujan yang amat deras.",
+      "example_cn": "很抱歉，因为雨下得非常大，今天的派送遇到了问题。",
+      "synonym_note": "先回想：kendala 常在哪儿听到？客服、通知、工作汇报：Ada kendala, Kak? / Kendalanya di mana? 它比 masalah 委婉、正式一点。和 tantangan 的区别：kendala 是眼下卡住的具体问题，tantangan 是要去克服的挑战。口语说法：日常常直接说 masalah 或 ada problem（Ada problem dikit, Kak）。",
+      "everyday": "日常常说 ada masalah / ada problem；kendala 多见于客服回复、通知和工作汇报",
+      "is_oral_new": false
+    },
+    {
+      "word": "tanah",
+      "display": "tanah",
+      "audio_text": "tanah",
+      "cn": "泥土；土地",
+      "en": "soil; earth; land",
+      "root": "tanah",
+      "root_cn": "泥土；土地",
+      "formation": "本身就是词根。两个常用意思：①泥土：tanah basah（湿土）、pot berisi tanah（装着土的花盆）；②土地、地皮：tanah kosong（空地）、sebidang tanah（一块地）、harga tanah（地价）。固定说法：tanah air（祖国）。派生：pertanahan（土地事务：kantor pertanahan）。",
+      "example": "Sebelum meninggal, kakek menanam pohon mangga di tanah kosong belakang rumah.",
+      "example_cn": "爷爷去世前，在屋后的空地上种了一棵芒果树。",
+      "synonym_note": "先回想：东西掉到“地上”用 tanah 还是 lantai？在户外泥地、草地上用 tanah（jatuh ke tanah）；在屋里、店里的地板上用 lantai（jatuh ke lantai）。bumi 是地球、大地（bumi kita）。tanah 没有常用的口语变体，日常就说 tanah。",
+      "is_oral_new": false
+    },
+    {
+      "word": "pusat",
+      "display": "pusat",
+      "audio_text": "pusat",
+      "cn": "中心；总部",
+      "en": "center; headquarters",
+      "root": "pusat",
+      "root_cn": "中心",
+      "formation": "本身就是词根。典型搭配：kantor pusat（总部）、pusat kota（市中心）、pusat perbelanjaan（购物中心）、pusat informasi（咨询中心）。派生：memusatkan（集中：memusatkan perhatian）、terpusat（集中的：sistem terpusat）。",
+      "example": "Perpustakaan kota ada di pusat kota, dekat alun-alun.",
+      "example_cn": "市图书馆在市中心，靠近广场。",
+      "synonym_note": "先回想：pusat 和 tengah 差在哪？tengah 只是位置在“中间”（di tengah jalan）；pusat 是功能上的“中心、总部”（kantor pusat, pusat kota）。和总部相对的是 cabang（分店、分公司）。说“市中心”pusat kota 和 tengah kota 都可以。口语说法：购物中心日常多说 mal，不说 pusat perbelanjaan。",
+      "everyday": "购物中心日常说 mal；kantor pusat、pusat kota 日常也常说",
+      "is_oral_new": false
+    },
+    {
+      "word": "menawarkan",
+      "display": "menawarkan",
+      "audio_text": "menawarkan",
+      "cn": "提供；主动提出；推销",
+      "en": "to offer",
+      "root": "tawar",
+      "root_cn": "议价；出价",
+      "formation": "meN- + tawar + -kan → menawarkan（t 脱落，像 menulis）。后面接“提供的东西”：menawarkan diskon / bantuan / pekerjaan；menawarkan diri（自告奋勇）。同词根：menawar（还价：menawar harga）、tawaran（提议、邀约：tawaran kerja）、penawaran（报价，偏正式）、ditawarkan（被提供）。",
+      "example": "Toko sebelah menawarkan diskon besar, tapi pelanggan setia kami tetap belanja di sini.",
+      "example_cn": "隔壁店推出了大折扣，可我们的老顾客还是在这儿买。",
+      "synonym_note": "先回想：menawar 和 menawarkan 别弄反：menawar 是买家“还价”（Bu Ros menawar harga kardus），menawarkan 是“提供、主动给出”（Penjual menawarkan harga khusus）。memberikan 只是“给”，menawarkan 是“提出来让对方选要不要”。口语说法：nawarin（Dia nawarin bantuan）；还价口语说 nawar。",
+      "everyday": "日常常说 nawarin（Dia nawarin aku kerjaan）；menawarkan 多见于广告、正式场合",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "mengakhiri",
+    "tantangan",
+    "kendala",
+    "tanah",
+    "pusat",
+    "menawarkan"
+  ],
+  "review_vocab": [
+    "kenal",
+    "mengenali",
+    "menuduh",
+    "nombok",
+    "bawahan"
+  ],
+  "sentences": [
+    {
+      "text": "Bang, jangan asal nuduh dong. Aku nggak pernah ngasih nomor HP Ibu ke siapa-siapa.",
+      "cn": "哥，别随便冤枉人好吗。我从来没把阿姨的手机号给过任何人。（nuduh = menuduh，nggak = tidak，ngasih = memberikan）"
+    },
+    {
+      "text": "Tahun lalu Bang Jali kena tipu dan terpaksa nombok lima ratus ribu dari uangnya sendiri.",
+      "cn": "去年贾利哥被骗了，只好自己掏了五十万盾补上。"
+    },
+    {
+      "text": "Menurut Pak Hendra, tindakan Mbak Sinta sudah tepat: langsung akhiri panggilannya dan jangan kasih kode apa pun.",
+      "cn": "亨德拉先生说，辛塔姐的做法很对：马上挂断电话，什么码都别给。"
+    },
+    {
+      "text": "Pak Hendra selalu membela bawahannya kalau mereka dituduh tanpa bukti.",
+      "cn": "下属被无凭无据地指责时，亨德拉先生总会替他们说话。"
+    },
+    {
+      "text": "Penipu sering pakai sebutan resmi seperti \"tim kantor pusat\" supaya kita percaya.",
+      "cn": "骗子常用“总部团队”这类正式的称呼，好让我们相信。"
+    }
+  ],
+  "reading": {
+    "title": "Penelepon dari Kantor Pusat · 自称总部的来电",
+    "text": "Jumat pagi, jari Bu Ros sudah di atas layar HP. \"Jangan, Bu!\" Mbak Sinta cepat-cepat menahan tangannya. Laki-laki di telepon mengaku dari kantor pusat Kilat Express. Dia menawarkan pencairan klaim hari ini juga, asal diberi kode OTP. \"Kalau memang dari kantor pusat, kenapa minta kode OTP?\" tanya Mbak Sinta. Penelepon itu malah menuduh agen memperlambat klaim. Mbak Sinta langsung mengakhiri panggilan itu. \"Kok dia tahu nomor saya?\" tanya Bu Ros. Ternyata kemarin Bu Ros posting foto resinya di Facebook, lengkap dengan nomor HP. Bang Jali langsung mengenali modus ini. Tahun lalu dia tertipu dan terpaksa nombok. Mbak Sinta menelepon Pak Hendra, koordinator wilayah yang dia kenal. \"Tidak ada bawahan saya yang minta kode OTP,\" tegasnya. \"Pak, paket Bu Ros sudah sampai mana, ya?\" \"Sudah di Medan. Kendalanya cuma hujan deras. Senin pasti sampai.\" Menurutnya, penipuan lewat telepon kini jadi tantangan besar bagi jasa kirim. Siangnya, seorang bapak membawa pot berisi tanah dan pohon cabai: \"Bisa dikirim ke Medan, Mbak?\"",
+    "cn": "周五早上，布罗丝阿姨的手指已经放在手机屏幕上了。“别，阿姨！”辛塔姐赶紧按住她的手。电话里的男人自称是闪电快递总部的人。他提出今天就能把理赔款打过来，条件是给他验证码。“如果真是总部的，为什么要验证码？”辛塔姐问。打电话的人反倒指责代收点拖慢理赔。辛塔姐马上挂断了电话。“他怎么会知道我的号码？”布罗丝阿姨问。原来布罗丝阿姨昨天在脸书上发了运单照片，上面连手机号都有。贾利哥一下子就认出了这种套路。他去年被骗过，只好自己掏钱补上。辛塔姐给亨德拉先生打电话，他是这一片的区域协调员，辛塔姐和他相熟。“我的下属没有一个会要验证码。”他强调说。“亨德拉先生，布罗丝阿姨的包裹到哪儿了？”“已经到棉兰了。唯一的问题是下大雨，不过周一一定送到。”他说，如今电话诈骗是快递公司面临的一大挑战。中午，一位大叔抱来一盆带土的辣椒苗：“这个能寄到棉兰吗？”"
+  },
+  "quiz": [
+    {
+      "kind": "zh2id",
+      "question": "我一下子就认出了这种诈骗套路。",
+      "target": "mengenali",
+      "target_cn": "认出",
+      "options": [
+        "Saya langsung mengenai modus penipuan ini.",
+        "Saya langsung mengenalkan modus penipuan ini.",
+        "Saya langsung mengenali modus penipuan ini.",
+        "Saya langsung dikenali modus penipuan ini."
+      ],
+      "answer_index": 2,
+      "answer": "Saya langsung mengenali modus penipuan ini.",
+      "point": "kenal 的词缀：mengenali（认出）/ mengenalkan（介绍）/ dikenali（被认出）；长得像的 mengenai（关于）",
+      "explain": "“凭特征认出来”是 mengenali，所以 C 对。A 的 mengenai 和 mengenali 只差一个字母，但意思是“关于；碰到”（Ini mengenai klaim Ibu），不是“认出”；B 的 mengenalkan 是“介绍”（mengenalkan teman ke orang tua）；D 的 dikenali 是被动，主语应该是被认出的东西：Modus penipuan ini mudah dikenali。也可以说 Saya langsung tahu ini modus penipuan，意思接近；kenal 多用于认识人（Saya kenal Pak Hendra），说认出套路用 mengenali 更准确。"
+    },
+    {
+      "question": "Menurut cerita hari ini, dari mana penipu itu bisa tahu nomor HP Bu Ros?",
+      "options": [
+        "Dari Mbak Sinta yang membocorkan data pelanggan agen.",
+        "Dari foto resi yang Bu Ros posting di Facebook.",
+        "Dari Pak Hendra, koordinator wilayah Kilat Express.",
+        "Dari Dimas yang menyebarkan nomor ibunya."
+      ],
+      "answer_index": 1,
+      "answer": "Dari foto resi yang Bu Ros posting di Facebook.",
+      "explain": "课文说布罗丝阿姨昨天在脸书上发了运单照片抱怨，而她的手机号就印在运单上（posting foto resinya di Facebook, lengkap dengan nomor HP），所以 B 对。A 课文里没有这回事，骗子只是指责代收点拖慢理赔，号码其实是从运单照片上泄露的；C 亨德拉先生是辛塔姐打电话核实时才出场的，他说下属不会要验证码；D 课文里迪马斯没有参与这件事。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "辛塔姐马上挂断了那通电话。",
+      "target": "mengakhiri",
+      "target_cn": "结束；挂断",
+      "options": [
+        "Mbak Sinta langsung berakhir panggilan itu.",
+        "Mbak Sinta langsung diakhiri panggilan itu.",
+        "Mbak Sinta langsung mengakhirkan panggilan itu.",
+        "Mbak Sinta langsung mengakhiri panggilan itu."
+      ],
+      "answer_index": 3,
+      "answer": "Mbak Sinta langsung mengakhiri panggilan itu.",
+      "point": "akhir 的词缀：mengakhiri（结束某事，接宾语）/ berakhir（自己结束，不接宾语）/ diakhiri（被动）/ mengakhirkan（放到最后）",
+      "explain": "辛塔姐是动作的发出者，“结束掉电话”要用接宾语的 mengakhiri，所以 D 对。A 的 berakhir 不接宾语，只能说 Panggilannya berakhir（电话结束了）；B 的 diakhiri 是被动，要说 Panggilan itu langsung diakhiri oleh Mbak Sinta；C 的 mengakhirkan 是“放到最后、推迟到最后”，不是“挂断”。日常口语也常说 Mbak Sinta langsung nutup teleponnya，意思一样。"
+    }
+  ],
+  "output": {
+    "task": "接本集故事：你是辛塔姐，给代收点的顾客群发一条 WhatsApp 提醒（5 句）：说明有人自称（mengaku）是总部（kantor pusat）的人，提出（menawarkan）更快打理赔款，条件是给验证码；说明闪电快递从来不要验证码，遇到这种电话直接挂断（akhiri）；告诉大家包裹遇到问题（kendala）时该怎么办；最后用本周句型 Mohon dibantu …, ya. 请大家帮忙转告家人。按骨架填空，用上 pusat、menawarkan、kendala。",
+    "frame": "Halo, Bapak/Ibu pelanggan Agen Kilat. Belakangan ini ada orang yang mengaku dari kantor pusat Kilat Express dan menawarkan …… asal kita memberikan kode OTP. Kilat Express tidak pernah ……, jadi langsung akhiri saja panggilannya. Kalau paket Anda mengalami kendala, …… . Mohon dibantu …… , ya.",
+    "reference_answer": "Halo, Bapak/Ibu pelanggan Agen Kilat. Belakangan ini ada orang yang mengaku dari kantor pusat Kilat Express dan menawarkan pencairan klaim yang lebih cepat asal kita memberikan kode OTP. Kilat Express tidak pernah minta kode OTP, jadi langsung akhiri saja panggilannya. Kalau paket Anda mengalami kendala, silakan datang ke agen atau hubungi CS resmi. Mohon dibantu sebarkan info ini ke keluarga, ya.",
+    "reference_cn": "各位闪电代收点的顾客好。最近有人自称是闪电快递总部的人，说只要给他验证码，理赔款就能更快到账。闪电快递从来不会要验证码，所以接到这种电话直接挂断就行。如果您的包裹遇到问题，请到代收点来，或者联系官方客服。麻烦大家把这条消息转告家人。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 认识（人、地方）、认出、指责；冤枉、自己垫钱补差额（口语）、下属；再说出 结束（某事）、挑战、障碍；卡点、泥土；土地、中心；总部、提供；主动提出。卡住的词回看词卡再说一遍。",
+    "易混词：tantangan 是要去克服的挑战（Penipuan lewat telepon kini jadi tantangan besar bagi jasa kirim），kendala 是眼下卡住的具体问题（Kendalanya cuma hujan deras）；mengakhiri 接宾语（Mbak Sinta mengakhiri panggilan itu），berakhir 不接宾语（Panggilannya berakhir）。各说一句。",
+    "重点复习词 mengenali（最近常错）是“凭特征认出”：Bang Jali langsung mengenali modus ini；认识一个人用 kenal：Mbak Sinta sudah lama kenal Pak Hendra；别和长得像的 mengenai（关于）混。再用 nombok 说一句自己垫钱的经历：Aku pernah nombok waktu ..."
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "认识（人、地方）",
+        "id": "kenal"
+      },
+      {
+        "cn": "认出；辨认出",
+        "id": "mengenali"
+      },
+      {
+        "cn": "指责；冤枉",
+        "id": "menuduh"
+      },
+      {
+        "cn": "自己垫钱补差额（口语）",
+        "id": "nombok"
+      },
+      {
+        "cn": "下属",
+        "id": "bawahan"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "tantangan",
+            "cn": "挑战（要去克服的）"
+          },
+          {
+            "id": "kendala",
+            "cn": "障碍；卡住的具体问题"
+          }
+        ],
+        "note": "kendala 是眼下卡住进度的问题，客服、通知里常说（pengiriman mengalami kendala）；tantangan 是要努力去面对的挑战（tantangan besar）。说“最大的难处”两个都能用。"
+      },
+      {
+        "items": [
+          {
+            "id": "mengakhiri",
+            "cn": "结束（某事）"
+          },
+          {
+            "id": "berakhir",
+            "cn": "（自己）结束"
+          }
+        ],
+        "note": "mengakhiri 后面接被结束的事（mengakhiri panggilan / rapat）；berakhir 不接宾语（Rapatnya berakhir jam sembilan）。"
+      },
+      {
+        "items": [
+          {
+            "id": "kenal",
+            "cn": "认识（人、地方）"
+          },
+          {
+            "id": "mengenali",
+            "cn": "凭特征认出"
+          },
+          {
+            "id": "mengenai",
+            "cn": "关于；碰到"
+          }
+        ],
+        "note": "kenal 是认识、熟悉（kenal Pak Hendra）；mengenali 是凭特征认出来（mengenali modus penipuan）；mengenai 只是长得像，意思是“关于”（mengenai klaim Ibu）。"
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "tantangan",
+      "kendala",
+      "mengakhiri"
+    ],
+    "patterns": [
+      {
+        "pattern": "… sudah sampai mana, ya?",
+        "cn": "……到哪儿了？",
+        "function": "ask-status",
+        "example": "Pak, paket Bu Ros sudah sampai mana, ya?",
+        "example_cn": "亨德拉先生，布罗丝阿姨的包裹到哪儿了？"
+      },
+      {
+        "pattern": "Kalau memang …, kenapa …?",
+        "cn": "如果真是……，为什么……？",
+        "example": "Kalau memang dari kantor pusat, kenapa minta kode OTP?",
+        "example_cn": "如果真是总部的，为什么要验证码？"
+      }
+    ]
+  }
+}
