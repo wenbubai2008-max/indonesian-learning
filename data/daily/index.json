@@ -1060,11 +1060,13 @@
     {
       "date": "2026-11-27",
       "am": true,
-      "pm": false,
+      "pm": true,
       "verified": "generated_daily_lesson",
       "day": 98,
       "am_day": 98,
-      "am_status": "generated"
+      "am_status": "generated",
+      "pm_day": 98,
+      "pm_status": "lesson_complete"
     }
   ],
   "updated": "2026-11-27",
