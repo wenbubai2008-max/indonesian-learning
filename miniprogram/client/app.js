@@ -1,7 +1,7 @@
 const CONFIG = require('./utils/config');
 
 App({
-  globalData: { cloudError: '' },
+  globalData: { cloudError: '', showStars: false },
 
   onLaunch() {
     if (CONFIG.cloudEnv === 'TODO_ENV_ID') return;

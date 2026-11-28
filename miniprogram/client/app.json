@@ -1,16 +1,47 @@
 {
   "pages": [
-    "pages/home/index",
+    "pages/today/index",
+    "pages/phrases/index",
+    "pages/me/index",
+    "pages/deck/index",
+    "pages/reading/index",
+    "pages/reading/detail",
     "pages/lesson/index",
     "pages/nettest/index"
   ],
   "window": {
-    "navigationBarTitleText": "不白的外语学习",
+    "navigationBarTitleText": "印尼语学习",
     "navigationBarBackgroundColor": "#f5f7fb",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#f5f7fb"
   },
   "networkTimeout": {
     "request": 10000
+  },
+  "tabBar": {
+    "color": "#5f6675",
+    "selectedColor": "#3157d5",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/today/index",
+        "text": "今天",
+        "iconPath": "assets/today.png",
+        "selectedIconPath": "assets/today-active.png"
+      },
+      {
+        "pagePath": "pages/phrases/index",
+        "text": "句库",
+        "iconPath": "assets/phrases.png",
+        "selectedIconPath": "assets/phrases-active.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我",
+        "iconPath": "assets/me.png",
+        "selectedIconPath": "assets/me-active.png"
+      }
+    ]
   }
 }

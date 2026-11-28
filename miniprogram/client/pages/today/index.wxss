@@ -1,0 +1,20 @@
+.day-title { font-size: 44rpx; font-weight: 750; }
+.review-button { background: var(--blue); color: white; text-align: left; border-radius: 40rpx; padding: 30rpx; }
+.review-button[disabled] { color: #eef3ff; background: #5267a9; }
+.review-meta { margin-top: 8rpx; font-size: 27rpx; line-height: 1.45; }
+.course-title { font-size: 34rpx; font-weight: 750; margin: 18rpx 0 4rpx; }
+.serial { margin-top: 12rpx; }
+.course progress { margin: 22rpx 0; }
+.segment { background: white; width: 100%; display: flex; align-items: center; gap: 16rpx; padding: 14rpx 16rpx; min-height: 92rpx; text-align: left; border: 2rpx solid var(--line); border-radius: 26rpx; margin-top: 12rpx; }
+.segment.current { background: var(--soft); border-color: #8fa6ee; }
+.segment-number { display: flex; justify-content: center; align-items: center; width: 52rpx; height: 52rpx; flex-shrink: 0; border-radius: 50%; border: 2rpx solid var(--line); color: var(--muted); }
+.current .segment-number { background: var(--blue); color: white; border-color: var(--blue); }
+.done .segment-number { color: var(--ok); border-color: #c8e5d1; }
+.segment-copy { flex: 1; min-width: 0; }
+.segment-title { font-weight: 700; }
+.done .segment-title { color: var(--muted); }
+.segment-description { font-size: 24rpx; margin-top: 6rpx; }
+.segment-end { flex-shrink: 0; font-size: 24rpx; color: var(--muted); }
+.current .segment-end { color: #2445b7; font-weight: 700; }
+.reading-link { background: white; text-align: left; width: 100%; padding: 0; color: var(--text); }
+.unpublished { margin-top: 14rpx; }

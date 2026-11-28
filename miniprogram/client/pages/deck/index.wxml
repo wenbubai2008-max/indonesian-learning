@@ -1,0 +1,69 @@
+<import src="../../templates/chat.wxml"/>
+<view class="container stack deck">
+  <view class="deck-top">
+    <button class="close-button" bindtap="close" aria-label="关闭刷卡">×</button>
+    <progress wx:if="{{total}}" percentage="{{percent}}" activeColor="#3157d5" backgroundColor="#e5e9f1" stroke-width="6" border-radius="4"/>
+    <text wx:if="{{total}}" class="muted">{{number}} / {{total}}</text>
+  </view>
+  <view wx:if="{{busy}}" class="surface muted">正在准备卡片…</view>
+  <view wx:elif="{{error}}" class="surface stack">
+    <text>{{error}}</text>
+    <button class="secondary" bindtap="load">重试</button>
+  </view>
+  <view wx:elif="{{finished}}" class="surface stack finish">
+    <view class="day-title">这一组刷完了</view>
+    <view class="score-totals">
+      <view class="pill">记得 {{counts.remembered}}</view>
+      <view class="pill neutral">模糊 {{counts.fuzzy}}</view>
+      <view class="pill amber">忘了 {{counts.forgot}}</view>
+    </view>
+    <button class="action" bindtap="again">再刷一组</button>
+    <button class="secondary" bindtap="todayPage">回到今天</button>
+  </view>
+  <block wx:elif="{{card}}">
+    <view class="surface deck-card {{moving ? 'moving' : ''}}">
+      <view class="between deck-head">
+        <text class="pill">{{card.label}}</text>
+        <text class="muted card-source">{{card.source}}</text>
+      </view>
+      <block wx:if="{{card.kind === 'chat'}}">
+        <view class="section-title">{{card.front}}</view>
+        <button class="text-button" bindtap="flip">{{seen ? '隐藏中文' : '显示中文'}}</button>
+        <template is="chat" data="{{lines: card.lines, showCn: seen}}"/>
+      </block>
+      <block wx:else>
+        <view wx:if="{{!seen && card.kind === 'word'}}" class="muted">看中文，先在心里说出印尼语</view>
+        <view wx:if="{{!seen && card.kind === 'sentence'}}" class="muted">用印尼语说出整句</view>
+        <view wx:if="{{!seen && card.kind === 'contrast' && !card.options.length}}" class="muted">说说它们的区别</view>
+        <view wx:if="{{!seen || card.kind === 'story' || card.options.length}}" class="body-text card-front {{card.kind === 'story' ? 'story indonesian' : ''}}">{{card.front}}</view>
+        <view wx:if="{{!seen && card.hint}}" class="muted">{{card.hint}}</view>
+        <view wx:if="{{!seen && card.frame}}" class="frame body-text">{{card.frame}}</view>
+        <view wx:if="{{!seen && card.hints.length}}" class="hints"><text wx:for="{{card.hints}}" wx:key="*this" class="pill">{{item}}</text></view>
+        <button wx:for="{{card.options}}" wx:key="index" disabled="{{seen}}"
+          class="option {{seen && index === card.answer ? 'correct' : ''}} {{seen && index === pick && pick !== card.answer ? 'incorrect' : ''}}"
+          data-index="{{index}}" bindtap="choose">
+          <text wx:if="{{card.kind === 'choice'}}">{{index === 0 ? 'A.' : index === 1 ? 'B.' : index === 2 ? 'C.' : 'D.'}} </text>{{item}}
+        </button>
+        <block wx:if="{{seen}}">
+          <view wx:if="{{card.options.length}}" class="feedback {{pick === card.answer ? 'correct-text' : 'notice'}}">{{pick === card.answer ? '答对了' : '答错了'}}</view>
+          <view class="body-text card-answer {{card.kind === 'story' || card.kind === 'contrast' ? '' : 'indonesian'}}">{{card.back}}</view>
+          <view wx:if="{{card.example}}" class="body-text indonesian">{{card.example}}</view>
+          <view wx:if="{{card.exampleCn}}" class="body-text">{{card.exampleCn}}</view>
+          <view wx:if="{{card.root || card.note || card.explain}}" class="muted body-text">{{card.root || card.note || card.explain}}</view>
+        </block>
+        <button wx:if="{{card.fullCn}}" class="text-button" bindtap="expand">{{expanded ? '收起整段中文' : '看整段中文'}}</button>
+        <view wx:if="{{expanded}}" class="body-text">{{card.fullCn}}</view>
+      </block>
+      <view class="muted pronunciation">发音 · 之后的版本开放</view>
+    </view>
+
+    <button wx:if="{{card.kind === 'chat' || card.kind === 'text' || (seen && (card.kind === 'choice' || card.kind === 'output' || card.kind === 'fill' || card.kind === 'order'))}}"
+      class="action deck-action" bindtap="next">{{card.kind === 'chat' ? '读完了' : '下一张'}}</button>
+    <button wx:elif="{{!seen && !card.options.length}}" class="action deck-action" bindtap="flip">{{card.kind === 'story' ? '显示中文' : '翻面看答案'}}</button>
+    <button wx:elif="{{seen && card.kind === 'contrast' && card.options.length}}"
+      class="action deck-action" data-rating="{{pick === card.answer ? 'remembered' : 'fuzzy'}}" bindtap="rate">{{pick === card.answer ? '记得' : '懂了'}}</button>
+    <view wx:elif="{{seen}}" class="ratings">
+      <button wx:for="{{scores}}" wx:key="key" class="rating {{item.key}}" data-rating="{{item.key}}" bindtap="rate">{{card.kind === 'story' ? item.storyLabel : item.label}}</button>
+    </view>
+  </block>
+</view>

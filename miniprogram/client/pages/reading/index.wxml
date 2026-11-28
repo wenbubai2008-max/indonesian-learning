@@ -1,0 +1,15 @@
+<template name="row">
+  <button class="surface reading-row" data-id="{{item.id}}" data-path="{{item.path}}" bindtap="open">
+    <view class="muted">{{label ? label + ' · ' : ''}}{{item.date}}</view>
+    <view class="section-title indonesian">{{item.title}}</view>
+    <view>{{item.title_cn}}</view>
+    <view wx:if="{{item.minutes}}" class="muted">{{item.category}} · {{item.level}} · 约 {{item.minutes}} 分钟</view>
+  </button>
+</template>
+<view class="container stack">
+  <view wx:if="{{offline}}" class="muted">未能更新，优先显示已保存的内容。</view>
+  <view wx:if="{{busy && !current.length && !history.length}}" class="surface muted">正在读取泛读…</view>
+  <template wx:for="{{current}}" wx:key="id" is="row" data="{{item: item, label: '最新泛读'}}"/>
+  <view wx:if="{{history.length}}" class="section-title">泛读归档</view>
+  <template wx:for="{{history}}" wx:key="id" is="row" data="{{item: item}}"/>
+</view>

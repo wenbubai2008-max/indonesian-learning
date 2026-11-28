@@ -1,0 +1,32 @@
+<template name="course">
+  <view class="surface course">
+    <view class="between">
+      <view class="section-title">{{course.time}} {{course.label}}</view>
+      <text wx:if="{{course.available}}" class="muted">已学 {{course.completed}} / {{course.rows.length}} 段</text>
+      <text wx:else class="pill {{course.published ? '' : 'amber'}}">{{course.published ? '已发布' : '未发布'}}</text>
+    </view>
+    <block wx:if="{{course.available}}">
+      <view class="course-title indonesian">{{course.title.id}}</view>
+      <view wx:if="{{course.title.cn}}">{{course.title.cn}}</view>
+      <view wx:if="{{course.series}}" class="muted serial">连载 · {{course.series}} · 第 {{course.episode}} 集</view>
+      <progress percentage="{{course.percent}}" activeColor="#3157d5" backgroundColor="#e5e9f1" stroke-width="5" border-radius="4"/>
+      <button wx:for="{{course.rows}}" wx:key="key" class="segment {{item.current ? 'current' : ''}} {{item.done ? 'done' : ''}}"
+        data-date="{{course.date}}" data-session="{{course.session}}" data-key="{{item.key}}" bindtap="openSegment">
+        <text class="segment-number">{{item.done ? '✓' : item.number}}</text>
+        <view class="segment-copy">
+          <view class="segment-title">{{item.name}}</view>
+          <view class="muted segment-description">{{item.details}}</view>
+        </view>
+        <text class="segment-end">{{item.current ? '继续' : item.minutes + ' 分钟'}}</text>
+      </button>
+      <button class="text-button" data-date="{{course.date}}" data-session="{{course.session}}" bindtap="openLesson">看完整课程</button>
+    </block>
+    <block wx:elif="{{course.published}}">
+      <view class="muted">课程正文暂未读取。联网后下拉重试。</view>
+      <button class="text-button" data-date="{{course.date}}" data-session="{{course.session}}" bindtap="openLesson">看完整课程</button>
+    </block>
+    <view wx:else class="muted unpublished">
+      {{course.session === 'pm' ? '今晚 ' + course.time + ' 发布。到时同样拆成 5 段：重点 · 词卡 · 阅读 · 对话 · 改写与小测。' : '早课发布后将在这里显示。'}}
+    </view>
+  </view>
+</template>

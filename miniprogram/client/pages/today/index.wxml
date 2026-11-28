@@ -1,0 +1,23 @@
+<import src="../../templates/course.wxml"/>
+<view class="container stack">
+  <view class="between">
+    <view class="day-title">{{titleDate}}</view>
+    <text wx:if="{{day}}" class="muted">学习第 {{day}} 天</text>
+  </view>
+  <view wx:if="{{offline}}" class="muted">未能更新，优先显示已保存的内容。</view>
+  <button class="review-button" disabled="{{!groupCount}}" bindtap="openReview">
+    <view class="section-title">刷一组卡片</view>
+    <view class="review-meta">今天课里的词卡、句卡、易混卡 · {{groupCount ? '约 ' + groupCount + ' 张 · ' + groupMinutes + ' 分钟' : '暂无待刷卡片'}}</view>
+  </button>
+  <view wx:if="{{!lessonViews.length}}" class="surface muted">{{busy ? '正在读取课程…' : '暂未读到课程，请检查网络后下拉重试。'}}</view>
+  <template wx:for="{{lessonViews}}" wx:key="session" is="course" data="{{course: item}}"/>
+  <view class="surface">
+    <button wx:if="{{latest}}" class="reading-link" bindtap="openReading">
+      <view class="muted">最新泛读 · {{latest.date}} · 约 {{latest.minutes}} 分钟</view>
+      <view class="course-title indonesian">{{latest.title}}</view>
+      <view>{{latest.title_cn}}</view>
+    </button>
+    <navigator class="text-button" url="/pages/reading/index">全部泛读</navigator>
+  </view>
+  <view class="notice">卡片评分先存在手机上；之后的版本会写回复习系统，在小程序里学也算数。</view>
+</view>

@@ -1,10 +1,11 @@
 const CONFIG = require('./config');
-const { isDate, jakartaDate, shiftDate } = require('./date');
+const { isDate } = require('./date');
 
 const INDEX = 'index';
 const STORAGE_KEY = 'mini_cache_v1:lessons';
 const CACHE_LIMIT = 2 * 1024 * 1024;
 const INDEX_URL = CONFIG.websiteRoot + 'data/daily/index.json';
+let currentIndex;
 
 function lessonKey(date, session) {
   return date + '-' + session;
@@ -37,9 +38,8 @@ function readCache() {
 function withinCacheWindow(key) {
   if (key === INDEX) return true;
   const date = key.slice(0, 10);
-  const today = jakartaDate();
   return /^\d{4}-\d{2}-\d{2}-(am|pm)$/.test(key) &&
-    isDate(date) && date >= shiftDate(today, -13) && date <= today;
+    isDate(date);
 }
 
 function writeCache(cache) {
@@ -65,10 +65,14 @@ function save(key, entry) {
   if (bytes(key, entry) + STORAGE_KEY.length + 2 > CACHE_LIMIT) return;
 
   cache[key] = entry;
+  const days = [...new Set(Object.keys(cache).filter(name => name !== INDEX)
+    .sort((a, b) => cache[b].updatedAt - cache[a].updatedAt).map(name => name.slice(0, 10)))];
+  Object.keys(cache).filter(name => name !== INDEX && !days.slice(0, 14).includes(name.slice(0, 10)))
+    .forEach(name => delete cache[name]);
   const keys = Object.keys(cache);
   let size = STORAGE_KEY.length + 2 + keys.reduce((sum, name) => sum + bytes(name, cache[name]), 0);
   if (size > CACHE_LIMIT) {
-    const removable = keys.filter(name => name !== INDEX).sort();
+    const removable = keys.filter(name => name !== INDEX).sort((a, b) => cache[a].updatedAt - cache[b].updatedAt);
     for (const name of removable) {
       if (size <= CACHE_LIMIT) break;
       size -= bytes(name, cache[name]);
@@ -111,13 +115,21 @@ async function refresh(key, url, valid) {
   return entry;
 }
 
-function fetchIndex() {
-  return refresh(INDEX, INDEX_URL, data => data && Array.isArray(data.dates));
+async function fetchIndex() {
+  currentIndex = await refresh(INDEX, INDEX_URL, data => data && Array.isArray(data.dates));
+  return currentIndex;
 }
 
-function fetchLesson(date, session) {
-  return refresh(lessonKey(date, session), lessonUrl(date, session), data =>
-    data && data.date === date && data.session === session);
+function currentIndexEntry() {
+  return currentIndex || cacheSnapshot()[INDEX];
+}
+
+function fetchLesson(date, session, cache = true) {
+  if (!isDate(date) || !['am', 'pm'].includes(session)) return Promise.reject(new Error('课程地址无效'));
+  const valid = data => data && data.date === date && data.session === session;
+  const url = lessonUrl(date, session);
+  if (!cache) return fetchJson(url, valid).then(data => ({ data }));
+  return refresh(lessonKey(date, session), url, valid);
 }
 
 function isPublished(index, date, session) {
@@ -125,5 +137,5 @@ function isPublished(index, date, session) {
 }
 
 module.exports = {
-  INDEX, INDEX_URL, lessonKey, lessonUrl, cacheSnapshot, fetchIndex, fetchLesson, isPublished
+  INDEX, INDEX_URL, fetchJson, lessonKey, lessonUrl, cacheSnapshot, currentIndexEntry, fetchIndex, fetchLesson, isPublished
 };
