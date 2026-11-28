@@ -1,6 +1,6 @@
-const { websiteRoot } = require('./config');
 const { parseAssignment } = require('./jsliteral');
 const { read, write, size } = require('./storage');
+const remote = require('./remote');
 const { chat, text, asList } = require('./cards');
 
 const KEY = 'mini_v11:reading';
@@ -12,18 +12,10 @@ const inFlight = new Map();
 let memory;
 
 function literal(path, name) {
+  if (!validFile(path) && path !== INDEX_PATH) return Promise.reject(new Error('泛读地址无效'));
   if (!inFlight.has(path)) {
-    const promise = new Promise((resolve, reject) => wx.request({
-      url: websiteRoot + path + '?t=' + Math.floor(Date.now() / 60000), method: 'GET',
-      timeout: 10000, dataType: 'text', responseType: 'text',
-      success(response) {
-        try {
-          if (response.statusCode !== 200) throw new Error('HTTP ' + response.statusCode);
-          resolve(parseAssignment(response.data, name));
-        } catch (error) { reject(error); }
-      },
-      fail(error) { reject(new Error(error.errMsg || '网络请求失败')); }
-    })).finally(() => inFlight.delete(path));
+    const promise = remote.read(path).then(source => parseAssignment(source, name))
+      .finally(() => inFlight.delete(path));
     inFlight.set(path, promise);
   }
   return inFlight.get(path);

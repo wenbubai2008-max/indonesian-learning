@@ -1,7 +1,5 @@
-const { fetchIndex, fetchLesson } = require('../../utils/data');
-const { cachedIndex, cachedLesson } = require('../../utils/course');
-const reading = require('../../utils/reading');
-const { collect, dedupe, search } = require('../../utils/phrases');
+const remote = require('../../utils/remote');
+const { dedupe, search } = require('../../utils/phrases');
 const { scenes } = require('../../utils/scenes');
 const { read, write } = require('../../utils/storage');
 
@@ -44,58 +42,16 @@ Page({
 
   async collectMissing() {
     this.setData({ building: true, message: '', done: 0, count: 0 });
-    const [indexResult, historyResult, latestResult] = await Promise.allSettled([
-      fetchIndex(), reading.history(), reading.latest()
-    ]);
-    const available = [indexResult, historyResult, latestResult].some(result => result.status === 'fulfilled');
-    if (!available) {
-      this.setData({ message: '未能更新，显示已整理的句子。' });
-      return;
-    }
-    const jobs = [];
-    const index = indexResult.status === 'fulfilled' ? indexResult.value.data : cachedIndex();
-    const archives = historyResult.status === 'fulfilled' ? historyResult.value : reading.cache().history;
-    const latest = latestResult.status === 'fulfilled' ? latestResult.value : [];
-    const latestIds = new Set(latest.map(item => item.id));
-    asCourses(index).forEach(({ date, session }) => jobs.push({
-      key: date + '-' + session, date, load: async () => {
-        const saved = cachedLesson(date, session);
-        return { lesson: saved || (await fetchLesson(date, session, false)).data };
-      }
-    }));
-    archives.filter(row => !latestIds.has(row.id)).forEach(row => jobs.push({
-      key: row.id, date: row.date, load: async () => ({ reading: await reading.getItem(row.path, row.id, false) })
-    }));
-    latest.forEach(item => jobs.push({ key: item.id, date: item.date, load: async () => ({ reading: item }) }));
-    const missing = jobs.filter(job => !this.store.completed[job.key]).sort((a, b) => b.date.localeCompare(a.date));
-    if (!missing.length) return;
-    this.setData({ count: missing.length });
-    let next = 0;
-    let done = 0;
-    let failed = 0;
-    let pending = [];
-    const flush = () => {
-      this.store.rows = dedupe(this.store.rows.concat(pending));
-      pending = [];
+    try {
+      const rows = await remote.phraseRows();
+      this.store.rows = dedupe(rows);
+      this.store.syncedAt = new Date().toISOString();
       write(KEY, this.store, 1024 * 1024);
+      this.setData({ count: rows.length, done: rows.length });
       this.render();
-    };
-    const worker = async () => {
-      while (next < missing.length) {
-        const job = missing[next++];
-        try {
-          pending.push(...collect(await job.load()));
-          this.store.completed[job.key] = true;
-        } catch (_) { failed++; }
-        done++;
-        if (done === 1 || done % 8 === 0 || done === missing.length) {
-          this.setData({ done });
-          flush();
-        }
-      }
-    };
-    await Promise.all(Array.from({ length: Math.min(4, missing.length) }, worker));
-    if (failed) this.setData({ message: failed + ' 项内容暂未读取，下次会继续整理。' });
+    } catch (_) {
+      this.setData({ message: '未能更新，显示已整理的句子。' });
+    }
   },
 
   render() {
@@ -129,8 +85,3 @@ Page({
     if (row) wx.setClipboardData({ data: row.id, success: () => wx.showToast({ title: '已复制', icon: 'success' }) });
   }
 });
-
-function asCourses(index) {
-  return (index && index.dates || []).flatMap(row => ['am', 'pm'].filter(session => row[session] === true)
-    .map(session => ({ date: row.date, session })));
-}

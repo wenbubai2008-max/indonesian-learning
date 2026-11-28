@@ -1,6 +1,6 @@
 const { jakartaDate, shiftDate } = require('../../utils/date');
-const { fetchIndex, fetchJson, isPublished } = require('../../utils/data');
-const { websiteRoot } = require('../../utils/config');
+const { fetchIndex, isPublished } = require('../../utils/data');
+const remote = require('../../utils/remote');
 const courses = require('../../utils/course');
 const reading = require('../../utils/reading');
 const { read, write } = require('../../utils/storage');
@@ -30,7 +30,7 @@ function calendar(month, today, index) {
 
 Page({
   data: { labels, month: '', label: '', days: [], selected: '', selectedAm: false, selectedPm: false,
-    backMonth: false, nextMonth: false, totalDays: 0, stats: null, readingCount: 0, version: '1.1.0',
+    backMonth: false, nextMonth: false, totalDays: 0, stats: null, readingCount: 0, version: '1.2.0',
     course: null, courseBusy: false },
 
   onLoad() {
@@ -63,19 +63,14 @@ Page({
   },
 
   async readStats() {
-    const saved = read(STATS, {});
-    const today = this.today;
-    if (saved.attempt === today || this.statsAttempt === today) return;
-    this.statsAttempt = today;
-    write(STATS, { ...saved, attempt: today }, 2048);
-    const snapshot = await fetchJson(websiteRoot + 'data/weakness-sync.json', data =>
-      data && data.words && typeof data.words === 'object' && !Array.isArray(data.words));
-    const result = { mastered: 0, active: 0, date: String(snapshot.updated_at || '').slice(0, 10) || today };
-    for (const record of Object.values(snapshot.words)) {
-      if (record && (record.status === 'mastered' || record.status === 'active')) result[record.status]++;
+    try {
+      const result = await remote.stats();
+      write(STATS, { result }, 2048);
+      this.setData({ stats: result });
+    } catch (_) {
+      const saved = read(STATS, {});
+      if (saved.result) this.setData({ stats: saved.result });
     }
-    write(STATS, { attempt: today, result }, 2048);
-    this.setData({ stats: result });
   },
 
   render() {

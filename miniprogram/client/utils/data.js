@@ -1,10 +1,10 @@
-const CONFIG = require('./config');
 const { isDate } = require('./date');
+const remote = require('./remote');
 
 const INDEX = 'index';
 const STORAGE_KEY = 'mini_cache_v1:lessons';
 const CACHE_LIMIT = 2 * 1024 * 1024;
-const INDEX_URL = CONFIG.websiteRoot + 'data/daily/index.json';
+const INDEX_URL = 'data/daily/index.json';
 let currentIndex;
 
 function lessonKey(date, session) {
@@ -12,7 +12,7 @@ function lessonKey(date, session) {
 }
 
 function lessonUrl(date, session) {
-  return CONFIG.websiteRoot + 'data/daily/' + lessonKey(date, session) + '.json';
+  return 'data/daily/' + lessonKey(date, session) + '.json';
 }
 
 function utf8Size(text) {
@@ -83,28 +83,10 @@ function save(key, entry) {
 }
 
 function fetchJson(url, valid) {
-  return new Promise((resolve, reject) => {
-    wx.request({
-      url: url + '?t=' + Math.floor(Date.now() / 60000),
-      method: 'GET',
-      timeout: 10000,
-      success(response) {
-        if (response.statusCode !== 200) {
-          reject(new Error('HTTP ' + response.statusCode));
-          return;
-        }
-        try {
-          const payload = typeof response.data === 'string' ? JSON.parse(response.data) : response.data;
-          if (!valid(payload)) throw new Error('课程数据格式不正确');
-          resolve(payload);
-        } catch (error) {
-          reject(error);
-        }
-      },
-      fail(error) {
-        reject(new Error(error.errMsg || '网络请求失败'));
-      }
-    });
+  return remote.read(url).then(source => {
+    const payload = JSON.parse(source);
+    if (!valid(payload)) throw new Error('课程数据格式不正确');
+    return payload;
   });
 }
 
