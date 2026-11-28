@@ -1071,11 +1071,13 @@
     {
       "date": "2026-11-28",
       "am": true,
-      "pm": false,
+      "pm": true,
       "verified": "generated_daily_lesson",
       "day": 99,
       "am_day": 99,
-      "am_status": "generated"
+      "am_status": "generated",
+      "pm_day": 99,
+      "pm_status": "lesson_complete"
     }
   ],
   "updated": "2026-11-28",
