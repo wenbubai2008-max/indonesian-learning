@@ -2,20 +2,20 @@
   "version": 1,
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
-    "date": "2026-11-28",
-    "session": "pm",
-    "time": "18:00",
-    "day": 99
+    "date": "2026-11-29",
+    "session": "am",
+    "time": "08:00",
+    "day": 100
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-28T09:40:25.436Z",
-    "lesson_watermark": "2026-11-28 08:00",
+    "runtime_generated_at": "2026-11-28T10:52:52.262Z",
+    "lesson_watermark": "2026-11-28 18:00",
     "index_updated": "2026-11-28",
-    "runtime_hash": "ec7544791445daea0c2e640c8f19b5472b64679e5243573b07a62a6ca95a844b",
-    "index_hash": "815a923add48d317bc797edc5046e3e62cf0108d03e66b6349bb646e66f5092e",
+    "runtime_hash": "e3fdad812208e31cfbc05dc63490998e5a5b7dae3e274596802d2619f3bfc404",
+    "index_hash": "e6e0c9cb9327cedd5a6fe871a5f2cbffa5860172ad41b8c2710ebabc84754148",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -1102,16 +1102,6 @@
         "美味"
       ],
       [
-        "kata sandi",
-        3,
-        0,
-        "",
-        "2026-11-20T05:15:28.907Z",
-        "密码",
-        "kata sandi",
-        "密码"
-      ],
-      [
         "mencret",
         3,
         0,
@@ -1412,26 +1402,6 @@
         "邀请；招呼"
       ],
       [
-        "hukuman",
-        2,
-        0,
-        "",
-        "2026-11-20T05:14:40.014Z",
-        "惩罚；刑罚",
-        "hukum",
-        "法律；规则"
-      ],
-      [
-        "kejar",
-        2,
-        0,
-        "",
-        "2026-11-20T05:15:53.235Z",
-        "追；追赶",
-        "kejar",
-        "追"
-      ],
-      [
         "pencuri",
         2,
         0,
@@ -1460,16 +1430,6 @@
         "确保；弄清楚",
         "pasti",
         "确定；一定"
-      ],
-      [
-        "gengsi",
-        2,
-        0,
-        "",
-        "2026-11-20T05:14:15.214Z",
-        "爱面子；拉不下脸",
-        "gengsi",
-        "面子；体面"
       ],
       [
         "kepo",
@@ -2182,16 +2142,6 @@
         "斗争；奋斗"
       ],
       [
-        "pendapatan",
-        2,
-        1,
-        "2026-10-15T08:09:10.364Z",
-        "2026-10-27T07:31:13.784Z",
-        "收入",
-        "dapat",
-        "得到；获得"
-      ],
-      [
         "anggaran",
         3,
         0,
@@ -2200,16 +2150,6 @@
         "预算",
         "anggar",
         "估算（词根很少单用）"
-      ],
-      [
-        "mendapatkan",
-        3,
-        0,
-        "",
-        "2026-11-15T03:32:38.568Z",
-        "获得 / 得到",
-        "dapat",
-        "得到；可以"
       ],
       [
         "berbentuk",
@@ -2250,6 +2190,66 @@
         "画；画作",
         "lukis",
         "绘画"
+      ],
+      [
+        "manja",
+        2,
+        0,
+        "",
+        "2026-10-26T07:49:48.999Z",
+        "娇气；爱撒娇；（宠物）黏人",
+        "manja",
+        "娇惯"
+      ],
+      [
+        "meja rias",
+        2,
+        0,
+        "",
+        "2026-10-26T07:49:51.413Z",
+        "梳妆台",
+        "rias",
+        "打扮；化妆"
+      ],
+      [
+        "penyayang",
+        2,
+        0,
+        "",
+        "2026-10-26T07:49:59.318Z",
+        "有爱心的；慈爱的（人）",
+        "sayang",
+        "爱；疼爱"
+      ],
+      [
+        "tekstur",
+        2,
+        0,
+        "",
+        "2026-10-26T07:50:03.409Z",
+        "质地；（食物的）口感",
+        "",
+        ""
+      ],
+      [
+        "nganter",
+        3,
+        0,
+        "",
+        "2026-11-23T04:37:31.241Z",
+        "送某人去；送到",
+        "antar",
+        ""
+      ],
+      [
+        "membayangkan",
+        1,
+        1,
+        "2026-10-16T15:54:43.469Z",
+        "2026-10-27T07:32:33.584Z",
+        "想象；设想",
+        "bayang",
+        "影子；影像"
       ],
       [
         "resi",
@@ -2390,66 +2390,6 @@
         "缺货；卖完了",
         "habis",
         "完；用尽"
-      ],
-      [
-        "lega",
-        2,
-        1,
-        "2026-10-15T03:28:12.199Z",
-        "2026-10-26T07:45:22.738Z",
-        "松一口气；宽慰",
-        "lega",
-        "宽慰；轻松"
-      ],
-      [
-        "kelewat",
-        3,
-        2,
-        "2026-10-13T15:12:17.174Z",
-        "2026-10-31T06:41:41.475Z",
-        "错过；漏掉；超过（口语）",
-        "lewat",
-        "经过；超过"
-      ],
-      [
-        "berpartisipasi",
-        2,
-        0,
-        "",
-        "2026-11-18T14:20:40.965Z",
-        "参与；参加（活动、讨论）",
-        "partisipasi",
-        "参与"
-      ],
-      [
-        "sejarah",
-        2,
-        0,
-        "",
-        "2026-11-15T03:32:23.619Z",
-        "历史 / 故事",
-        "sejarah",
-        "历史"
-      ],
-      [
-        "tenang",
-        3,
-        0,
-        "",
-        "2026-11-15T03:31:13.433Z",
-        "冷静、安静",
-        "tenang",
-        "平静"
-      ],
-      [
-        "ramai",
-        3,
-        0,
-        "",
-        "2026-11-18T07:07:39.353Z",
-        "拥挤的 / 热闹的",
-        "ramai",
-        "热闹；人多"
       ]
     ],
     "focus": [
@@ -2726,31 +2666,6 @@
   },
   "history_7d": [
     {
-      "date": "2026-11-21",
-      "session": "am",
-      "review_core": [
-        "nyalakan",
-        "menyalakan",
-        "bunyi",
-        "mengantar",
-        "sungkan"
-      ],
-      "new_words": []
-    },
-    {
-      "date": "2026-11-21",
-      "session": "pm",
-      "review_core": [
-        "bengkak",
-        "haus",
-        "istimewa",
-        "jarak",
-        "mengeluh",
-        "perkirakan"
-      ],
-      "new_words": []
-    },
-    {
       "date": "2026-11-22",
       "session": "am",
       "review_core": [
@@ -2931,74 +2846,34 @@
         "kekurangan"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-28",
+      "session": "pm",
+      "review_core": [
+        "pendapatan",
+        "mendapatkan",
+        "gengsi",
+        "hukuman",
+        "berangsur",
+        "pembangunan"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "new_words": [],
     "review_core": [
-      "harusnya",
-      "balas",
-      "membatasi",
-      "berlaku",
-      "hiburan",
-      "mengharukan"
+      "pendapatan",
+      "mendapatkan",
+      "gengsi",
+      "hukuman",
+      "berangsur",
+      "pembangunan"
     ]
   },
-  "same_day_am": {
-    "date": "2026-11-28",
-    "vocab": [
-      [
-        "lega",
-        "松了一口气；宽慰；（空间）宽敞",
-        "relieved; (of space) roomy",
-        "lega",
-        "宽慰；宽敞"
-      ],
-      [
-        "kelewat",
-        "错过；漏掉；（口语）太、过于",
-        "missed, overlooked; (colloquial) too, overly",
-        "lewat",
-        "经过；通过"
-      ],
-      [
-        "berpartisipasi",
-        "参与；参加（活动、项目）",
-        "to participate",
-        "partisipasi",
-        "参与（来自英语 participation）"
-      ],
-      [
-        "sejarah",
-        "历史；来历",
-        "history; background story",
-        "sejarah",
-        "历史"
-      ],
-      [
-        "tenang",
-        "冷静；安静；平静",
-        "calm; quiet; peaceful",
-        "tenang",
-        "平静"
-      ],
-      [
-        "ramai",
-        "热闹；人多；拥挤",
-        "crowded; busy; lively",
-        "ramai",
-        "热闹"
-      ]
-    ],
-    "review_vocab": [
-      "menghabiskan",
-      "stok habis",
-      "sengaja",
-      "saya pamit",
-      "kekurangan"
-    ]
-  },
+  "same_day_am": null,
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"

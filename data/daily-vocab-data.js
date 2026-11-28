@@ -11111,27 +11111,29 @@ window.DAILY_VOCAB_DB = [
     "en": "get; obtain; receive",
     "root": "dapat",
     "root_cn": "得到；可以",
-    "example": "Datang lebih pagi kalau mau mendapatkan tempat duduk di depan. Telat sedikit saja, bisa keduluan orang lain.",
-    "example_cn": "想拿到前排座位就早点来。稍微晚一点，就会被别人抢先。（keduluan，口语：被抢先）",
+    "example": "Setelah dipecat dari pabrik, dia butuh enam bulan untuk mendapatkan pekerjaan baru.",
+    "example_cn": "从工厂被开除以后，他花了六个月才找到新工作。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-16 08:00",
-    "last_seen": "2026-10-15 18:00",
+    "last_seen": "2026-11-28 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-16",
-      "2026-10-15"
+      "2026-10-15",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
       "2026-09-16 08:00",
-      "2026-10-15 18:00"
+      "2026-10-15 18:00",
+      "2026-11-28 18:00"
     ]
   },
   {
@@ -12206,16 +12208,16 @@ window.DAILY_VOCAB_DB = [
     "en": "development; construction",
     "root": "bangun",
     "root_cn": "建；起；醒",
-    "example": "Penyebab utama label tertukar adalah pembangunan gudang: semua kardus jadi ditumpuk di satu ruangan.",
-    "example_cn": "标签贴错的主要原因是仓库在施工：所有箱子都只能堆在一个房间里。",
+    "example": "Pembangunan jalan tol di dekat rumahku bikin macet tiap pagi.",
+    "example_cn": "我家附近在修高速公路，每天早上都堵车。（bikin = membuat）",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 8,
+    "times_seen": 9,
     "first_seen": "2026-09-18 18:00",
-    "last_seen": "2026-11-18 08:00",
+    "last_seen": "2026-11-28 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -12228,7 +12230,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-28",
       "2026-10-29",
       "2026-11-13",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
       "2026-09-18 18:00",
@@ -12238,7 +12241,8 @@ window.DAILY_VOCAB_DB = [
       "2026-10-28 18:00",
       "2026-10-29 08:00",
       "2026-11-13 18:00",
-      "2026-11-18 08:00"
+      "2026-11-18 08:00",
+      "2026-11-28 18:00"
     ]
   },
   {
@@ -15224,27 +15228,29 @@ window.DAILY_VOCAB_DB = [
     "en": "income; revenue",
     "root": "dapat",
     "root_cn": "得到；获得",
-    "example": "Sebagai sopir ojek online, pendapatan Pak Anton tidak tetap. Kadang besar, kadang kecil, tergantung situasinya.",
-    "example_cn": "作为网约摩的司机，Anton 先生的收入不固定，时多时少，要看具体情况。",
+    "example": "Walaupun punya gelar S2, pendapatannya sebagai guru honorer masih kecil.",
+    "example_cn": "虽然他有硕士学位，当代课老师的收入还是很低。",
     "categories": [
       "每日学习",
       "08:00",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-09-26 08:00",
-    "last_seen": "2026-10-15 18:00",
+    "last_seen": "2026-11-28 18:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-09-26",
-      "2026-10-15"
+      "2026-10-15",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
       "2026-09-26 08:00",
-      "2026-10-15 18:00"
+      "2026-10-15 18:00",
+      "2026-11-28 18:00"
     ]
   },
   {
@@ -16849,24 +16855,26 @@ window.DAILY_VOCAB_DB = [
     "en": "password",
     "root": "kata sandi",
     "root_cn": "密码",
-    "example": "Saya lupa kata sandi akun itu, jadi belum bisa masuk.",
-    "example_cn": "我忘了那个账号的密码，所以还登录不了。",
+    "example": "Berkas laporan ini dikunci pakai kata sandi, jadi tanya dulu ke Pak Andi.",
+    "example_cn": "这份报告文件用密码锁住了，所以先问问 Andi 先生。",
     "categories": [
       "每日学习",
       "18:00",
       "口语"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-30 18:00",
-    "last_seen": "2026-09-30 18:00",
+    "last_seen": "2026-11-28 18:00",
     "sessions": [
       "18:00"
     ],
     "dates": [
-      "2026-09-30"
+      "2026-09-30",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-09-30 18:00"
+      "2026-09-30 18:00",
+      "2026-11-28 18:00"
     ]
   },
   {
@@ -18690,23 +18698,27 @@ window.DAILY_VOCAB_DB = [
     "en": "to chase; to run after",
     "root": "kejar",
     "root_cn": "追",
-    "example": "Ayo kejar, bisnya belum jauh!",
-    "example_cn": "快追，公交车还没走远！",
+    "example": "Maaf aku nggak bisa ikut makan siang, lagi dikejar deadline. Nanti aku nyusul, ya.",
+    "example_cn": "抱歉，我不能一起去吃午饭了，正赶截止期限。我待会儿再过去找你们。（nggak = tidak，lagi = sedang，nyusul = menyusul）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-28 18:00"
     ]
   },
   {
@@ -18886,23 +18898,27 @@ window.DAILY_VOCAB_DB = [
     "en": "punishment; penalty",
     "root": "hukum",
     "root_cn": "法律；规则",
-    "example": "Anak itu dapat hukuman karena menyontek waktu ujian.",
-    "example_cn": "那个孩子因为考试作弊受到了惩罚。",
+    "example": "Waktu pendidikan tentara, telat bangun lima menit aja hukumannya push-up seratus kali.",
+    "example_cn": "受军训的时候，起床晚了五分钟，惩罚就是做一百个俯卧撑。（aja = saja）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-05 08:00",
-    "last_seen": "2026-10-05 08:00",
+    "last_seen": "2026-11-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-05"
+      "2026-10-05",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-10-05 08:00"
+      "2026-10-05 08:00",
+      "2026-11-28 18:00"
     ]
   },
   {
@@ -19069,23 +19085,27 @@ window.DAILY_VOCAB_DB = [
     "en": "pride; reluctance to lose face",
     "root": "gengsi",
     "root_cn": "面子；体面",
-    "example": "Dia gengsi minta maaf duluan, padahal dia tahu dia yang salah.",
-    "example_cn": "他明明知道是自己错了，却拉不下脸先道歉。",
+    "example": "Dia gengsi ngaku masih jomblo di depan teman-teman SMA-nya.",
+    "example_cn": "在高中同学面前，他拉不下脸承认自己还是单身。（ngaku = mengaku）",
     "categories": [
       "每日学习",
-      "08:00"
+      "08:00",
+      "18:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-06 08:00",
-    "last_seen": "2026-10-06 08:00",
+    "last_seen": "2026-11-28 18:00",
     "sessions": [
-      "08:00"
+      "08:00",
+      "18:00"
     ],
     "dates": [
-      "2026-10-06"
+      "2026-10-06",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-10-06 08:00"
+      "2026-10-06 08:00",
+      "2026-11-28 18:00"
     ]
   },
   {
@@ -31099,16 +31119,16 @@ window.DAILY_VOCAB_DB = [
     "en": "gradually",
     "root": "angsur",
     "root_cn": "一点一点地推进",
-    "example": "Setelah minum obat dan banyak istirahat, gejala flunya berangsur hilang.",
-    "example_cn": "吃了药、多休息以后，他的感冒症状逐渐消失了。",
+    "example": "Setelah operasi, kekuatan kakinya berangsur pulih.",
+    "example_cn": "手术以后，他腿上的力气渐渐恢复了。",
     "categories": [
       "每日学习",
       "18:00",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-11-08 18:00",
-    "last_seen": "2026-11-18 18:00",
+    "last_seen": "2026-11-28 18:00",
     "sessions": [
       "18:00",
       "08:00"
@@ -31116,12 +31136,14 @@ window.DAILY_VOCAB_DB = [
     "dates": [
       "2026-11-08",
       "2026-11-09",
-      "2026-11-18"
+      "2026-11-18",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
       "2026-11-08 18:00",
       "2026-11-09 08:00",
-      "2026-11-18 18:00"
+      "2026-11-18 18:00",
+      "2026-11-28 18:00"
     ]
   },
   {
