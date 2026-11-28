@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="masthead">
+    <view>
+      <view class="muted">雅加达 · 今天</view>
+      <view class="date">{{today}}</view>
+    </view>
+    <navigator class="net-link" url="/pages/nettest/index" hover-class="link-pressed">网络自检</navigator>
+  </view>
+  <view class="notice mode">练习模式：在小程序里答题不计入复习</view>
+
+  <view class="today-cards">
+    <block wx:for="{{current}}" wx:key="key">
+      <navigator wx:if="{{item.published}}" class="card today-card published" hover-class="link-pressed"
+        url="{{item.url}}">
+        <view class="slot-head">
+          <text>{{item.label}}</text>
+          <text wx:if="{{item.time}}" class="slot-time">{{item.time}}</text>
+        </view>
+        <view class="course-title">{{item.title || (busy ? '正在读取课程…' : '查看课程')}}</view>
+      </navigator>
+      <view wx:else class="card today-card">
+        <view class="slot-head">{{item.label}}</view>
+        <view class="muted">{{hasIndex ? '尚未发布' : (busy ? '正在查询…' : '发布状态暂不可用')}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view wx:if="{{hasIndex}}" class="recent">
+    <view class="heading recent-heading">最近 7 天</view>
+    <view wx:if="{{recent.length}}" class="card archive">
+      <navigator wx:for="{{recent}}" wx:key="key" class="archive-row" hover-class="link-pressed"
+        url="{{item.url}}">
+        <view class="row-info">
+          <text class="muted">{{item.date}} · {{item.label}}</text>
+          <view class="archive-title">{{item.title || (busy ? '正在读取课程…' : '查看课程')}}</view>
+        </view>
+        <text class="chevron" aria-hidden="true">›</text>
+      </navigator>
+    </view>
+    <view wx:else class="muted">这七天暂无已发布的课程。</view>
+  </view>
+  <view wx:if="{{issue}}" class="status problem">{{issue}}</view>
+  <view wx:if="{{status}}" class="status muted">{{status}}</view>
+</view>

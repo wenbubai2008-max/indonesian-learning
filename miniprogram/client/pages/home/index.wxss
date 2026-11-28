@@ -1,0 +1,19 @@
+.masthead { display: flex; align-items: flex-end; justify-content: space-between; gap: 16rpx; }
+.date { font-size: 62rpx; letter-spacing: -2rpx; line-height: 1.15; font-weight: 700; }
+.net-link { color: var(--blue); font-size: 26rpx; padding: 12rpx; flex-shrink: 0; }
+.mode { margin: 20rpx 0 24rpx; }
+.today-cards { display: flex; flex-direction: column; gap: 16rpx; }
+.today-card { min-height: 140rpx; }
+.published { border-left: 8rpx solid var(--blue); }
+.slot-head { display: flex; align-items: center; gap: 14rpx; font-size: 26rpx; font-weight: 700; color: var(--blue); margin-bottom: 8rpx; }
+.slot-time { font-variant-numeric: tabular-nums; }
+.course-title { font-size: 34rpx; font-weight: 700; line-height: 1.35; }
+.recent { margin-top: 36rpx; }
+.recent-heading { margin-bottom: 16rpx; }
+.archive { padding: 0 24rpx; }
+.archive-row { display: flex; align-items: center; justify-content: space-between; gap: 18rpx; padding: 20rpx 0; }
+.archive-row + .archive-row { border-top: 1rpx solid var(--line); }
+.row-info { min-width: 0; }
+.archive-title { font-weight: 600; overflow-wrap: break-word; }
+.chevron { color: var(--blue); font-size: 44rpx; }
+.link-pressed { background: var(--soft); }

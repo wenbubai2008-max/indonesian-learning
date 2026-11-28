@@ -1,0 +1,35 @@
+page {
+  --blue: #3157d5;
+  --page: #f5f7fb;
+  --card: #ffffff;
+  --line: #e5e9f1;
+  --text: #172033;
+  --muted: #6b7280;
+  --soft: #eef3ff;
+  --secondary: #eef1f6;
+  --ok: #16803b;
+  --bad: #b42318;
+  --warn: #a15c00;
+  background: var(--page);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 30rpx;
+  line-height: 1.55;
+}
+
+view, button, input, scroll-view, navigator { box-sizing: border-box; }
+
+.container { max-width: 720px; margin: 0 auto; padding: 28rpx 32rpx 40rpx; }
+.card { background: var(--card); border: 2rpx solid var(--line); border-radius: 36rpx; padding: 36rpx; }
+.heading { font-size: 38rpx; line-height: 1.25; font-weight: 750; }
+.muted { color: var(--muted); font-size: 26rpx; }
+.status { margin: 30rpx 0 8rpx; text-align: center; }
+.problem { color: var(--bad); overflow-wrap: break-word; }
+.notice { color: var(--warn); font-size: 26rpx; }
+.body-text { white-space: pre-wrap; overflow-wrap: break-word; }
+button { line-height: 1.3; font-size: 28rpx; margin: 0; }
+button::after { border: 0; }
+.action, .secondary { border-radius: 22rpx; font-weight: 750; }
+.action { background: var(--blue); color: var(--card); padding: 20rpx 24rpx; }
+.secondary { background: var(--secondary); color: var(--text); padding: 15rpx 20rpx; }
+.action[disabled], .secondary[disabled] { background: var(--secondary); color: var(--muted); }
