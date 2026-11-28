@@ -4,13 +4,13 @@
  "note": "阶段一旁路观察：只做统计和建议，不被选词、复习排程、掌握判定或课程生成读取。",
  "counts": {
   "all": {
-   "use": 1097,
+   "use": 1110,
    "recognize": 116,
    "unsure": 30,
    "fast": 137
   },
   "active": {
-   "use": 697,
+   "use": 699,
    "recognize": 100,
    "unsure": 28,
    "fast": 51
@@ -11422,6 +11422,123 @@
    ]
   },
   "pecah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "estimasi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "tertahan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "belah": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "active",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "COD": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "patokan": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "titip": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "penerima": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "pengirim": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "kode pos": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "garansi": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "stok habis": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "penyok": {
+   "goal": "use",
+   "fast": false,
+   "by": "rule",
+   "status": "other",
+   "why": [
+    "课程里出现的派生词或常用表达"
+   ]
+  },
+  "cabang": {
    "goal": "use",
    "fast": false,
    "by": "rule",
