@@ -1,0 +1,12 @@
+.search { min-height: 92rpx; width: 100%; background: white; border: 2rpx solid var(--line); border-radius: 28rpx; padding: 0 22rpx; font-size: 29rpx; }
+.scene-scroll { width: 100%; white-space: nowrap; }
+.scenes { display: inline-flex; gap: 12rpx; padding-bottom: 5rpx; }
+.scene { display: flex; align-items: center; justify-content: center; background: white; border: 2rpx solid var(--line); border-radius: 44rpx; padding: 0 20rpx; white-space: nowrap; }
+.scene.selected { color: #2445b7; background: var(--soft); border-color: #93a9ee; font-weight: 720; }
+.phrase { display: flex; gap: 16rpx; align-items: flex-start; }
+.phrase-copy { min-width: 0; flex: 1; overflow-wrap: break-word; }
+.phrase-id { font-size: 32rpx; font-weight: 750; line-height: 1.45; }
+.phrase-actions { flex-shrink: 0; min-width: 88rpx; display: flex; flex-direction: column; }
+.star, .copy { background: transparent; color: #2445b7; min-width: 88rpx; padding: 0 7rpx; }
+.star { font-size: 40rpx; color: var(--muted); }
+.starred { color: #8a4b00; }

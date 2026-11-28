@@ -1,0 +1,36 @@
+<import src="../../templates/chat.wxml"/>
+<view class="container stack">
+  <view wx:if="{{offline}}" class="muted">{{article ? '未能更新，显示已保存的文章。' : '暂未读到文章，联网后下拉重试。'}}</view>
+  <view wx:if="{{!article && !offline}}" class="surface muted">{{busy ? '正在读取文章…' : '泛读地址无效。'}}</view>
+  <block wx:if="{{article}}">
+    <view class="surface stack-small">
+      <view class="reading-title indonesian">{{article.title}}</view>
+      <view>{{article.title_cn}}</view>
+      <view class="muted">{{article.date}} · {{article.category}} · {{article.level}} · 约 {{article.minutes}} 分钟</view>
+    </view>
+    <view class="surface stack">
+      <button class="secondary" bindtap="toggle">{{showCn ? '收起中文' : '显示中文'}}</button>
+      <view wx:for="{{article.paragraphs}}" wx:key="index" class="stack-small">
+        <view class="body-text indonesian paragraph">{{item.id}}</view>
+        <view wx:if="{{showCn && item.cn}}" class="body-text translation">{{item.cn}}</view>
+      </view>
+      <view wx:if="{{showCn && article.fullCn}}" class="body-text translation">{{article.fullCn}}</view>
+    </view>
+    <view wx:if="{{article.lines.length}}" class="surface stack-small">
+      <view class="section-title">{{article.dialogueTitle || '情景对话'}}</view>
+      <template is="chat" data="{{lines: article.lines, showCn: showCn}}"/>
+    </view>
+    <view wx:if="{{article.hints.length}}" class="surface stack-small">
+      <view class="section-title">词语提示</view>
+      <view wx:for="{{article.hints}}" wx:key="term"><text class="indonesian">{{item.term || item.word}}</text> · {{item.cn}}</view>
+    </view>
+    <view wx:if="{{article.reviewWords.length}}" class="surface stack-small">
+      <view class="section-title">复习词</view>
+      <view class="word-pills"><text wx:for="{{article.reviewWords}}" wx:key="index" class="pill">{{item.word || item}}</text></view>
+    </view>
+    <view wx:if="{{article.source || article.links.length}}" class="muted stack-small body-text">
+      <view>{{article.source}}</view>
+      <text wx:for="{{article.links}}" wx:key="*this" user-select>{{item}}</text>
+    </view>
+  </block>
+</view>

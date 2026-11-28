@@ -1,0 +1,9 @@
+<template name="chat">
+  <view wx:for="{{lines}}" wx:key="index" class="chat-row {{item.side}}">
+    <view class="chat-bubble">
+      <view wx:if="{{item.speaker}}" class="muted">{{item.speaker}}</view>
+      <view class="indonesian body-text">{{item.id}}</view>
+      <view wx:if="{{showCn && item.cn}}" class="chat-cn">{{item.cn}}</view>
+    </view>
+  </view>
+</template>

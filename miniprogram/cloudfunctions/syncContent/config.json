@@ -1,0 +1,15 @@
+{
+  "timeout": 60,
+  "triggers": [
+    {
+      "name": "dailyJakarta",
+      "type": "timer",
+      "config": "0 15,45 1,5,11 * * * *"
+    },
+    {
+      "name": "hourlyFallback",
+      "type": "timer",
+      "config": "0 50 * * * * *"
+    }
+  ]
+}

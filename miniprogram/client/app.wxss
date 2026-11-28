@@ -33,3 +33,24 @@ button::after { border: 0; }
 .action { background: var(--blue); color: var(--card); padding: 20rpx 24rpx; }
 .secondary { background: var(--secondary); color: var(--text); padding: 15rpx 20rpx; }
 .action[disabled], .secondary[disabled] { background: var(--secondary); color: var(--muted); }
+
+page {
+  --muted: #5f6675;
+  --id: #284f83;
+}
+button, navigator { min-height: 44px; }
+.surface { padding: 26rpx; background: var(--card); border: 2rpx solid var(--line); border-radius: 40rpx; }
+.stack { display: flex; flex-direction: column; gap: 22rpx; }
+.stack-small { display: flex; flex-direction: column; gap: 12rpx; }
+.between { display: flex; align-items: center; justify-content: space-between; gap: 12rpx; }
+.section-title { font-size: 34rpx; line-height: 1.35; font-weight: 750; }
+.indonesian { color: var(--id); }
+.pill { display: inline-block; padding: 5rpx 15rpx; border-radius: 26rpx; background: var(--soft); color: #2445b7; font-size: 24rpx; }
+.pill.amber { background: #fff2d8; color: #8a4b00; }
+.pill.neutral { background: #eef1f6; color: #343f52; }
+.text-button { display: flex; align-items: center; justify-content: flex-start; padding: 0; min-height: 44px; font-weight: 700; color: #2445b7; background: transparent; font-size: 27rpx; }
+.chat-row { display: flex; justify-content: flex-start; margin: 10rpx 0; }
+.chat-row.right { justify-content: flex-end; }
+.chat-bubble { max-width: 88%; padding: 16rpx 20rpx; border-radius: 26rpx; background: var(--secondary); }
+.right .chat-bubble { background: var(--soft); }
+.chat-cn { margin-top: 8rpx; }

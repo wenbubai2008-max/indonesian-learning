@@ -1,0 +1,4 @@
+.reading-title { font-size: 44rpx; font-weight: 750; line-height: 1.25; }
+.paragraph { font-size: 32rpx; line-height: 1.85; }
+.translation { font-size: 29rpx; line-height: 1.7; padding-left: 18rpx; border-left: 4rpx solid #cbd8f6; }
+.word-pills { display: flex; flex-wrap: wrap; gap: 12rpx; }

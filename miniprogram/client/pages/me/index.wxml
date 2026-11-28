@@ -1,0 +1,40 @@
+<import src="../../templates/course.wxml"/>
+<view class="container stack">
+  <view class="stats">
+    <view class="surface stat"><view class="stat-number">{{totalDays || '—'}}</view><text class="muted">学习天数</text></view>
+    <view class="surface stat"><view class="stat-number">{{stats ? stats.mastered : '—'}}</view><text class="muted">已掌握词</text></view>
+    <view class="surface stat"><view class="stat-number">{{stats ? stats.active : '—'}}</view><text class="muted">待掌握词</text></view>
+  </view>
+  <view class="muted">{{stats ? '词数来自学习系统 ' + stats.date + ' 的快照' : '暂未读到词汇快照'}}</view>
+  <view class="surface calendar">
+    <view class="between">
+      <button class="month-button" data-delta="-1" disabled="{{!backMonth}}" bindtap="changeMonth" aria-label="上个月">‹</button>
+      <view class="section-title">{{label}}</view>
+      <button class="month-button" data-delta="1" disabled="{{!nextMonth}}" bindtap="changeMonth" aria-label="下个月">›</button>
+    </view>
+    <view class="calendar-grid">
+      <view wx:for="{{labels}}" wx:key="*this" class="muted weekday">{{item}}</view>
+      <block wx:for="{{days}}" wx:key="key">
+        <button wx:if="{{item.date}}" class="day {{item.today ? 'today' : ''}} {{item.date === selected ? 'chosen-day' : ''}}"
+          data-date="{{item.date}}" bindtap="selectDay" aria-label="{{item.date}}">
+          <view>{{item.day}}</view>
+          <view class="dots"><text class="dot {{item.am ? 'published' : ''}}"/><text class="dot {{item.pm ? 'published' : ''}}"/></view>
+        </button>
+        <view wx:else/>
+      </block>
+    </view>
+    <view wx:if="{{selected}}" class="date-options">
+      <button class="secondary" data-session="am" disabled="{{!selectedAm}}" bindtap="pickCourse">{{selected}} 早课</button>
+      <button class="secondary" data-session="pm" disabled="{{!selectedPm}}" bindtap="pickCourse">{{selected}} 晚课</button>
+    </view>
+  </view>
+  <view wx:if="{{courseBusy}}" class="muted">正在读取课程…</view>
+  <template wx:elif="{{course}}" is="course" data="{{course: course}}"/>
+  <view class="surface settings">
+    <button class="settings-row" bindtap="stars">我收藏的句子 <text>›</text></button>
+    <navigator class="settings-row" url="/pages/reading/index">泛读归档 <text>{{readingCount}} 篇 ›</text></navigator>
+    <navigator class="settings-row" url="/pages/nettest/index">网络自检 <text>›</text></navigator>
+    <view class="settings-row">版本 <text>{{version}}</text></view>
+  </view>
+  <view class="site-hint muted">这些继续在网站上用：自动训练 · 听词训练 · 词汇画像 · 词根家族 · 双语书籍 · 难点解释</view>
+</view>

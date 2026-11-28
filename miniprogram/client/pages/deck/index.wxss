@@ -1,0 +1,25 @@
+.deck-top { display: flex; align-items: center; gap: 20rpx; }
+.deck-top progress { flex: 1; }
+.close-button { width: 88rpx; color: var(--text); font-size: 44rpx; background: transparent; padding: 0; }
+.deck-card { border-radius: 48rpx; box-shadow: 0 10rpx 32rpx rgba(28,43,74,.08); min-height: 470rpx; display: flex; flex-direction: column; gap: 20rpx; transition: transform .12s, opacity .12s; }
+.deck-card.moving { transform: translateX(-30rpx); opacity: 0; }
+.deck-head { margin-bottom: 12rpx; }
+.card-source { text-align: right; }
+.card-front, .card-answer { font-size: 43rpx; font-weight: 720; line-height: 1.4; }
+.card-answer { font-size: 36rpx; }
+.story { font-size: 32rpx; font-weight: 500; line-height: 1.85; }
+.frame { border: 2rpx dashed #a3b3d2; background: #f8faff; border-radius: 24rpx; padding: 24rpx; }
+.hints, .ratings, .score-totals { display: flex; gap: 12rpx; flex-wrap: wrap; }
+.ratings { flex-wrap: nowrap; }
+.rating { flex: 1; min-width: 0; min-height: 112rpx; padding: 8rpx; border-radius: 28rpx; font-weight: 700; }
+.rating.forgot { background: #fff2d8; color: #8a4b00; }
+.rating.fuzzy { background: #eef1f6; color: #343f52; }
+.rating.remembered { background: #3157d5; color: white; }
+.deck-action { width: 100%; min-height: 112rpx; }
+.option { width: 100%; padding: 16rpx; border: 2rpx solid var(--line); text-align: left; border-radius: 26rpx; color: var(--text); background: var(--page); }
+.option.correct { color: #166437; background: #e9f6ed; }
+.option.incorrect { color: #8a4b00; background: #fff2d8; }
+.correct-text { color: var(--ok); }
+.feedback { font-weight: 750; }
+.pronunciation { margin-top: auto; padding-top: 18rpx; font-size: 24rpx; }
+.finish .day-title { font-size: 44rpx; font-weight: 750; }

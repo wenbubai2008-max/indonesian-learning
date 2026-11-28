@@ -1,0 +1,29 @@
+<view class="container stack">
+  <view class="between">
+    <view class="muted" wx:if="{{total}}">{{total}} 句</view>
+    <button class="text-button" bindtap="showStars" aria-pressed="{{starsOnly}}">{{starsOnly ? '显示全部' : '只看收藏'}}</button>
+  </view>
+  <view class="muted">课程、对话、泛读里学过的句子，按场景找，复制就能发到 WhatsApp。</view>
+  <input class="search" placeholder="用中文搜，比如：发票、缺货、运费" maxlength="80" value="{{query}}" bindinput="changeQuery"/>
+  <scroll-view scroll-x class="scene-scroll" enhanced show-scrollbar="{{false}}">
+    <view class="scenes">
+      <button wx:for="{{scenes}}" wx:key="*this" data-scene="{{item}}" class="scene {{item === scene ? 'selected' : ''}}" bindtap="selectScene">{{item}}</button>
+    </view>
+  </scroll-view>
+  <view wx:if="{{building}}" class="muted">{{count ? '正在整理句库 ' + done + ' / ' + count : '正在检查句库更新…'}}</view>
+  <view wx:if="{{message}}" class="muted">{{message}}</view>
+  <view wx:if="{{!total && !building}}" class="surface muted">{{starsOnly ? '暂无符合条件的收藏句子。' : '暂无符合条件的句子。'}}</view>
+  <view wx:for="{{visible}}" wx:key="key" class="surface phrase">
+    <view class="phrase-copy stack-small">
+      <view class="indonesian phrase-id">{{item.id}}</view>
+      <view>{{item.cn}}</view>
+      <view wx:if="{{item.note}}" class="muted">{{item.note}}</view>
+      <view class="muted">{{item.source}}</view>
+    </view>
+    <view class="phrase-actions">
+      <button class="star {{item.starred ? 'starred' : ''}}" data-key="{{item.key}}" bindtap="star" aria-label="{{item.starred ? '取消收藏' : '收藏'}}">{{item.starred ? '★' : '☆'}}</button>
+      <button class="copy" data-key="{{item.key}}" bindtap="copy">复制</button>
+    </view>
+  </view>
+  <view wx:if="{{more}}" class="muted status">向下滑动加载更多 · 共 {{total}} 句</view>
+</view>
