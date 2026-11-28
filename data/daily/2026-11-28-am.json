@@ -1,0 +1,293 @@
+{
+  "date": "2026-11-28",
+  "session": "am",
+  "time": "08:00",
+  "day": 99,
+  "title": "08:00 早课｜Pohon Cabai yang Punya Sejarah · 有来历的辣椒苗",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "transfer"
+  },
+  "story": {
+    "series": "Agen Kilat Mbak Sinta · 辛塔姐的快递代收点",
+    "episode": 6,
+    "previously_cn": "上集：一个自称闪电快递总部的人打电话向布罗丝阿姨要验证码，被辛塔姐识破、当场挂断；区域协调员说包裹已到棉兰。中午，一位大叔抱来一盆带土的辣椒苗，问能不能寄到棉兰。",
+    "next_cn": "下集：迪马斯的包裹比预计的早到了，可箱子是瘪的——里面的辣椒酱瓶子还好吗？"
+  },
+  "vocab": [
+    {
+      "word": "lega",
+      "display": "lega",
+      "audio_text": "lega",
+      "cn": "松了一口气；宽慰；（空间）宽敞",
+      "en": "relieved; (of space) roomy",
+      "root": "lega",
+      "root_cn": "宽慰；宽敞",
+      "formation": "本身就是词根（形容词）。常用说法：merasa lega（感到松了口气）、lega rasanya / lega banget（真是松了口气）、hati lega（心里踏实了）。派生：melegakan = meN- + lega + -kan（令人宽慰的：kabar yang melegakan）；kelegaan（宽慰感，偏书面）。另一个意思是空间宽敞：kamarnya lega、parkirannya lega。",
+      "example": "Rekan kerja saya langsung lega waktu tahu laptopnya cuma ketinggalan di mobil.",
+      "example_cn": "我同事得知笔记本电脑只是落在车里了，一下子松了口气。",
+      "synonym_note": "先回想：lega 和 melegakan 谁是“人”的感觉？lega 说人自己的感受（Pak Joko akhirnya lega）；melegakan 说让人松口气的那件事（Kabar itu melegakan）。tenang 是平静、不慌，不一定之前紧张过；感受义的 lega 是先担心、后来放下心。口语说法：Lega banget! / Akhirnya lega juga.",
+      "is_oral_new": false
+    },
+    {
+      "word": "kelewat",
+      "display": "kelewat",
+      "audio_text": "kelewat",
+      "cn": "错过；漏掉；（口语）太、过于",
+      "en": "missed, overlooked; (colloquial) too, overly",
+      "root": "lewat",
+      "root_cn": "经过；通过",
+      "formation": "ke- + lewat。口语里 ke- 常表示“不小心、不由自主地发生”，相当于标准语的 ter-：kelewat = terlewat（不小心错过、漏掉），同类的还有 kebaca = terbaca。另一个常见意思是“太、过于”：kelewat mahal = terlalu mahal，kelewat batas（过了头）。注意 kelewatan 是另一个词：“过分”（Kamu kelewatan!）。",
+      "example": "Gara-gara kepo baca chat grup, halte kantorku kelewat.",
+      "example_cn": "因为忍不住去看群里的八卦，我坐过了公司那一站。",
+      "synonym_note": "先回想：kelewat 的两个意思怎么分？后面接形容词时是“太……”（kelewat pedas）；单独用、说某个站、某个细节、某个时间时是“错过、漏掉”（Haltenya kelewat; Detail ini hampir kelewat）。标准语对应 terlewat / terlewatkan 和 terlalu；在正式文字里用标准形。kelewatan 是“过分”，别混。",
+      "everyday": "日常聊天常说 kelewat（Halteku kelewat!）；正式文字写 terlewat、terlalu",
+      "is_oral_new": false
+    },
+    {
+      "word": "berpartisipasi",
+      "display": "berpartisipasi",
+      "audio_text": "berpartisipasi",
+      "cn": "参与；参加（活动、项目）",
+      "en": "to participate",
+      "root": "partisipasi",
+      "root_cn": "参与（来自英语 participation）",
+      "formation": "ber- + partisipasi → berpartisipasi。后面常接 dalam / di + 活动：berpartisipasi dalam acara / program / pemilu。名词 partisipasi（参与：partisipasi warga 居民参与）；参加者是 peserta。",
+      "example": "Hanya toko tertentu yang boleh berpartisipasi dalam promo akhir tahun ini.",
+      "example_cn": "只有特定的店铺才能参加这次年终促销。",
+      "synonym_note": "先回想：日常说“参加”用哪个？平时多说 ikut / ikutan（Aku ikut lomba itu）；berpartisipasi 偏正式，多见于通知、新闻、致辞（Terima kasih sudah berpartisipasi）。mengikuti 也常用于正式场合的“参加”（mengikuti ujian / rapat）。",
+      "everyday": "日常多说 ikut / ikutan；berpartisipasi 多见于通知、新闻和正式发言",
+      "is_oral_new": false
+    },
+    {
+      "word": "sejarah",
+      "display": "sejarah",
+      "audio_text": "sejarah",
+      "cn": "历史；来历",
+      "en": "history; background story",
+      "root": "sejarah",
+      "root_cn": "历史",
+      "formation": "本身就是词根（阿拉伯语来源）。常见搭配：sejarah Indonesia、pelajaran sejarah（历史课）、sejarah panjang（悠久的历史）、punya sejarah（有来历、有故事）。派生：bersejarah（有历史意义的：tempat bersejarah, hari bersejarah）、sejarawan（历史学家）。",
+      "example": "Museum kecil ini menceritakan sejarah kehidupan nelayan di Jakarta Utara.",
+      "example_cn": "这座小博物馆讲述了北雅加达渔民生活的历史。",
+      "synonym_note": "先回想：sejarah 和 kisah 差在哪？kisah 是讲出来的一段故事（kisah cinta、kisah hidupnya）；sejarah 是过去真实经历的过程、来历（sejarah kota ini）。说一件东西“有来历”可以说 punya sejarah，口语也常说 ada ceritanya（Kalung ini ada ceritanya）。",
+      "everyday": "说东西“有来历”日常也常说 ada ceritanya；sejarah 课本、新闻、日常都常用",
+      "is_oral_new": false
+    },
+    {
+      "word": "tenang",
+      "display": "tenang",
+      "audio_text": "tenang",
+      "cn": "冷静；安静；平静",
+      "en": "calm; quiet; peaceful",
+      "root": "tenang",
+      "root_cn": "平静",
+      "formation": "本身就是词根（形容词）。常见搭配：tetap tenang（保持冷静）、suasana tenang（安静的氛围）、Tenang aja（别担心）。派生：menenangkan = meN- + tenang + -kan（使平静：menenangkan diri / pelanggan）、ketenangan（平静）。",
+      "example": "Di tengah ancaman banjir, Pak RT bicara dengan tenang dan mengarahkan warga satu per satu.",
+      "example_cn": "在洪水的威胁中，居委会主任说话很冷静，一个一个地给居民指路。",
+      "synonym_note": "先回想：tenang 的反面是什么？说地方时和 ramai（热闹、人多）相对：kafe yang tenang ↔ kafe yang ramai；说人时和 panik、cemas（慌、焦虑）相对。sepi 是“人少、冷清”，安静的咖啡馆说 tenang 或 sepi 都行，但 sepi 有时带“生意冷清”的意思。口语说法：Tenang aja / Santai aja（别急、别担心）。",
+      "is_oral_new": false
+    },
+    {
+      "word": "ramai",
+      "display": "ramai",
+      "audio_text": "ramai",
+      "cn": "热闹；人多；拥挤",
+      "en": "crowded; busy; lively",
+      "root": "ramai",
+      "root_cn": "热闹",
+      "formation": "本身就是词根（形容词）。常见搭配：ramai sekali / rame banget、jalanan ramai（路上车多人多）、ramai pembeli（顾客很多）。派生：meramaikan（凑热闹、给……添人气：meramaikan acara）、keramaian（人群、热闹的地方）、ramai-ramai（一大帮人一起：Kita ke sana ramai-ramai）。",
+      "example": "Pasar malamnya rame banget, sampai motor kami nggak muat di parkiran.",
+      "example_cn": "夜市人多得不得了，连我们的摩托车都停不进停车场。（rame = ramai，nggak = tidak）",
+      "synonym_note": "先回想：ramai 和 penuh 一样吗？penuh 是“满了、没位置”（Busnya penuh）；ramai 是人多、热闹、声音多，不一定满（Pasarnya ramai, tapi masih bisa jalan）。反义是 sepi（冷清）或 tenang（安静）。口语说法：rame（Rame banget hari ini!），日常读写都很常见。",
+      "everyday": "日常说和写都常用 rame；ramai 是标准写法",
+      "is_oral_new": false
+    }
+  ],
+  "cycle_vocab": [
+    "lega",
+    "kelewat",
+    "berpartisipasi",
+    "sejarah",
+    "tenang",
+    "ramai"
+  ],
+  "review_vocab": [
+    "menghabiskan",
+    "stok habis",
+    "sengaja",
+    "saya pamit",
+    "kekurangan"
+  ],
+  "sentences": [
+    {
+      "text": "Aku sengaja datang pagi, mumpung agennya belum rame.",
+      "cn": "我特意早点来，趁代收点还没什么人。（mumpung = selagi，rame = ramai）"
+    },
+    {
+      "text": "Maaf, Kak, sambal botol besar lagi stok habis. Yang kecil masih ada.",
+      "cn": "不好意思，大瓶的辣椒酱现在缺货，小瓶的还有。"
+    },
+    {
+      "text": "Anak saya bisa menghabiskan sebotol sambal dalam seminggu. Katanya, sambal buatan rumah lebih nikmat.",
+      "cn": "我儿子一个星期就能吃完一瓶辣椒酱。他说家里做的辣椒酱更好吃。"
+    },
+    {
+      "text": "Kekurangan aplikasi ini cuma satu: status paketnya sering telat berubah.",
+      "cn": "这个应用只有一个缺点：包裹状态经常更新得很慢。"
+    },
+    {
+      "text": "Kalau begitu, saya pamit dulu, Mbak. Besok saya balik lagi.",
+      "cn": "那我先告辞了。明天我再来。"
+    }
+  ],
+  "reading": {
+    "title": "Pohon Cabai yang Punya Sejarah · 有来历的辣椒苗",
+    "text": "Sabtu pagi, agen Mbak Sinta ramai sekali karena berpartisipasi dalam promo akhir pekan. Pemilik pot cabai kemarin, Pak Joko, datang lagi. \"Pohon ini punya sejarah, Mbak. Bibitnya dari kebun almarhumah istri saya. Anak saya di Medan kangen sambal ibunya.\" Di halaman terakhir daftar barang terlarang, ada aturan yang hampir kelewat: tanaman hidup dan tanah tidak boleh dikirim ke luar pulau tanpa surat karantina. Sebab, hama di tanah bisa menjadi ancaman bagi daerah lain. \"Saya sengaja bawa tanahnya supaya pohonnya nggak mati,\" kata Pak Joko, kecewa. Mbak Sinta bertanya dengan tenang, \"Jadi yang sebenarnya dicari anak Bapak itu rasa sambal ibunya, betul?\" Bu Ros punya ide: \"Bikin sambal saja, Pak! Warung langganan saya stok habis, jadi saya mau beli sebotol buat Dimas.\" Bang Jali bercanda: \"Kekurangannya cuma satu, Pak: sambal nggak bisa ditanam.\" Pak Joko akhirnya lega. \"Kalau begitu, saya pamit dulu. Besok saya bawa sambalnya.\" Malamnya, Dimas mengirim foto: paketnya sampai lebih cepat dari perkiraan, tapi kardusnya penyok.",
+    "cn": "周六早上，辛塔姐的代收点人特别多，因为这里参加了周末促销。昨天那盆辣椒苗的主人乔科大叔又来了。“辛塔，这棵树是有来历的。苗是从我过世的老伴的菜园里来的。我儿子在棉兰，想念他妈妈做的辣椒酱。”在禁寄物品清单的最后一页，有一条差点被漏看的规定：活的植物和泥土，没有检疫证明不能寄到外岛。因为土里的害虫可能威胁到别的地方。“我是特意把土带来的，免得树死掉。”乔科大叔失望地说。辛塔姐冷静地问：“所以，您儿子真正想要的，其实是他妈妈做的辣椒酱的味道，对吗？”布罗丝阿姨有了主意：“那就做辣椒酱吧，大叔！我常去的那家小店缺货了，我也想买一瓶给迪马斯。”贾利哥开玩笑说：“缺点只有一个，大叔：辣椒酱种不出来。”乔科大叔终于松了一口气：“那我先告辞了，明天把辣椒酱带来。”当天晚上，迪马斯发来一张照片：包裹比预计的早到了，可箱子是瘪的。"
+  },
+  "quiz": [
+    {
+      "question": "Menurut cerita hari ini, kenapa pohon cabai Pak Joko tidak bisa dikirim ke Medan?",
+      "options": [
+        "Karena potnya kelewat besar dan tidak muat di kardus.",
+        "Karena tanaman hidup dan tanah butuh surat karantina kalau dikirim ke luar pulau.",
+        "Karena agen sedang ramai dan tidak menerima paket baru.",
+        "Karena Pak Joko lupa membawa uang untuk ongkir."
+      ],
+      "answer_index": 1,
+      "answer": "Karena tanaman hidup dan tanah butuh surat karantina kalau dikirim ke luar pulau.",
+      "explain": "课文里辛塔姐在禁寄清单最后一页看到：活的植物和泥土没有检疫证明不能寄到外岛，因为泥土可能带害虫（hama di tanah bisa menjadi ancaman），所以 B 对。A 课文没说盆太大装不下；C 代收点虽然人多（ramai），但照常收件，还在参加促销；D 课文里没提到钱的问题。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "我是特意把土带来的，免得树死掉。",
+      "target": "sengaja",
+      "target_cn": "故意；特意",
+      "options": [
+        "Saya kebetulan bawa tanahnya supaya pohonnya nggak mati.",
+        "Saya sengaja bawa tanahnya sehingga pohonnya nggak mati.",
+        "Saya disengaja bawa tanahnya supaya pohonnya nggak mati.",
+        "Saya sengaja bawa tanahnya supaya pohonnya nggak mati."
+      ],
+      "answer_index": 3,
+      "answer": "Saya sengaja bawa tanahnya supaya pohonnya nggak mati.",
+      "point": "sengaja（特意）/ kebetulan（碰巧）；supaya（为了、免得）/ sehingga（以致）；disengaja 是被动",
+      "explain": "“特意”是 sengaja，“为了……、免得……”说目的用 supaya，所以 D 对。A 的 kebetulan 是“碰巧”，和“特意”正相反；B 的 sehingga 表示已经发生的结果（“所以树就没死”），不表示目的；C 的 disengaja 是被动（“被故意做的”），主语是人时不能这样用，可以说 Itu memang disengaja（那是故意的）。口语里也常说 biar：Saya sengaja bawa tanahnya biar pohonnya nggak mati。"
+    },
+    {
+      "kind": "zh2id",
+      "question": "周六早上，辛塔姐的代收点人特别多。",
+      "target": "ramai",
+      "target_cn": "人多；热闹",
+      "options": [
+        "Sabtu pagi, agen Mbak Sinta ramai sekali.",
+        "Sabtu pagi, agen Mbak Sinta meramaikan sekali.",
+        "Sabtu pagi, agen Mbak Sinta keramaian sekali.",
+        "Sabtu pagi, agen Mbak Sinta tenang sekali."
+      ],
+      "answer_index": 0,
+      "answer": "Sabtu pagi, agen Mbak Sinta ramai sekali.",
+      "point": "ramai 的词形：ramai（形容词，人多）/ meramaikan（凑热闹、添人气，要接宾语）/ keramaian（名词，人群）；反义 tenang",
+      "explain": "“人很多”直接用形容词 ramai，所以 A 对。B 的 meramaikan 是动词“给……添人气”，要接宾语（Banyak warga datang meramaikan acara itu），不能加 sekali 当形容词用；C 的 keramaian 是名词“人群、热闹的地方”（Dia takut keramaian），不能这样作谓语；D 的 tenang 是“安静、平静”，意思正相反。口语也常说 Agennya rame banget。"
+    }
+  ],
+  "output": {
+    "task": "接本集故事：你是乔科大叔，给在棉兰的儿子发一条 WhatsApp（4 句）：说明妈妈的辣椒苗为什么寄不了；说你是特意（sengaja）把土带来的；让他别担心（tenang），说你和布罗丝阿姨要用辣椒做辣椒酱；最后用本周句型 Kalau bisa, … sebelum … 说你打算什么时候寄。按骨架填空，用上 sengaja、tenang、ramai。",
+    "frame": "Nak, pohon cabai ibumu ternyata tidak bisa dikirim ke Medan, sebab …… . Padahal Bapak sengaja bawa tanahnya supaya …… . Tapi tenang saja, Bapak dan Bu Ros mau …… . Kalau bisa, Bapak kirim hari Senin pagi, sebelum …… .",
+    "reference_answer": "Nak, pohon cabai ibumu ternyata tidak bisa dikirim ke Medan, sebab tanaman hidup dan tanah butuh surat karantina. Padahal Bapak sengaja bawa tanahnya supaya pohonnya nggak mati. Tapi tenang saja, Bapak dan Bu Ros mau bikin sambal dari cabainya, pasti nikmat. Kalau bisa, Bapak kirim hari Senin pagi, sebelum agennya ramai lagi.",
+    "reference_cn": "儿子，你妈妈的辣椒苗原来寄不到棉兰，因为活的植物和泥土需要检疫证明。我还特意把土带去了，免得树死掉。不过别担心，我和布罗丝阿姨要用这些辣椒做辣椒酱，味道一定很好。如果可以的话，我周一早上就寄，趁代收点还没变得人多。"
+  },
+  "review": [
+    "3秒主动提取：看中文说出 用完；花掉（时间、钱）、缺货；卖完了、故意；特意、我先告辞了、缺点；不足；再说出 松了一口气、错过；漏掉、参与、历史；来历、冷静；安静、热闹；人多。卡住的词回看词卡再说一遍。",
+    "易混词：ramai 和 tenang 是一对反义词（Sabtu pagi, agen Mbak Sinta ramai sekali ↔ Mbak Sinta bertanya dengan tenang）；lega 说人的感受（Pak Joko akhirnya lega），melegakan 说让人松口气的事（Kabar itu melegakan）；kelewat 是不小心错过（Haltenya kelewat），kelewatan 是“过分”。各说一句。",
+    "重点复习词：stok habis 和 menghabiskan 同词根 habis——stok habis 是货卖完了（Warung langganan saya stok habis），menghabiskan 是把东西用完、吃光（Anak saya bisa menghabiskan sebotol sambal dalam seminggu）。再用 sengaja 说一句你特意做过的事：Aku sengaja ... supaya ..."
+  ],
+  "review_cards": {
+    "recall": [
+      {
+        "cn": "用完；吃光；花掉（时间、钱）",
+        "id": "menghabiskan"
+      },
+      {
+        "cn": "缺货；卖完了",
+        "id": "stok habis"
+      },
+      {
+        "cn": "故意；特意",
+        "id": "sengaja"
+      },
+      {
+        "cn": "我先告辞了",
+        "id": "saya pamit"
+      },
+      {
+        "cn": "缺点；不足",
+        "id": "kekurangan"
+      }
+    ],
+    "contrasts": [
+      {
+        "items": [
+          {
+            "id": "ramai",
+            "cn": "热闹；人多"
+          },
+          {
+            "id": "tenang",
+            "cn": "安静；冷静"
+          }
+        ],
+        "note": "说地方时是一对反义词：ramai 人多声音多（agen ramai），tenang 安静平和（kafe yang tenang）；tenang 还能说人不慌（tetap tenang）。"
+      },
+      {
+        "items": [
+          {
+            "id": "lega",
+            "cn": "（人）松了口气"
+          },
+          {
+            "id": "melegakan",
+            "cn": "（事）令人宽慰"
+          }
+        ],
+        "note": "lega 说人自己的感受（Pak Joko akhirnya lega）；melegakan 说让人松口气的那件事（Kabar itu melegakan）。"
+      },
+      {
+        "items": [
+          {
+            "id": "kelewat",
+            "cn": "错过；漏掉；太"
+          },
+          {
+            "id": "kelewatan",
+            "cn": "过分"
+          }
+        ],
+        "note": "kelewat 是不小心错过（haltenya kelewat），接形容词时是“太”（kelewat mahal）；kelewatan 是说人做得“过分了”（Kamu kelewatan!）。"
+      }
+    ]
+  },
+  "lesson_focus": {
+    "words": [
+      "ramai",
+      "tenang",
+      "lega"
+    ],
+    "patterns": [
+      {
+        "pattern": "Jadi …, betul?",
+        "cn": "所以……，对吗？",
+        "function": "confirm-info",
+        "example": "Jadi yang sebenarnya dicari anak Bapak itu rasa sambal ibunya, betul?",
+        "example_cn": "所以，您儿子真正想要的，其实是他妈妈做的辣椒酱的味道，对吗？"
+      },
+      {
+        "pattern": "Saya sengaja … supaya …",
+        "cn": "我特意……，为了／免得……",
+        "example": "Saya sengaja bawa tanahnya supaya pohonnya nggak mati",
+        "example_cn": "我是特意把土带来的，免得树死掉"
+      }
+    ]
+  }
+}
