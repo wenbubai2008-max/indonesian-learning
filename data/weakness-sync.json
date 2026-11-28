@@ -1,13 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-11-23T16:03:34.542Z",
+  "updated_at": "2026-11-28T08:37:45.839Z",
   "words": {
     "tunda": {
       "word": "tunda",
       "status": "mastered",
       "updated_at": "2026-10-19T06:09:37.441Z",
       "display": "tunda",
-      "cn": "推迟",
+      "cn": "推迟；延期",
+      "root": "tunda",
       "last_review": "2026-10-19T06:09:37.372Z",
       "last_mastered": "2026-09-15T04:40:54.860Z",
       "source": "每日学习阅读",
@@ -3447,7 +3448,9 @@
       "last_wrong": "2026-10-03T14:10:41.203Z",
       "last_review": "2026-10-21T06:07:35.301Z",
       "last_mastered": "2026-10-16T09:42:30.616Z",
-      "reasons": [],
+      "reasons": [
+        "listening_slow"
+      ],
       "wrong_count": 3,
       "right_streak": 3
     },
@@ -5151,7 +5154,7 @@
       "status": "active",
       "updated_at": "2026-11-23T12:49:48.659Z",
       "display": "menuduh",
-      "cn": "指控；指责（说某人做了坏事）",
+      "cn": "指控；指责",
       "root": "tuduh",
       "root_cn": "指控；指责",
       "last_wrong": "2026-11-23T12:49:48.574Z",
@@ -8297,8 +8300,11 @@
     "ancaman": {
       "word": "ancaman",
       "status": "active",
-      "updated_at": "2026-11-14T08:25:08.359Z",
+      "updated_at": "2026-11-28T08:37:17.063Z",
       "display": "ancaman",
+      "cn": "威胁",
+      "root": "ancam",
+      "root_cn": "威胁",
       "last_review": "2026-11-14T08:25:08.299Z",
       "reasons": [
         "memory_dont"
@@ -11324,8 +11330,9 @@
     "aturan": {
       "word": "aturan",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:52.182Z",
+      "updated_at": "2026-11-28T08:36:09.309Z",
       "display": "aturan",
+      "cn": "规则、条例",
       "last_review": "2026-09-12T14:13:52.715Z",
       "last_mastered": "2026-09-12T14:13:52.715Z",
       "reasons": [],
@@ -14100,8 +14107,9 @@
     "pemilik": {
       "word": "pemilik",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:00:56.451Z",
+      "updated_at": "2026-11-28T08:34:53.164Z",
       "display": "pemilik",
+      "cn": "拥有者",
       "last_review": "2026-09-12T14:13:56.996Z",
       "last_mastered": "2026-09-12T14:13:56.996Z",
       "reasons": [],
@@ -15755,7 +15763,9 @@
       "status": "active",
       "updated_at": "2026-11-23T04:16:00.800Z",
       "display": "pecah",
-      "cn": "破裂",
+      "cn": "碎；破裂；裂成几块",
+      "root": "pecah",
+      "root_cn": "破碎",
       "source": "每日学习高频句子",
       "source_date": "2026-11-23",
       "session": "08:00",
@@ -20647,8 +20657,10 @@
     "bawa": {
       "word": "bawa",
       "status": "mastered",
-      "updated_at": "2026-10-14T07:01:07.665Z",
+      "updated_at": "2026-11-28T08:37:35.577Z",
       "display": "bawa",
+      "cn": "带；携带",
+      "root": "bawa",
       "last_review": "2026-09-12T16:54:12.039Z",
       "last_mastered": "2026-09-12T16:54:12.039Z",
       "reasons": [],
@@ -30811,6 +30823,7 @@
       "display": "meningkatkan",
       "cn": "提高某事物",
       "root": "tingkat",
+      "root_cn": "层；级别",
       "last_wrong": "2026-11-23T04:33:43.846Z",
       "last_review": "2026-11-23T04:33:43.846Z",
       "reasons": [
@@ -32173,6 +32186,7 @@
       "root": "patungan",
       "root_cn": "共同凑钱；分摊费用",
       "last_wrong": "2026-11-14T08:24:34.705Z",
+      "last_review": "2026-11-17T11:26:15.789Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -32251,6 +32265,10 @@
       "root": "pepet",
       "root_cn": "逼近；紧逼",
       "last_wrong": "2026-11-14T08:25:55.004Z",
+      "last_review": "2026-11-17T11:26:24.502Z",
+      "source": "课程小测",
+      "source_date": "2026-11-14",
+      "session": "18:00",
       "reasons": [
         "quick_wrong"
       ],
@@ -32374,6 +32392,7 @@
       "root": "tiban",
       "root_cn": "落到；压到",
       "last_wrong": "2026-11-15T11:18:12.967Z",
+      "last_review": "2026-11-18T14:18:12.545Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -32651,6 +32670,7 @@
       "root": "ngeles",
       "root_cn": "找借口；回避重点",
       "last_wrong": "2026-11-14T08:25:43.627Z",
+      "last_review": "2026-11-17T11:26:20.698Z",
       "reasons": [
         "quick_wrong"
       ],
@@ -32988,7 +33008,9 @@
       "status": "active",
       "updated_at": "2026-11-23T04:15:54.071Z",
       "display": "belah",
-      "cn": "分裂",
+      "cn": "劈开，切成两半；（成对事物的）一边、一方",
+      "root": "belah",
+      "root_cn": "劈开；半边",
       "source": "每日学习高频句子",
       "source_date": "2026-11-23",
       "session": "08:00",
