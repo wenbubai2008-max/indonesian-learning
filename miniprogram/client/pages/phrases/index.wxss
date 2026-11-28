@@ -1,7 +1,7 @@
 .search { min-height: 92rpx; width: 100%; background: white; border: 2rpx solid var(--line); border-radius: 28rpx; padding: 0 22rpx; font-size: 29rpx; }
 .scene-scroll { width: 100%; white-space: nowrap; }
 .scenes { display: inline-flex; gap: 12rpx; padding-bottom: 5rpx; }
-.scene { background: white; border: 2rpx solid var(--line); border-radius: 44rpx; padding: 0 20rpx; white-space: nowrap; }
+.scene { display: flex; align-items: center; justify-content: center; background: white; border: 2rpx solid var(--line); border-radius: 44rpx; padding: 0 20rpx; white-space: nowrap; }
 .scene.selected { color: #2445b7; background: var(--soft); border-color: #93a9ee; font-weight: 720; }
 .phrase { display: flex; gap: 16rpx; align-items: flex-start; }
 .phrase-copy { min-width: 0; flex: 1; overflow-wrap: break-word; }

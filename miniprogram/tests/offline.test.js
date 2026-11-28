@@ -51,7 +51,7 @@ async function main() {
   assert(today.data.groupCount > 0);
   const deck = openPage('pages/deck/index', { date, session: 'am', segment: 'focus' });
   const phrases = openPage('pages/phrases/index');
-  const reading = openPage('pages/reading/detail', { id: article.id, path: readingPath });
+  const reading = openPage('pages/reading/detail', { id: encodeURIComponent(article.id), path: encodeURIComponent(readingPath) });
   const fullLesson = openPage('pages/lesson/index', { date, session: 'am' });
   await new Promise(resolve => setImmediate(resolve));
   phrases.showStars();

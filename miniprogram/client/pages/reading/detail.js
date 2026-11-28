@@ -2,7 +2,16 @@ const reading = require('../../utils/reading');
 
 Page({
   data: { article: null, showCn: false, offline: false, busy: true },
-  onLoad({ id, path }) {
+  onLoad(options) {
+    let id;
+    let path;
+    try {
+      id = decodeURIComponent(options.id || '');
+      path = decodeURIComponent(options.path || '');
+    } catch (_) {
+      this.setData({ busy: false });
+      return;
+    }
     if (!id || !reading.validFile(path)) { this.setData({ busy: false }); return; }
     this.address = { id, path };
     const entry = reading.cache().items[id];
