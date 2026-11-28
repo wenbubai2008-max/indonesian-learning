@@ -1780,22 +1780,24 @@ window.DAILY_VOCAB_DB = [
       "原始课程",
       "18:00"
     ],
-    "times_seen": 2,
+    "times_seen": 3,
     "first_seen": "2026-08-29 08:00",
-    "last_seen": "2026-10-15 18:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00",
       "18:00"
     ],
     "dates": [
       "2026-08-29",
-      "2026-10-15"
+      "2026-10-15",
+      "2026-11-28"
     ],
     "example": "Aku sengaja nggak bilang harganya ke Ibu. Nggak tega, nanti beliau kepikiran.",
     "example_cn": "我故意没跟妈妈说价格。不忍心，不然她会一直惦记着。（nggak = tidak）",
     "lesson_occurrences": [
       "2026-08-29 08:00",
-      "2026-10-15 18:00"
+      "2026-10-15 18:00",
+      "2026-11-28 08:00"
     ],
     "root_cn": "故意；有意"
   },
@@ -9198,27 +9200,29 @@ window.DAILY_VOCAB_DB = [
     "en": "miss; pass; go beyond",
     "root": "lewat",
     "root_cn": "经过；超过",
-    "example": "Maaf, chat kamu tadi kelewat karena grupnya lagi ramai banget.",
-    "example_cn": "不好意思，你刚才的消息被我漏掉了，因为群里当时特别热闹。",
+    "example": "Gara-gara kepo baca chat grup, halte kantorku kelewat.",
+    "example_cn": "因为忍不住去看群里的八卦，我坐过了公司那一站。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 3,
+    "times_seen": 4,
     "first_seen": "2026-09-11 08:00",
-    "last_seen": "2026-10-14 08:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
       "2026-09-11",
       "2026-10-04",
-      "2026-10-14"
+      "2026-10-14",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
       "2026-09-11 08:00",
       "2026-10-04 08:00",
-      "2026-10-14 08:00"
+      "2026-10-14 08:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -11973,23 +11977,25 @@ window.DAILY_VOCAB_DB = [
     "en": "history",
     "root": "sejarah",
     "root_cn": "历史",
-    "example": "Aku mulai tertarik membaca sejarah Indonesia.",
-    "example_cn": "我开始对阅读印尼历史感兴趣。",
+    "example": "Museum kecil ini menceritakan sejarah kehidupan nelayan di Jakarta Utara.",
+    "example_cn": "这座小博物馆讲述了北雅加达渔民生活的历史。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -12062,23 +12068,25 @@ window.DAILY_VOCAB_DB = [
     "en": "calm / quiet",
     "root": "tenang",
     "root_cn": "平静",
-    "example": "Coba tetap tenang saat ada masalah.",
-    "example_cn": "遇到问题时尽量保持冷静。",
+    "example": "Di tengah ancaman banjir, Pak RT bicara dengan tenang dan mengarahkan warga satu per satu.",
+    "example_cn": "在洪水的威胁中，居委会主任说话很冷静，一个一个地给居民指路。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-18 08:00",
-    "last_seen": "2026-09-18 08:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-18"
+      "2026-09-18",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-09-18 08:00"
+      "2026-09-18 08:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -12273,23 +12281,25 @@ window.DAILY_VOCAB_DB = [
     "en": "crowded / lively",
     "root": "ramai",
     "root_cn": "热闹；人多",
-    "example": "Pasar itu sangat ramai pada akhir pekan.",
-    "example_cn": "那个市场周末非常热闹。",
+    "example": "Pasar malamnya rame banget, sampai motor kami nggak muat di parkiran.",
+    "example_cn": "夜市人多得不得了，连我们的摩托车都停不进停车场。（rame = ramai，nggak = tidak）",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-09-19 08:00",
-    "last_seen": "2026-09-19 08:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-09-19"
+      "2026-09-19",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-09-19 08:00"
+      "2026-09-19 08:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -17628,17 +17638,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-02 08:00",
-    "last_seen": "2026-10-02 08:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-02"
+      "2026-10-02",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-10-02 08:00"
+      "2026-10-02 08:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -19888,23 +19900,25 @@ window.DAILY_VOCAB_DB = [
     "en": "to participate",
     "root": "partisipasi",
     "root_cn": "参与",
-    "example": "Warga diajak berpartisipasi dalam kerja bakti membersihkan selokan.",
-    "example_cn": "居民被邀请参与清理水沟的义务劳动。",
+    "example": "Hanya toko tertentu yang boleh berpartisipasi dalam promo akhir tahun ini.",
+    "example_cn": "只有特定的店铺才能参加这次年终促销。",
     "categories": [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-08 08:00",
-    "last_seen": "2026-10-08 08:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-08"
+      "2026-10-08",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-10-08 08:00"
+      "2026-10-08 08:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -20353,19 +20367,23 @@ window.DAILY_VOCAB_DB = [
     "categories": [
       "每日学习",
       "18:00",
-      "口语"
+      "口语",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-09 18:00",
-    "last_seen": "2026-10-09 18:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-09"
+      "2026-10-09",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-10-09 18:00"
+      "2026-10-09 18:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -22383,17 +22401,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-15 08:00",
-    "last_seen": "2026-10-15 08:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-10-15"
+      "2026-10-15",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-10-15 08:00"
+      "2026-10-15 08:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -22534,19 +22554,23 @@ window.DAILY_VOCAB_DB = [
     "example_cn": "我们团队最近缺人手，所以活儿一直堆着。（lagi = sedang）",
     "categories": [
       "每日学习",
-      "18:00"
+      "18:00",
+      "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-10-15 18:00",
-    "last_seen": "2026-10-15 18:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
-      "18:00"
+      "18:00",
+      "08:00"
     ],
     "dates": [
-      "2026-10-15"
+      "2026-10-15",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-10-15 18:00"
+      "2026-10-15 18:00",
+      "2026-11-28 08:00"
     ]
   },
   {
@@ -34405,17 +34429,19 @@ window.DAILY_VOCAB_DB = [
       "每日学习",
       "08:00"
     ],
-    "times_seen": 1,
+    "times_seen": 2,
     "first_seen": "2026-11-26 08:00",
-    "last_seen": "2026-11-26 08:00",
+    "last_seen": "2026-11-28 08:00",
     "sessions": [
       "08:00"
     ],
     "dates": [
-      "2026-11-26"
+      "2026-11-26",
+      "2026-11-28"
     ],
     "lesson_occurrences": [
-      "2026-11-26 08:00"
+      "2026-11-26 08:00",
+      "2026-11-28 08:00"
     ]
   },
   {

@@ -3,19 +3,19 @@
   "purpose": "read-only lesson-generation context; final candidate MUST pass existing validator",
   "target": {
     "date": "2026-11-28",
-    "session": "am",
-    "time": "08:00",
+    "session": "pm",
+    "time": "18:00",
     "day": 99
   },
   "source": {
     "rules_version": 4,
     "runtime_version": 4,
     "master_unique": 977,
-    "runtime_generated_at": "2026-11-27T10:54:04.405Z",
-    "lesson_watermark": "2026-11-27 18:00",
-    "index_updated": "2026-11-27",
-    "runtime_hash": "ce59fd8fc6074a35c9b5cb7017eb2677875c6feb086584a585fd19e790d0a985",
-    "index_hash": "0db69908de1e288c76b8fc62f02fefc74066b7aeb3d0a1f9cdfdc939607fe0be",
+    "runtime_generated_at": "2026-11-28T00:32:11.038Z",
+    "lesson_watermark": "2026-11-28 08:00",
+    "index_updated": "2026-11-28",
+    "runtime_hash": "8b9ed98e2cf0dba4f6e83509fbe2ee0bc440980f37fcca85672446c50bc1da99",
+    "index_hash": "815a923add48d317bc797edc5046e3e62cf0108d03e66b6349bb646e66f5092e",
     "rules_hash": "255c864b764a64ffa460a0b41c52293ebad361298baffea76092873909dca182"
   },
   "schema": {
@@ -682,26 +682,6 @@
         "随口插话；突然说一句"
       ],
       [
-        "sejarah",
-        2,
-        0,
-        "",
-        "2026-11-15T03:32:23.619Z",
-        "历史 / 故事",
-        "sejarah",
-        "历史"
-      ],
-      [
-        "tenang",
-        3,
-        0,
-        "",
-        "2026-11-15T03:31:13.433Z",
-        "冷静、安静",
-        "tenang",
-        "平静"
-      ],
-      [
         "sejumlah",
         3,
         0,
@@ -720,16 +700,6 @@
         "重量轻的",
         "ringan",
         "轻"
-      ],
-      [
-        "ramai",
-        3,
-        0,
-        "",
-        "2026-11-18T07:07:39.353Z",
-        "拥挤的 / 热闹的",
-        "ramai",
-        "热闹；人多"
       ],
       [
         "resign",
@@ -1252,16 +1222,6 @@
         "故事"
       ],
       [
-        "lega",
-        2,
-        1,
-        "2026-10-15T03:28:12.199Z",
-        "2026-10-26T07:45:22.738Z",
-        "松一口气；宽慰",
-        "lega",
-        "宽慰；轻松"
-      ],
-      [
         "lepas",
         2,
         0,
@@ -1622,16 +1582,6 @@
         "聚集；聚在一起"
       ],
       [
-        "berpartisipasi",
-        2,
-        0,
-        "",
-        "2026-11-18T14:20:40.965Z",
-        "参与；参加（活动、讨论）",
-        "partisipasi",
-        "参与"
-      ],
-      [
         "kejam",
         2,
         0,
@@ -1760,16 +1710,6 @@
         "整齐；整洁；有条理",
         "rapi",
         "整齐"
-      ],
-      [
-        "menghabiskan",
-        3,
-        0,
-        "",
-        "2026-11-23T04:52:50.319Z",
-        "用完；吃光；花掉（时间、钱）",
-        "habis",
-        "完；没有了"
       ],
       [
         "sampah",
@@ -2152,16 +2092,6 @@
         "温度"
       ],
       [
-        "kelewat",
-        3,
-        2,
-        "2026-10-13T15:12:17.174Z",
-        "2026-10-31T06:41:41.475Z",
-        "错过；漏掉；超过（口语）",
-        "lewat",
-        "经过；超过"
-      ],
-      [
         "pantes",
         3,
         0,
@@ -2212,16 +2142,6 @@
         ""
       ],
       [
-        "saya pamit",
-        2,
-        0,
-        "",
-        "2026-10-26T07:49:11.695Z",
-        "我先告辞了",
-        "pamit",
-        "告辞；辞行"
-      ],
-      [
         "boros",
         3,
         0,
@@ -2232,24 +2152,104 @@
         ""
       ],
       [
-        "kekurangan",
-        1,
-        1,
-        "2026-10-15T11:39:38.739Z",
-        "2026-10-26T07:54:47.112Z",
-        "缺乏；不足；缺点",
-        "kurang",
-        "不够；少；不太"
-      ],
-      [
-        "sengaja",
-        1,
+        "angsuran",
+        2,
         0,
         "",
-        "2026-10-26T07:50:26.767Z",
-        "故意；特意",
-        "sengaja",
-        "故意；有意"
+        "2026-10-26T07:49:15.755Z",
+        "分期款；分期付款的每一期",
+        "angsur",
+        "分次、一点一点地（挪动、偿还）"
+      ],
+      [
+        "aset",
+        2,
+        0,
+        "",
+        "2026-10-26T07:54:42.480Z",
+        "资产；（比喻）宝贵的人或东西",
+        "",
+        ""
+      ],
+      [
+        "berjuang",
+        2,
+        0,
+        "",
+        "2026-10-26T07:48:31.512Z",
+        "奋斗；拼搏；斗争",
+        "juang",
+        "斗争；奋斗"
+      ],
+      [
+        "pendapatan",
+        2,
+        1,
+        "2026-10-15T08:09:10.364Z",
+        "2026-10-27T07:31:13.784Z",
+        "收入",
+        "dapat",
+        "得到；获得"
+      ],
+      [
+        "anggaran",
+        3,
+        0,
+        "",
+        "2026-11-14T08:24:11.119Z",
+        "预算",
+        "anggar",
+        "估算（词根很少单用）"
+      ],
+      [
+        "mendapatkan",
+        3,
+        0,
+        "",
+        "2026-11-15T03:32:38.568Z",
+        "获得 / 得到",
+        "dapat",
+        "得到；可以"
+      ],
+      [
+        "berbentuk",
+        2,
+        0,
+        "",
+        "2026-10-26T07:49:29.029Z",
+        "呈……形状；形状是……",
+        "bentuk",
+        "形状"
+      ],
+      [
+        "berjabat tangan",
+        2,
+        0,
+        "",
+        "2026-10-26T07:49:34.264Z",
+        "握手",
+        "jabat",
+        "握住"
+      ],
+      [
+        "jemuran",
+        2,
+        0,
+        "",
+        "2026-10-26T07:49:43.283Z",
+        "晾着的衣服；晾衣架/晾衣处",
+        "jemur",
+        "晒；晾"
+      ],
+      [
+        "lukisan",
+        2,
+        0,
+        "",
+        "2026-10-26T07:49:46.992Z",
+        "画；画作",
+        "lukis",
+        "绘画"
       ],
       [
         "resi",
@@ -2372,6 +2372,16 @@
         "寄；送"
       ],
       [
+        "penyok",
+        2,
+        0,
+        "",
+        "",
+        "压瘪；凹陷（硬的东西被压、被撞后凹进去）",
+        "penyok",
+        "凹陷；瘪"
+      ],
+      [
         "stok habis",
         2,
         0,
@@ -2382,14 +2392,64 @@
         "完；用尽"
       ],
       [
-        "penyok",
+        "lega",
+        2,
+        1,
+        "2026-10-15T03:28:12.199Z",
+        "2026-10-26T07:45:22.738Z",
+        "松一口气；宽慰",
+        "lega",
+        "宽慰；轻松"
+      ],
+      [
+        "kelewat",
+        3,
+        2,
+        "2026-10-13T15:12:17.174Z",
+        "2026-10-31T06:41:41.475Z",
+        "错过；漏掉；超过（口语）",
+        "lewat",
+        "经过；超过"
+      ],
+      [
+        "berpartisipasi",
         2,
         0,
         "",
+        "2026-11-18T14:20:40.965Z",
+        "参与；参加（活动、讨论）",
+        "partisipasi",
+        "参与"
+      ],
+      [
+        "sejarah",
+        2,
+        0,
         "",
-        "压瘪；凹陷（硬的东西被压、被撞后凹进去）",
-        "penyok",
-        "凹陷；瘪"
+        "2026-11-15T03:32:23.619Z",
+        "历史 / 故事",
+        "sejarah",
+        "历史"
+      ],
+      [
+        "tenang",
+        3,
+        0,
+        "",
+        "2026-11-15T03:31:13.433Z",
+        "冷静、安静",
+        "tenang",
+        "平静"
+      ],
+      [
+        "ramai",
+        3,
+        0,
+        "",
+        "2026-11-18T07:07:39.353Z",
+        "拥挤的 / 热闹的",
+        "ramai",
+        "热闹；人多"
       ]
     ],
     "focus": [
@@ -2859,6 +2919,18 @@
         "mengharukan"
       ],
       "new_words": []
+    },
+    {
+      "date": "2026-11-28",
+      "session": "am",
+      "review_core": [
+        "menghabiskan",
+        "stok habis",
+        "sengaja",
+        "saya pamit",
+        "kekurangan"
+      ],
+      "new_words": []
     }
   ],
   "previous_pm": {
@@ -2873,7 +2945,60 @@
       "mengharukan"
     ]
   },
-  "same_day_am": null,
+  "same_day_am": {
+    "date": "2026-11-28",
+    "vocab": [
+      [
+        "lega",
+        "松了一口气；宽慰；（空间）宽敞",
+        "relieved; (of space) roomy",
+        "lega",
+        "宽慰；宽敞"
+      ],
+      [
+        "kelewat",
+        "错过；漏掉；（口语）太、过于",
+        "missed, overlooked; (colloquial) too, overly",
+        "lewat",
+        "经过；通过"
+      ],
+      [
+        "berpartisipasi",
+        "参与；参加（活动、项目）",
+        "to participate",
+        "partisipasi",
+        "参与（来自英语 participation）"
+      ],
+      [
+        "sejarah",
+        "历史；来历",
+        "history; background story",
+        "sejarah",
+        "历史"
+      ],
+      [
+        "tenang",
+        "冷静；安静；平静",
+        "calm; quiet; peaceful",
+        "tenang",
+        "平静"
+      ],
+      [
+        "ramai",
+        "热闹；人多；拥挤",
+        "crowded; busy; lively",
+        "ramai",
+        "热闹"
+      ]
+    ],
+    "review_vocab": [
+      "menghabiskan",
+      "stok habis",
+      "sengaja",
+      "saya pamit",
+      "kekurangan"
+    ]
+  },
   "contract": {
     "rules": "data/learning-pool-rules.json",
     "validator": ".github/scripts/validate-lesson-candidate.js"
