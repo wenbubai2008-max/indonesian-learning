@@ -1,0 +1,371 @@
+{
+  "date": "2026-11-28",
+  "session": "pm",
+  "time": "18:00",
+  "day": 99,
+  "title": "18:00 晚课｜Honornya Belum Masuk Juga · 稿费迟迟没到账",
+  "write_status": "lesson_complete",
+  "phase": {
+    "theme_id": "logistics",
+    "day_role": "transfer"
+  },
+  "new_words": [],
+  "vocab": [
+    {
+      "word": "pendapatan",
+      "display": "pendapatan",
+      "audio_text": "pendapatan",
+      "cn": "收入（一段时间里挣到的钱）",
+      "en": "income; earnings",
+      "root": "dapat",
+      "root_cn": "得到；获得",
+      "formation": "peN- + dapat + -an → pendapatan（d 开头，peN- 变 pen-）。同词根：dapat / mendapat（得到）、mendapatkan（获得）、pendapat（意见、看法）——pendapat 和 pendapatan 只差一个 -an，意思完全不同。常见搭配：pendapatan per bulan（月收入）、pendapatan tambahan（额外收入）、pendapatan naik-turun（收入不稳定）、pendapatan rata-rata（平均收入）。",
+      "example": "Walaupun punya gelar S2, pendapatannya sebagai guru honorer masih kecil.",
+      "example_cn": "虽然他有硕士学位，当代课老师的收入还是很低。",
+      "synonym_note": "pendapatan、gaji、penghasilan、pendapat：gaji 是公司按月发的“工资”；pendapatan 和 penghasilan 都是“收入”，范围更大，接稿费、做生意、房租进账都算，两者大多能互换，填表时 penghasilan 更常见；pendapat 是“意见”（Menurut pendapat saya …），别和 pendapatan 混。口语说法：聊天里常说 pemasukan（进账）或直接说 gaji / penghasilan。",
+      "everyday": "聊天常说 penghasilan、pemasukan；pendapatan 在新闻、表格、报税里更常见",
+      "usage_note": "此前学过、答错过的词，已经一个多月没复习。和 mendapatkan 是同一个词根 dapat：Rina 说这笔稿费就是她一个月的收入。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "mendapatkan",
+      "display": "mendapatkan",
+      "audio_text": "mendapatkan",
+      "cn": "得到；获得；（努力后）争取到",
+      "en": "to get; to obtain",
+      "root": "dapat",
+      "root_cn": "得到；获得",
+      "formation": "meN- + dapat + -kan → mendapatkan（d 开头变 men-，d 保留）。被动 didapatkan / didapat。同词根：mendapat（得到）、pendapatan（收入）、pendapat（意见）。常见搭配：mendapatkan pekerjaan（找到工作）、mendapatkan proyek（拿到项目）、mendapatkan izin（获得许可）、mendapatkan informasi（得到信息）。",
+      "example": "Setelah dipecat dari pabrik, dia butuh enam bulan untuk mendapatkan pekerjaan baru.",
+      "example_cn": "从工厂被开除以后，他花了六个月才找到新工作。",
+      "synonym_note": "mendapatkan 和 mendapat：意思基本一样，大多能互换（mendapat / mendapatkan pekerjaan 都对）；mendapatkan 稍微强调“经过努力拿到”，mendapat 更常跟 hukuman、kabar、nilai 这类“落到身上”的东西（mendapat hukuman、mendapat kabar）。和 menerima 也不同：menerima 是“收到、接受”别人给的东西（menerima paket）。口语说法：dapet（Aku dapet proyek baru!）；正式场合用 mendapatkan / memperoleh。",
+      "everyday": "日常多说 dapet（Akhirnya dapet juga!）；mendapatkan 偏书面，新闻、邮件里常见",
+      "usage_note": "此前学过的词，已经一个多月没复习。和 pendapatan 同一个词根 dapat：阅读里 Rina 上个月接到了一个大项目。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "gengsi",
+      "display": "gengsi",
+      "audio_text": "gengsi",
+      "cn": "爱面子；拉不下脸；（名词）面子、体面",
+      "en": "prestige; too proud (to do something)",
+      "root": "gengsi",
+      "root_cn": "面子；体面",
+      "formation": "词根本身既是名词（面子）又像形容词（爱面子）。派生：bergengsi（有名望的、高档的：sekolah bergengsi 名校）、gengsian（口语：特别爱面子的人）。常见搭配：gengsi + 动词（gengsi minta maaf 拉不下脸道歉、gengsi nanya 不好意思问）、demi gengsi（为了面子）、gengsinya tinggi（特别好面子）。",
+      "example": "Dia gengsi ngaku masih jomblo di depan teman-teman SMA-nya.",
+      "example_cn": "在高中同学面前，他拉不下脸承认自己还是单身。（ngaku = mengaku）",
+      "synonym_note": "gengsi 和 malu：malu 是“害羞、难为情、羞愧”，可能是性格或做错了事；gengsi 是怕丢面子、怕被看低，所以不肯做（gengsi minta tolong 拉不下脸求人）。很多场合两种说法都可以，但 gengsi 带“自尊心作怪”的意思。bergengsi 是褒义，“有名望的”（kampus bergengsi），不是“爱面子”。口语说法：gengsian（Jangan gengsian, deh!）；正式场合多说 harga diri（自尊）。",
+      "usage_note": "此前学过的词，已经快两个月没复习。Rina 不好意思一直催款，怕被看成没耐心。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "hukuman",
+      "display": "hukuman",
+      "audio_text": "hukuman",
+      "cn": "惩罚；处罚；刑罚",
+      "en": "punishment; penalty; sentence",
+      "root": "hukum",
+      "root_cn": "法律；规则",
+      "formation": "hukum + -an → hukuman（受到的惩罚）。同词根：hukum（法律：melanggar hukum 违法）、menghukum（惩罚某人）、dihukum（受罚、被判刑）。常见搭配：mendapat hukuman / kena hukuman（受到惩罚，后者口语）、memberi hukuman（给予惩罚）、hukuman ringan / berat（轻罚 / 重罚）、hukuman penjara（徒刑）。",
+      "example": "Waktu pendidikan tentara, telat bangun lima menit aja hukumannya push-up seratus kali.",
+      "example_cn": "受军训的时候，起床晚了五分钟，惩罚就是做一百个俯卧撑。（aja = saja）",
+      "synonym_note": "hukuman、denda、sanksi：hukuman 是一般的“惩罚”，学校、家里、法院都能用；denda 是“罚款”（kena denda 被罚款）；sanksi 是“处分、制裁”，多见于规定、公司、正式通知（sanksi administratif）。注意 hukum 是“法律”，不是“惩罚”。口语说法：kena hukuman、dihukum（Dia dihukum guru）。",
+      "usage_note": "此前学过的词，已经快两个月没复习。阅读里 Bima 没做作业，被老师罚去捡学校院子里的垃圾。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "berangsur",
+      "display": "berangsur",
+      "audio_text": "berangsur",
+      "cn": "逐渐；渐渐地（一点一点地变化）",
+      "en": "gradually",
+      "root": "angsur",
+      "root_cn": "逐步；分期",
+      "formation": "ber- + angsur → berangsur，口语和书面都常重叠成 berangsur-angsur，后面接表示变化的词。同词根：angsuran（分期付款的每一期：angsuran motor 摩托车分期）、mengangsur（分期付）。常见搭配：berangsur membaik（逐渐好转）、berangsur pulih（逐渐恢复）、berangsur turun / naik（逐渐下降 / 上升）、berangsur normal（渐渐恢复正常）。",
+      "example": "Setelah operasi, kekuatan kakinya berangsur pulih.",
+      "example_cn": "手术以后，他腿上的力气渐渐恢复了。",
+      "synonym_note": "berangsur(-angsur)、perlahan-lahan、lama-lama：berangsur 强调“一步一步地变化”，最常和 membaik、pulih、turun 搭配，偏书面，新闻、病情、天气报告里多见；perlahan-lahan / pelan-pelan 说动作或速度“慢慢地”（Jalan pelan-pelan）；lama-lama 是“时间长了就……”（Lama-lama kamu juga terbiasa），很口语。别和 angsuran（分期）混。口语说法：聊天里多说 pelan-pelan 或 lama-lama。",
+      "everyday": "聊天多说 pelan-pelan、lama-lama；berangsur(-angsur) 多见于新闻、天气和病情报告",
+      "usage_note": "此前学过、答错过的词，十天没复习。阅读里 Rina 的收入渐渐好起来，但每个月还是忽高忽低。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "pembangunan",
+      "display": "pembangunan",
+      "audio_text": "pembangunan",
+      "cn": "建设；建造；（地区、国家的）发展",
+      "en": "construction; development",
+      "root": "bangun",
+      "root_cn": "起来；建造",
+      "formation": "peN- + bangun + -an → pembangunan（b 开头，peN- 变 pem-，b 保留）。同词根：membangun（建造：membangun rumah）、dibangun（被建造）、bangunan（建筑物）。常见搭配：pembangunan jalan tol（修高速公路）、pembangunan gedung / gudang（盖楼 / 建仓库）、proyek pembangunan（建设项目）、masih dalam pembangunan（还在建设中）。",
+      "example": "Pembangunan jalan tol di dekat rumahku bikin macet tiap pagi.",
+      "example_cn": "我家附近在修高速公路，每天早上都堵车。（bikin = membuat）",
+      "synonym_note": "pembangunan、bangunan、perkembangan：pembangunan 是“建造、建设”的过程（pembangunan gedung 盖楼）；bangunan 是盖好的“建筑物”本身（bangunan tua 老房子）；perkembangan 是“发展、进展”（perkembangan anak 孩子的成长、perkembangan teknologi），不是盖东西。口语说法：日常常说 lagi dibangun（Gudangnya lagi dibangun）；pembangunan 也常说，新闻里更多。",
+      "usage_note": "此前学过、答错过的词，十天没复习。财务说，这个月的钱大多用在建新仓库上了。",
+      "source_group": "review",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kejar",
+      "display": "kejar",
+      "audio_text": "kejar",
+      "cn": "追；追赶；赶（时间、进度）；追着催",
+      "en": "to chase; to rush to meet",
+      "root": "kejar",
+      "root_cn": "追",
+      "formation": "词根口语里直接当动词用（kejar dia!）。标准形 mengejar（meN- + kejar），被动 dikejar，口语 ngejar。常见搭配：mengejar kereta / bus（赶火车 / 公交）、kejar deadline / kejar target（赶期限 / 冲指标）、dikejar waktu（时间紧，被时间追着跑）、kejar-kejaran（互相追逐）。在办公室里 kejar 某人还可以是“追着催”：saya kejar tanda tangannya（我去催他签字）。",
+      "example": "Maaf aku nggak bisa ikut makan siang, lagi dikejar deadline. Nanti aku nyusul, ya.",
+      "example_cn": "抱歉，我不能一起去吃午饭了，正赶截止期限。我待会儿再过去找你们。（nggak = tidak，lagi = sedang，nyusul = menyusul）",
+      "synonym_note": "kejar、ikut、buru-buru：mengejar 是想追上、赶上（mengejar bus 追公交）；mengikuti / ikut 是跟在后面、跟着做；buru-buru 是“匆忙、赶紧”，说状态，不接目标。说“时间紧”可以说 dikejar waktu，也可以说 lagi buru-buru。口语说法：ngejar（Aku lagi ngejar kereta）；正式场合用 mengejar。",
+      "everyday": "聊天多说 ngejar（lagi ngejar deadline）；mengejar 用在叙述、新闻里",
+      "usage_note": "此前学过的词，今晚换到催款场景里用：Rina 前两周一直在赶交稿期限；财务答应今天就去催副经理批款。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    },
+    {
+      "word": "kata sandi",
+      "display": "kata sandi",
+      "audio_text": "kata sandi",
+      "cn": "密码（账号、网银、电脑的登录密码）",
+      "en": "password",
+      "root": "sandi",
+      "root_cn": "暗号；密码",
+      "formation": "kata（词）+ sandi（暗号、密码）组成的合成词，两个词分开写。常见搭配：masukkan kata sandi（输入密码）、lupa kata sandi（忘了密码）、ganti kata sandi（改密码）、kata sandi salah（密码错误）、reset kata sandi（重置密码）。",
+      "example": "Berkas laporan ini dikunci pakai kata sandi, jadi tanya dulu ke Pak Andi.",
+      "example_cn": "这份报告文件用密码锁住了，所以先问问 Andi 先生。",
+      "synonym_note": "kata sandi、PIN、kode OTP：kata sandi（password）一般是字母加数字、长期使用的登录密码；PIN 是几位数字的密码（PIN ATM）；kode OTP 是短信收到的一次性验证码，用一次就失效。口语说法：日常几乎都说 password（Password Wi-Fi-nya apa?）；kata sandi 多见于应用界面、银行通知。",
+      "everyday": "日常多说 password（Password-nya apa, ya?）；kata sandi 常见于应用、网站和银行的界面",
+      "usage_note": "此前学过的词，今晚换到财务转账场景：管网银密码的经理在休假，所有转账都卡住了。",
+      "source_group": "application",
+      "is_new": false,
+      "is_oral_new": false
+    }
+  ],
+  "reading": {
+    "title": "Honor yang Belum Masuk · 还没到账的稿费",
+    "text": "Setelah bercerai dua tahun lalu, Rina membesarkan anaknya, Bima, sendirian. Pendapatannya sebagai ilustrator lepas berangsur-angsur membaik, tetapi masih naik-turun setiap bulan. Bulan lalu dia mendapatkan proyek besar dari sebuah penerbit: dua puluh gambar untuk buku cerita anak tentang seekor jerapah kecil yang lincah. Karena mengejar tenggat, Rina bekerja sampai larut malam selama dua minggu. Akibatnya, dia lupa memeriksa PR Bima, dan Bima mendapat hukuman dari gurunya: memungut sampah di halaman sekolah. Gambar-gambarnya sudah dikirim tiga minggu lalu, tetapi honornya belum juga masuk. Rina sebenarnya gengsi menagih terus, karena takut dianggap tidak sabar. Namun, uang sekolah Bima harus dibayar hari Jumat. Senin pagi, dia akhirnya memutuskan untuk menelepon bagian keuangan penerbit itu.",
+    "cn": "两年前离婚以后，Rina 一个人带大儿子 Bima。她做自由插画师，收入渐渐好起来了，但每个月还是忽高忽低。上个月，她从一家出版社接到了一个大项目：给一本儿童故事书画二十幅插图，故事讲的是一只灵活的小长颈鹿。为了赶交稿期限，Rina 连续两个星期工作到深夜。结果她忘了检查 Bima 的作业，Bima 被老师罚去捡学校院子里的垃圾。画稿三个星期前就交了，可稿费一直没到账。Rina 其实拉不下脸一直催，怕别人觉得她没耐心。可是 Bima 的学费星期五就得交。星期一早上，她终于决定给出版社的财务部打电话。"
+  },
+  "dialogue": {
+    "title": "打电话给出版社财务：稿费三个星期还没到账",
+    "twist": 4,
+    "lines": [
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Halo, dengan Dewi dari bagian keuangan Penerbit Pelangi. Ada yang bisa dibantu?",
+        "cn": "您好，我是彩虹出版社财务部的 Dewi。请问有什么可以帮您？"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Halo, Mbak Dewi. Saya Rina, ilustrator buku Si Jerapah Kecil. Mau tanya, pembayaran honor saya sudah sampai mana, ya?",
+        "cn": "您好，Dewi 姐。我是 Rina，《小长颈鹿》那本书的插画师。想问一下，我的稿费付到哪一步了？"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Sebentar ya, Mbak, saya cek dulu. … Oh, berkas invoice-nya udah lengkap dan udah disetujui dari hari Senin lalu.",
+        "cn": "请稍等，我查一下。……哦，您的发票材料已经齐了，上星期一就批下来了。（udah = sudah）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Syukurlah. Kira-kira kapan dananya masuk, Mbak? Jujur, saya agak gengsi nagih terus, tapi ini pendapatan saya satu bulan.",
+        "cn": "那太好了。大概什么时候能到账呢？说实话，我有点拉不下脸一直催，可这是我一个月的收入。（nagih = menagih）"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Masalahnya, Pak Hendra yang pegang password (kata sandi) internet banking lagi cuti sampai minggu depan. Jadi semua transfer ditahan dulu.",
+        "cn": "问题是，管网银密码的 Hendra 先生在休假，要到下星期才回来。所以所有转账都先压着。（lagi = sedang）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Lho, minggu depan? Maaf, Mbak, saya belum nangkep. Uang sekolah anak saya harus dibayar hari Jumat ini. Masa nggak ada orang lain yang bisa transfer?",
+        "cn": "咦，下星期？抱歉，我没太听明白。我孩子的学费这星期五就得交。难道就没有别人能转账吗？（nangkep = menangkap，“听懂”；nggak = tidak；masa = 难道）"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Ada Bu Lina, wakilnya. Tapi beliau cuma bisa menyetujui transfer kecil. Dana bulan ini juga banyak kepakai buat pembangunan gudang baru, jadi beliau ngeduluin pembayaran ke percetakan.",
+        "cn": "有，副经理 Lina 女士。不过她只能批小额转账。这个月的钱也大多用在建新仓库上了，所以她会先付印刷厂的款。（cuma = hanya，kepakai = terpakai，buat = untuk，ngeduluin = mendahulukan）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Saya ngerti, Mbak. Tapi di kontrak, honor dibayar paling lambat dua minggu setelah gambar diterima. Mohon dibantu disampaikan ke Bu Lina, ya.",
+        "cn": "我理解。可是合同里写着，稿费最晚在收到画稿后两个星期内支付。麻烦您帮忙转告 Lina 女士。（ngerti = mengerti）"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Baik, Mbak. Saya kejar persetujuan Bu Lina hari ini juga. Kalau bisa, Mbak kirim ulang invoice-nya lewat email sebelum jam tiga, biar langsung saya teruskan.",
+        "cn": "好的。我今天就去催 Lina 女士批。如果可以的话，请您三点之前把发票再用邮件发一次，我好马上转给她。（biar = supaya）"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Oke, saya kirim sekarang. Jadi honornya ditransfer paling lambat hari Kamis, betul?",
+        "cn": "好，我现在就发。所以稿费最晚星期四转过来，对吗？"
+      },
+      {
+        "speaker": "Mbak Dewi",
+        "id": "Betul, Mbak. Kalau ada kendala, saya kabari lagi. Mohon maaf atas keterlambatannya, ya.",
+        "cn": "对的。如果有什么问题，我再通知您。很抱歉耽误了您这么久。"
+      },
+      {
+        "speaker": "Rina",
+        "id": "Makasih banyak, Mbak Dewi. Saya tunggu kabarnya.",
+        "cn": "太感谢了，Dewi 姐。我等您的消息。（makasih = terima kasih）"
+      }
+    ],
+    "practice": {
+      "role": "Rina",
+      "lines": [
+        {
+          "speaker": "Rina",
+          "id": "Mbak, honor saya sudah sampai mana, ya?",
+          "cn": "Dewi 姐，我的稿费到哪一步了？"
+        },
+        {
+          "speaker": "Mbak Dewi",
+          "id": "Yang pegang password-nya lagi cuti, Mbak.",
+          "cn": "管密码的人在休假。"
+        },
+        {
+          "speaker": "Rina",
+          "id": "Tapi uang sekolah anak saya harus dibayar Jumat ini.",
+          "cn": "可是我孩子的学费这星期五就得交。"
+        },
+        {
+          "speaker": "Rina",
+          "id": "Mohon dibantu disampaikan ke Bu Lina, ya.",
+          "cn": "麻烦帮忙转告 Lina 女士。"
+        },
+        {
+          "speaker": "Mbak Dewi",
+          "id": "Saya kejar persetujuannya hari ini juga.",
+          "cn": "我今天就去催她批。"
+        },
+        {
+          "speaker": "Rina",
+          "id": "Jadi paling lambat Kamis, betul?",
+          "cn": "所以最晚星期四，对吗？"
+        }
+      ]
+    }
+  },
+  "rewrite": [
+    {
+      "kind": "twist",
+      "task": "转折应对：假如星期二 Mbak Dewi 回电话说，Lina 女士只能先批一半稿费，另一半要等 Hendra 先生下星期回来。你是 Rina：先表示理解，再说明这笔钱是你这个月的收入、星期五要交孩子的学费；用 Kalau bisa, … sebelum … 请她星期五之前先把一半转过来；最后用 Jadi …, betul? 确认剩下的一半什么时候付。尽量用上 pendapatan、gengsi 或 kejar。",
+      "frame": "Saya ngerti, Mbak. Jujur, saya …… , tapi honor ini …… , dan uang sekolah anak saya …… . Kalau bisa, …… sebelum hari Jumat, ya. Jadi …… , betul?",
+      "reference_answer": "Saya ngerti, Mbak. Jujur, saya gengsi nagih terus, tapi honor ini pendapatan saya satu bulan, dan uang sekolah anak saya harus dibayar hari Jumat. Kalau bisa, setengahnya ditransfer dulu sebelum hari Jumat, ya. Jadi sisanya dibayar Senin depan setelah Pak Hendra masuk, betul?",
+      "reference_cn": "我理解。说实话，我也拉不下脸一直催，可这笔稿费是我一个月的收入，我孩子的学费星期五就得交。如果可以的话，请在星期五之前先转一半过来。所以剩下的一半等 Hendra 先生回来上班，下星期一再付，对吗？"
+    }
+  ],
+  "daily_test": {
+    "questions": [
+      {
+        "type": "choice",
+        "prompt": "Rina 申请小额贷款，表格上有一栏：“____ per bulan: Rp6.000.000”。哪项最合适？",
+        "options": [
+          "Pendapat",
+          "Mendapatkan",
+          "Pendapatan",
+          "Didapat"
+        ],
+        "answer_index": 2,
+        "answer": "Pendapatan",
+        "explain": "表格里填“每月多少钱”，要用名词 pendapatan（收入），也可以写 penghasilan。pendapat 只差一个 -an，意思却是“意见、看法”；mendapatkan 是动词“获得”；didapat 是被动“被得到”，都不能当表格栏目名。"
+      },
+      {
+        "type": "choice",
+        "prompt": "Rina 的朋友抱怨：“Kakakku sama pacarnya ____ minggu lalu, padahal mereka udah pacaran lima tahun.” 哪项最自然？",
+        "options": [
+          "cerai",
+          "bercerai",
+          "pisah rumah",
+          "putus"
+        ],
+        "answer_index": 3,
+        "answer": "putus",
+        "explain": "他们只是在谈恋爱（pacaran），还没结婚，分手说 putus。cerai / bercerai 只用于夫妻离婚；pisah rumah 是“分居”，也是说已经住在一起的夫妻。口语里 udah pisah 也能指情侣分开，但这里没有这个选项。"
+      },
+      {
+        "type": "choice",
+        "prompt": "中午同事叫 Rina 一起去吃饭，可她三点前必须交完最后两张图。她怎么回答最自然？",
+        "options": [
+          "Duluan aja, aku lagi ngikutin deadline.",
+          "Duluan aja, aku lagi dikejar deadline.",
+          "Duluan aja, aku lagi kejar-kejaran sama deadline kemarin.",
+          "Duluan aja, aku lagi buru-buru deadline."
+        ],
+        "answer_index": 1,
+        "answer": "Duluan aja, aku lagi dikejar deadline.",
+        "explain": "“被截止期限追着跑、正在赶期限”说 lagi dikejar deadline，也可以说 lagi ngejar deadline。ngikutin 是“跟着”，不表示赶；kejar-kejaran 是两个人互相追逐，而且“昨天的期限”说不通；buru-buru 是“匆忙”，后面不直接接 deadline（可以说 lagi buru-buru karena deadline）。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Karena lupa mengerjakan PR, Bima mendapat ____ dari gurunya.（惩罚）",
+        "answer": "hukuman",
+        "explain": "mendapat hukuman / kena hukuman 是“受到惩罚”。别写成 hukum，hukum 是“法律”。如果是罚款，就说 kena denda。"
+      },
+      {
+        "type": "fill",
+        "prompt": "填空：Aku lupa ____ internet banking-ku, jadi harus ke bank buat reset.（密码）",
+        "answer": "kata sandi",
+        "explain": "登录用的密码是 kata sandi，日常也常说 password。如果是 ATM 卡那几位数字的密码，说 PIN。"
+      },
+      {
+        "type": "order",
+        "prompt": "按照中文排列印尼语：说实话，我有点拉不下脸一直催款。",
+        "tokens": [
+          "Jujur,",
+          "saya",
+          "agak",
+          "gengsi",
+          "nagih",
+          "terus."
+        ],
+        "answer": "Jujur, saya agak gengsi nagih terus.",
+        "answer_cn": "说实话，我有点拉不下脸一直催款。",
+        "explain": "Jujur（说实话）放句首；gengsi 后面直接接动词，表示“拉不下脸去做”：gengsi nagih（不好意思催款）；terus 放在动词后，是“一直、老是”。nagih 是 menagih 的口语形。"
+      }
+    ]
+  },
+  "review": {
+    "title": "可选 · 30 秒复述",
+    "steps": [
+      "用 cerai、pendapatan、gengsi、kejar 说说 Rina 为什么要打电话催稿费，最后和财务谈成了什么。"
+    ],
+    "retell_reference": "Setelah cerai, Rina membesarkan Bima sendirian, jadi honor ini pendapatannya satu bulan. Dia sebenarnya gengsi nagih terus, tapi uang sekolah Bima harus dibayar hari Jumat. Ternyata yang pegang password internet banking lagi cuti. Mbak Dewi janji mau kejar persetujuan Bu Lina, jadi honornya ditransfer paling lambat hari Kamis.",
+    "retell_reference_cn": "离婚以后，Rina 一个人带 Bima，所以这笔稿费就是她一个月的收入。她其实拉不下脸一直催，可 Bima 的学费星期五就得交。原来管网银密码的人在休假。Dewi 答应去催 Lina 女士批款，所以稿费最晚星期四转过来。"
+  },
+  "lesson_focus": {
+    "words": [
+      "gengsi",
+      "pendapatan",
+      "kejar"
+    ],
+    "patterns": [
+      {
+        "pattern": "… sudah sampai mana, ya?",
+        "cn": "……到哪儿了？／……进行到哪一步了？",
+        "function": "ask-status",
+        "example": "Mau tanya, pembayaran honor saya sudah sampai mana, ya?",
+        "example_cn": "想问一下，我的稿费付到哪一步了？"
+      },
+      {
+        "pattern": "Jujur, saya agak gengsi …, tapi …",
+        "cn": "说实话，我有点拉不下脸……，可是……",
+        "example": "Jujur, saya agak gengsi nagih terus, tapi ini pendapatan saya satu bulan.",
+        "example_cn": "说实话，我有点拉不下脸一直催，可这是我一个月的收入。"
+      }
+    ]
+  }
+}
